@@ -1,0 +1,10 @@
+id: gallont
+title: Gall ontology
+github_org: adeans
+repo: gallont
+import_group:
+  products:
+    - id: ro
+    - id: bfo
+    - id: pato
+    - id: po
