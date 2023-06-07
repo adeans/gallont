@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/adeans/gallont/workflows/CI/badge.svg)
 # Gall ontology
 
-Description: None
+Description: Ontology of terms used to describe plant gall phenotypes, which are extended phenotypes of the inducers. 
 
 More information can be found at http://obofoundry.org/ontology/gallont
 
@@ -26,4 +26,4 @@ Please use this GitHub repository's [Issue tracker](https://github.com/adeans/ga
 
 ## Acknowledgements
 
-This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
+This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit). The development of this resource was funded, in part, by the U.S. National Science Foundation, through award number DEB-1856626. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
