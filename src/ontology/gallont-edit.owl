@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/gallont.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,42 +9,96 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/gallont.owl>
-
-Import(<http://purl.obolibrary.org/obo/gallont/imports/ro_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/gallont/imports/bfo_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/gallont/imports/pato_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/gallont/imports/po_import.owl>)
-
-
+Import(<http://purl.obolibrary.org/obo/gallont/imports/ro_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Gall ontology")
 
-
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
+Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
 
 ############################
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/CARO_0000005> (anatomical space)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000005> "anatomical space")
+
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000000> (root node)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000000> "root node"@en)
 
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000001> (plant gall)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000001> "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism."@en)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000001> "2023-06-19T19:39:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000001> "plant gall"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> <http://purl.obolibrary.org/obo/PO_0025496>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000002> (emergence hole)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000002> "An anatomical space that is an opening through which an organism has emerged."@en)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000002> "2023-06-19T19:43:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000002> "emergence hole"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000002> <http://purl.obolibrary.org/obo/PO_0025117>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000003> (cavity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000003> "A plant anatomical space that is located inside a gall"@en)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000003> "2023-06-19T19:44:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000003> "cavity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000003> <http://purl.obolibrary.org/obo/PO_0025117>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plant structure")
+
+# Class: <http://purl.obolibrary.org/obo/PO_0009023> (leaf axil)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009023> "leaf axil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009023> <http://purl.obolibrary.org/obo/PO_0025117>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025117> (plant anatomical space)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025117> "plant anatomical space")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025117> <http://purl.obolibrary.org/obo/CARO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025496> (multi-tissue plant structure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025496> "multi-tissue plant structure")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025496> <http://purl.obolibrary.org/obo/PO_0009011>)
+
 
 )
-
