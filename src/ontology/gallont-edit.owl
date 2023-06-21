@@ -64,21 +64,27 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000000> 
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000001> "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000001> "2023-06-19T19:39:13Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000001> "https://orcid.org/0000-0002-2119-4663")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000001> "plant gall"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000001> "https://www.inaturalist.org/observations/62135900")
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> <http://purl.obolibrary.org/obo/PO_0025496>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000002> (emergence hole)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000002> "An anatomical space that is an opening through which an organism has emerged."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000002> "2023-06-19T19:43:46Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000002> "https://orcid.org/0000-0002-2119-4663")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000002> "emergence hole"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000002> "https://www.inaturalist.org/observations/33275700")
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000002> <http://purl.obolibrary.org/obo/PO_0025117>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000003> (cavity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000003> "A plant anatomical space that is located inside a gall"@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000003> "2023-06-19T19:44:42Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000003> "https://orcid.org/0000-0002-2119-4663")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000003> "cavity"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000003> "https://www.inaturalist.org/observations/117192961")
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000003> <http://purl.obolibrary.org/obo/PO_0025117>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
