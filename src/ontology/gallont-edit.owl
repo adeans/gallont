@@ -25,6 +25,18 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000463>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000464>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001435>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001436>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001438>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001995>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001998>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0005597>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006001>))
@@ -140,6 +152,77 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000006> "2
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000006> "detached chamber"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000006> <https://www.inaturalist.org/observations/117192961>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000006> <http://purl.obolibrary.org/obo/GALLONT_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000051> "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000070> (amount)
+
+AnnotationAssertion(Annotation(dcterms:contributor "https://orcid.org/0000-0002-2119-4663") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000070> "The number of entities of this type that are part of the whole organism. For galls, the number of entities of some type that are part of or located in a whole gall."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000070> "amount"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000070> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000463> (conspicuous)
+
+AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000463> "A quality inhering in a bearer by virtue of being clearly visible. For a gall, a quality in which the gall is clearly visible externally."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000463> "conspicuous"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000463> <https://www.inaturalist.org/observations/118068854>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000463> <http://purl.obolibrary.org/obo/PATO_0001998>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000464> (inconspicuous)
+
+AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000464> "A quality inhering in a bearer by virtue of not being clearly visible. For a gall, a quality in which the gall is not clearly visible externally."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0000464> "cryptic"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000464> "inconspicuous"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000464> <https://www.inaturalist.org/observations/64672866>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000464> <http://purl.obolibrary.org/obo/PATO_0001998>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001018> "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001241> "A quality which inheres in a continuant."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001435> (attachment quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001435> "A structural quality inhering in a bearer by virtue of the bearer's having connection or association with another entity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001435> "attachment quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001435> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001436> (sessile (sensu botany))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001436> "An attachment quality inhering in a flower (or gall) by virtue of the bearer's lacking a stalk, as in flowers or leaves (or galls) that grow directly from the stem."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001436> "sessile (sensu botany)"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001436> <https://www.inaturalist.org/observations/96365780>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001436> <http://purl.obolibrary.org/obo/PATO_0001435>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001438> (pedicellate)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001438> "A attachment quality inhering in a bearer by virtue of the bearer's having or being supported by a pedicel or pedicle."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001438> "pedicellate"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001438> <https://www.inaturalist.org/observations/53325638>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001438> <http://purl.obolibrary.org/obo/PATO_0001435>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001995> (organismal quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001995> "A quality that inheres in an entire organism or part of an organism."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001995> "organismal quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001995> <http://purl.obolibrary.org/obo/PATO_0001241>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001998> (conspicuousness)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001998> "A quality inhering in a bearer by virtue of its visibility"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001998> "conspicuousness"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001998> <http://purl.obolibrary.org/obo/PATO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0000055> (bud)
 
