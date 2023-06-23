@@ -31,9 +31,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020054>))
@@ -182,6 +186,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009001> "frui
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009001> <https://www.inaturalist.org/observations/138563159>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009001> <http://purl.obolibrary.org/obo/PO_0025496>)
 
+# Class: <http://purl.obolibrary.org/obo/PO_0009005> (root)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009005> "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009005> "root"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009005> <https://www.inaturalist.org/observations/139148692>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009005> <http://purl.obolibrary.org/obo/PO_0025496>)
+
 # Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009011> "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant."@en)
@@ -193,12 +204,32 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plan
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009023> "leaf axil"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009023> <http://purl.obolibrary.org/obo/PO_0025117>)
 
+# Class: <http://purl.obolibrary.org/obo/PO_0009035> (nectary)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009035> "A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009035> "nectary"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009035> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0009047> (stem)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009047> "A shoot axis (PO:0025029) that is the primary axis of a plant."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009047> "stem"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009047> <https://www.inaturalist.org/observations/125859005>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009047> <http://purl.obolibrary.org/obo/PO_0025496>)
+
 # Class: <http://purl.obolibrary.org/obo/PO_0009049> (inflorescence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009049> "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009049> "inflorescence"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009049> <https://www.inaturalist.org/observations/118434796>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009049> <http://purl.obolibrary.org/obo/PO_0025496>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0020038> (petiole)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020038> "A stalk (PO:0025066) of a vascular leaf (PO:0009025)."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020038> "petiole"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020038> <https://www.inaturalist.org/observations/32852385>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0020038> <http://purl.obolibrary.org/obo/PO_0009011>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020039> (leaf lamina)
 
