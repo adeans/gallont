@@ -44,12 +44,16 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000463>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000464>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000921>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001332>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001334>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001409>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001435>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001436>))
@@ -348,6 +352,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000117> "size"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000117> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000119> (height)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000119> "A 1-D extent quality inhering in a bearer by virtue of the bearer's vertical dimension of extension."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000119> "height"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000119> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000122> (length)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000122> "A 1-D extent quality which is equal to the distance between two points."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000122> "length"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000122> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000406> (curved)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000406> "A curvature quality inhering in a bearer by virtue of the bearer's having or being marked by a curve or smoothly rounded bend."@en)
@@ -370,6 +386,12 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000464> "in
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000464> <https://www.inaturalist.org/observations/64672866>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000464> <http://purl.obolibrary.org/obo/PATO_0001998>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000921> (width)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000921> "A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000921> "width"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000921> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001018> "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities."@en)
@@ -388,6 +410,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001332> "amorphous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001332> <https://www.inaturalist.org/observations/62126917>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001332> <http://purl.obolibrary.org/obo/PATO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001334> (diameter)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001334> "A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001334> "diameter"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001334> <http://purl.obolibrary.org/obo/PATO_0000117>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001409> (spindle-shaped)
 
