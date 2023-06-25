@@ -39,13 +39,20 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000329>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000333>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000463>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000464>))
@@ -61,11 +68,19 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001438>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001480>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001499>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001500>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001532>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001533>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001534>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001535>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001609>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001629>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001871>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001873>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001877>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001878>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001883>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001946>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001947>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001949>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001955>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001979>))
@@ -79,6 +94,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002108>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002215>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002240>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002273>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002274>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002276>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002311>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002335>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002400>))
@@ -328,6 +346,36 @@ AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_00000
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000019> "semiterete"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000019> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000020> (confluent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000020> "A spatial pattern (or gall arrangement) in which adjacent objects (galls) are positioned in such a way that each gall cannot readily be distinguished as an individual."@en)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000020> "2023-06-25T19:44:11Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000020> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000020> "confluent"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000020> <https://www.inaturalist.org/observations/48455940>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000020> <http://purl.obolibrary.org/obo/PATO_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000021> (linear color gradient)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000021> "A color pattern inhering in a bearer by virtue of bearer's being marked with one hue or degree of saturation near one pole and a different hue or degree of saturation at the opposite pole and a color gradient between the two poles."@en)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000021> "2023-06-25T20:11:58Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000021> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000021> "linear color gradient"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000021> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/NCIT_C48440> (solitary)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NCIT_C48440> "Not accompanied by another or others; exclusive of anyone or anything else."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C48440> "solitary"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCIT_C48440> <https://www.inaturalist.org/observations/53326034>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48440> <http://purl.obolibrary.org/obo/PATO_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000019> (color pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000019> "A chromatic property that is the relative position of different hues or degrees of saturation."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000019> "color pattern"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000019> <http://purl.obolibrary.org/obo/PATO_0000060>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000051> "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure."@en)
@@ -339,6 +387,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000052> "A morphological quality inhering in a bearer by virtue of the bearer's ratios of distances between its features (points, edges, surfaces and also holes etc.)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000052> "shape"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000052> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000060> (spatial pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000060> "A spatial quality inhering in a bearer by virtue of the bearer's exhibiting repetition of placement of its parts."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0000060> "distribution"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000060> "spatial pattern"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000060> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000070> (amount)
 
@@ -363,6 +418,20 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000119> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000122> "A 1-D extent quality which is equal to the distance between two points."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000122> "length"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000122> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000329> (blotchy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000329> "A color pattern inhering in a bearer by virtue of bearer's being marked with irregularly shaped spots or blots of a different hue or degree of saturation."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000329> "blotchy"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000329> <https://www.inaturalist.org/observations/93589998>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000329> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000333> (spotted)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000333> "A color pattern inhering in a bearer by virtue of bearer's being marked with a round area of different hue or degree of saturation."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000333> "spotted"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000333> <https://www.inaturalist.org/observations/62655170>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000333> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000406> (curved)
 
@@ -467,6 +536,52 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001500> "ta
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001500> <https://www.inaturalist.org/observations/165344292>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001500> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001532> (mono-colored)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001532> "A color pattern inhering in a bearer by virtue of the bearer's having one hue."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001532> "uniformly colored"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001532> "mono-colored"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001532> <https://www.inaturalist.org/observations/62136736>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001532> <http://purl.obolibrary.org/obo/PATO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001533> (multi-colored)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001533> "A color pattern inhering in a bearer by virtue of bearer's having two or more hues or degrees of saturation."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001533> "multi-colored"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001533> <https://www.inaturalist.org/observations/61596659>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001533> <http://purl.obolibrary.org/obo/PATO_0000019>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001534> (motley)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001534> "A color pattern inhering in a bearer by virtue of bearer's having 3 or more hues or degrees of saturations."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001534> "motley"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001534> <https://www.inaturalist.org/observations/61876229>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001534> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001535> (dappled)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001535> "A color pattern inhering in a bearer by virtue of bearer's being marked with small spots, patches, or specks of hue or degree of saturation differing from that of the background."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001535> "speckled"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001535> "dappled"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001535> <https://www.inaturalist.org/observations/134980830>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001535> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001609> (scattered)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001609> "A spatial pattern inhering in a bearer by virtue of the bearer's being scattered; spread irregularly, and at a distance from each other."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001609> "sparse"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001609> "scattered"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001609> <https://www.inaturalist.org/observations/60738203>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001609> <http://purl.obolibrary.org/obo/PATO_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001629> (clustered)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001629> "A spatial pattern inhering in a bearer by virtue of the bearer's being gathered or tending to gather into a mass or whole."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001629> "aggregated"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001629> "clustered"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001629> <https://www.inaturalist.org/observations/135839958>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001629> <http://purl.obolibrary.org/obo/PATO_0000060>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001871> (reniform)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001871> "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's having the shape of a (human) kidney."@en)
@@ -502,6 +617,21 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001883> "clavate")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001883> <https://www.inaturalist.org/observations/93643117>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001883> <http://purl.obolibrary.org/obo/PATO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001946> (banded)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001946> "A color pattern inhering in a bearer by virtue of bearer's exhibiting transverse stripes of one hue or degree of saturation crossing another."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001946> "banded"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001946> <https://www.inaturalist.org/observations/61502856>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001946> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001947> (netted)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001947> "A color pattern inhering in a bearer by virtue of bearer's being covered with reticulated lines of a different hue or degree of saturation."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001947> "reticulated"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001947> "netted"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001947> <https://www.inaturalist.org/observations/106192928>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001947> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001949> (pointleted)
 
@@ -591,6 +721,27 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002240> "teardrop-shaped"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002240> <https://www.inaturalist.org/observations/34366055>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002240> <http://purl.obolibrary.org/obo/PATO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002273> (marbled)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002273> "Multicolored quality inhering in a bearer by virtue of the bearer's being colored with a variegated pattern resembling marble."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002273> "marbled"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002273> <https://www.inaturalist.org/observations/61596659>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002273> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002274> (mottled)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002274> "Multicolored quality inhering in a bearer by virtue of the bearer's being dappled with spots, patches, or blotches of different colors."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002274> "mottled"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002274> <https://www.inaturalist.org/observations/162989102>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002274> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002276> (barred)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002276> "A color pattern inhering in a bearer by virtue of bearer's exhibiting vertical bars of one hue or degree of saturation crossing another."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002276> "barred"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002276> <https://www.inaturalist.org/observations/45656874>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002276> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002311> (fimbriated)
 
