@@ -51,6 +51,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000329>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000333>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000406>))
@@ -79,6 +80,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001873>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001877>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001878>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001883>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001907>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001925>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001946>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001947>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001949>))
@@ -419,6 +422,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000122> "length"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000122> <http://purl.obolibrary.org/obo/PATO_0000117>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000150> (texture)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000150> "A morphologic quality inhering in a bearer by virtue of the bearer's relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000150> "texture"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000150> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000329> (blotchy)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000329> "A color pattern inhering in a bearer by virtue of bearer's being marked with irregularly shaped spots or blots of a different hue or degree of saturation."@en)
@@ -617,6 +626,19 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001883> "clavate")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001883> <https://www.inaturalist.org/observations/93643117>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001883> <http://purl.obolibrary.org/obo/PATO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001907> (botryoidal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001907> "A surface feature shape quality inhering in a bearer by virtue of the bearer's being like the surface of a compact mass of grapes."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001907> "botryoidal"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001907> <https://www.inaturalist.org/observations/161485438>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001907> <http://purl.obolibrary.org/obo/PATO_0001925>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001925> (surface feature shape)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001925> "A surface shape quality inhering in a bearer by virtue of the bearer's shape of features present on its surface or outer shell."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001925> "surface feature shape"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001925> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001946> (banded)
 
