@@ -50,8 +50,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
@@ -61,7 +63,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000309>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000329>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000333>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000406>))
@@ -74,6 +78,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000701>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000921>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001332>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001334>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001359>))
@@ -85,12 +90,15 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001435>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001436>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001438>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001480>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001487>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001499>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001500>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001532>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001533>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001534>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001535>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001543>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001544>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001609>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001629>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001729>))
@@ -482,8 +490,18 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000030> <http://purl.ob
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000031> "A shedability quality in which a part can readily be detached from its location but it normally (in nature) stays attached; detachable."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000031> "2023-06-27T01:16:14Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000031> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000031> "semideciduous"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000031> <https://www.inaturalist.org/observations/167537899>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000031> <http://purl.obolibrary.org/obo/PATO_0001729>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000032> (brittle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000032> "A structural quality inhering in an object by virtue of the object's susceptibility to breaks, without significant deformation (strain) when subjected to stress."@en)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000032> "2023-06-27T01:41:01Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000032> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000032> "brittle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000032> <http://purl.obolibrary.org/obo/PATO_0001543>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C48440> (solitary)
 
@@ -491,6 +509,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C48440> "solitary"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCIT_C48440> <https://www.inaturalist.org/observations/53326034>)
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48440> <http://purl.obolibrary.org/obo/PATO_0000060>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000011> (age)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000011> "A time quality inhering in a bearer by virtue of how long the bearer has existed."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000011> "age"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000011> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000019> (color pattern)
 
@@ -547,11 +571,25 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000122> "length"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000122> <http://purl.obolibrary.org/obo/PATO_0000117>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000140> (location)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000140> "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0000140> "position"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000140> "location"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000140> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000150> (texture)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000150> "A morphologic quality inhering in a bearer by virtue of the bearer's relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000150> "texture"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000150> <http://purl.obolibrary.org/obo/PATO_0000051>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000309> (young)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000309> "An age which is relatively low."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000309> "young"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000309> <https://www.inaturalist.org/observations/127002034>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000309> <http://purl.obolibrary.org/obo/PATO_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000329> (blotchy)
 
@@ -627,7 +665,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000921> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001018> "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
@@ -635,6 +673,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001241> "A quality which inheres in a continuant."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001300> (optical quality)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001300> "An EM radiation quality in which the EM radiation is within the fiat range of the spectrum visible deemed to be light."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001300> "optical quality"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001300> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001332> (amorphous)
 
@@ -713,6 +757,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001480> "sp
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001480> <https://www.inaturalist.org/observations/138124736>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001480> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001487> (senescent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001487> "A time quality inhering in a bearer by virtue of the bearer's growing old; aging."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001487> "senescent"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001487> <https://www.inaturalist.org/observations/138291646>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001487> <http://purl.obolibrary.org/obo/PATO_0000011>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001499> (spherical)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001499> "globular"@en)
@@ -757,6 +808,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001535> "dappled"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001535> <https://www.inaturalist.org/observations/134980830>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001535> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001543> (flexibility)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001543> "A physical quality inhering in a bearer by virtue of the bearer's disposition to being turned, bowed, or twisted without breaking."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001543> "flexibility"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001543> <http://purl.obolibrary.org/obo/PATO_0001018>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001544> (flexible)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001544> "A physical quality inhering in a bearer by virtue of the bearer's ability of being turned, bowed, or twisted without breaking."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001544> "flexible"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001544> <http://purl.obolibrary.org/obo/PATO_0001543>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001609> (scattered)
 
