@@ -415,7 +415,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000024> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000026> "A texture quality in which a surface is covered or partially by with facets."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000026> "2023-06-26T21:35:23Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000026> "https://orcid.org/0000-0002-2119-4663"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000026> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000026> "faceted"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000026> <https://www.inaturalist.org/observations/33275277>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000026> <http://purl.obolibrary.org/obo/PATO_0000150>)
@@ -425,7 +425,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000026> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000027> "A texture quality in which a surface has the appearance and/or consistency of moss, especially those species in Polytrichaceae (Bryophyta)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000027> "mossy"@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000027> "2023-06-26T21:41:40Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000027> "https://orcid.org/0000-0002-2119-4663"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000027> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000027> "moss-like"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000027> <https://www.inaturalist.org/observations/134718736>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000027> <http://purl.obolibrary.org/obo/PATO_0000150>)
