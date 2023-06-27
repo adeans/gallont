@@ -19,7 +19,6 @@ Annotation(dcterms:title "Gall ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FLOPO_0900042>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000003>))
@@ -54,6 +53,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000052>))
@@ -66,6 +66,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000309>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000317>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000320>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000322>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000324>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000329>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000333>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000406>))
@@ -76,11 +80,20 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000464>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000700>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000701>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000921>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000952>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000954>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000957>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000963>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001246>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001250>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001264>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001287>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001332>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001334>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001354>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001359>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001361>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001365>))
@@ -112,6 +125,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001878>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001883>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001907>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001925>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001941>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001946>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001947>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001949>))
@@ -121,6 +135,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001981>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001995>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001998>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002078>))
@@ -137,6 +152,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002339>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002340>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002344>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002411>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002427>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002442>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0005002>))
@@ -209,10 +225,6 @@ AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/FLOPO_0900042
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FLOPO_0900042> "succulent"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FLOPO_0900042> <https://www.inaturalist.org/observations/81385187>)
 SubClassOf(<http://purl.obolibrary.org/obo/FLOPO_0900042> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
-
-# Class: <http://purl.obolibrary.org/obo/GALLONT_0000000> (root node)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000000> "root node"@en)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000001> (plant gall)
 
@@ -516,6 +528,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000011> "age"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000011> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000014> (color)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000014> "A composite chromatic quality composed of hue, saturation and intensity parts.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000014> "color")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000014> <http://purl.obolibrary.org/obo/PATO_0001300>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000019> (color pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000019> "A chromatic property that is the relative position of different hues or degrees of saturation."@en)
@@ -591,6 +609,30 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000309> "yo
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000309> <https://www.inaturalist.org/observations/127002034>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000309> <http://purl.obolibrary.org/obo/PATO_0000011>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000317> (black)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000317> "A color that lacks any hues as parts.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000317> "black")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000317> <http://purl.obolibrary.org/obo/PATO_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000320> (green)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000320> "A color hue with medium-low wavelength of that portion of the visible spectrum lying between yellow and blue, evoked in the human observer by radiant energy with wavelengths of approximately 490 to 570 nanometers.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000320> "green")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000320> <http://purl.obolibrary.org/obo/PATO_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000322> (red)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000322> "A color hue with high wavelength of the long-wave end of the visible spectrum, evoked in the human observer by radiant energy with wavelengths of approximately 630 to 750 nanometers.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000322> "red")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000322> <http://purl.obolibrary.org/obo/PATO_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000324> (yellow)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000324> "A color hue with medium wavelength of that portion of the visible spectrum lying between orange and green, evoked in the human observer by radiant energy with wavelengths of approximately 570 to 590 nanometers.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000324> "yellow")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000324> <http://purl.obolibrary.org/obo/PATO_0000014>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0000329> (blotchy)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000329> "A color pattern inhering in a bearer by virtue of bearer's being marked with irregularly shaped spots or blots of a different hue or degree of saturation."@en)
@@ -662,6 +704,31 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000921> "width"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000921> <http://purl.obolibrary.org/obo/PATO_0000117>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000952> (brown)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000952> "A color consisting of dark orange, red, of very low intensity.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000952> "brown")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000952> <http://purl.obolibrary.org/obo/PATO_0000014>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000954> (pink)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000954> "Red color having medium to high brightness and low to moderate saturation.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000954> "pink")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000954> <http://purl.obolibrary.org/obo/PATO_0000322>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000957> (opacity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000957> "An optical quality which obtains by virtue of the ability of the bearer to absorb visible light.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000957> "opacity")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000957> <http://purl.obolibrary.org/obo/PATO_0001300>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000963> (opaque)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000963> "A optical quality inhering in a bearer by virtue of the bearer's not being clear; not transmitting or reflecting light or radiant energy.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000963> "opaque")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000963> <https://www.inaturalist.org/observations/130540535>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000963> <http://purl.obolibrary.org/obo/PATO_0000957>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001018> "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities."@en)
@@ -673,6 +740,30 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001241> "A quality which inheres in a continuant."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001246> (light brown)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001246> "A color consisting of brown hue and high brightness.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001246> "light brown")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001246> <http://purl.obolibrary.org/obo/PATO_0000952>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001250> (light green)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001250> "A color consisting of green hue and high brightness.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001250> "light green")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001250> <http://purl.obolibrary.org/obo/PATO_0000320>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001264> (light yellow)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001264> "A color consisting of yellow hue and high brightness")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001264> "light yellow")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001264> <http://purl.obolibrary.org/obo/PATO_0000324>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001287> (red brown)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001287> "A color consisting of red and brown hue.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001287> "red brown")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001287> <http://purl.obolibrary.org/obo/PATO_0000952>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001300> (optical quality)
 
@@ -692,6 +783,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001332> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001334> "A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001334> "diameter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001334> <http://purl.obolibrary.org/obo/PATO_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001354> (translucent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001354> "A optical quality inhering in a bearer by virtue of the bearer's exhibiting low opacity.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001354> "translucent")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001354> <https://www.inaturalist.org/observations/82728541>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001354> <http://purl.obolibrary.org/obo/PATO_0000957>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001359> (rugose)
 
@@ -915,6 +1013,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001925> "surface feature shape"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001925> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001941> (yellow green)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001941> "A color consisting of yellow and green hues.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001941> "yellow green")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001941> <http://purl.obolibrary.org/obo/PATO_0000320>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001946> (banded)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001946> "A color pattern inhering in a bearer by virtue of bearer's exhibiting transverse stripes of one hue or degree of saturation crossing another."@en)
@@ -975,6 +1079,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001998> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002012> "A texture quality that exists through a liquid cover on the surface of the bearer."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002012> "coating"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002012> <http://purl.obolibrary.org/obo/PATO_0000150>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002020> (pale pink)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002020> "Pink color having high brightness and low saturation.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002020> "pale pink")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002020> <http://purl.obolibrary.org/obo/PATO_0000954>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002021> (conical)
 
@@ -1088,6 +1198,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002400> "fusiform"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002400> <https://www.inaturalist.org/observations/47505522>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002400> <http://purl.obolibrary.org/obo/PATO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002411> (yellow brown)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002411> "A color consisting of yellow and brown hue.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002411> "yellow brown")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002411> <http://purl.obolibrary.org/obo/PATO_0000952>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002427> (knobbled)
 
