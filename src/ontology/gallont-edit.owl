@@ -237,7 +237,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000002> (emergence hole)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000002> "An anatomical space that is an opening through which an organism has emerged."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000002> "An anatomical space that is an opening through which a gall-inducing organism has emerged."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000002> "2023-06-19T19:43:46Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000002> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000002> "emergence hole"@en)
@@ -246,7 +246,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000002> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000003> (cavity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000003> "A plant anatomical space that is located inside a gall"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000003> "A plant anatomical space that is located inside a gall."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000003> "2023-06-19T19:44:42Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000003> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000003> "cavity"@en)
@@ -1316,6 +1316,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plan
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009023> (leaf axil)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009023> "An axil that is the space between a shoot axis and a leaf that branches from the shoot axis."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009023> "leaf axil"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009023> <http://purl.obolibrary.org/obo/PO_0025117>)
 
