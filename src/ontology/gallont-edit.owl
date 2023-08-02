@@ -56,6 +56,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000037>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
@@ -170,6 +172,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0005597>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006504>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
@@ -532,6 +535,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000033> 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000033> <https://www.inaturalist.org/observations/79701805>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000033> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000034> (blister gall)
 
@@ -565,6 +569,31 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000036
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000036> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>))
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000012>))
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000037> (roly-poly gall)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000037> "A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000037> <http://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000037> "2023-08-02T01:35:34Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000037> <https://lccn.loc.gov/41001073>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000037> "roly-poly gall"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000037> <https://www.inaturalist.org/observations/117192961>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000037> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000006>))
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0002078>))
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000038> (rosette gall)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000038> "A plant gall that is located on a bud and which consists of layers of scale leaves or similar phyllomes that surround the inducer's chamber."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000038> "bunch gall"@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000038> <http://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000038> "2023-08-02T01:43:13Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000038> <https://lccn.loc.gov/41001073>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000038> "rosette gall"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000038> <https://www.inaturalist.org/observations/33495996>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0000055>))
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006001>))
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C48440> (solitary)
 
@@ -1345,6 +1374,10 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0006019> <ht
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006019> <http://purl.obolibrary.org/obo/PO_0009011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
+# Class: <http://purl.obolibrary.org/obo/PO_0006504> (<http://purl.obolibrary.org/obo/PO_0006504>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0006504> <http://purl.obolibrary.org/obo/PO_0009011>)
+
 # Class: <http://purl.obolibrary.org/obo/PO_0009001> (fruit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009001> "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)."@en)
@@ -1397,6 +1430,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020038> "petiole"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020038> <https://www.inaturalist.org/observations/32852385>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020038> <http://purl.obolibrary.org/obo/PO_0009011>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0020038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020039> (leaf lamina)
 
@@ -1412,6 +1446,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020049> "leaflet"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020049> <https://www.inaturalist.org/observations/90131758>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020049> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0020049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020054> (bud scale leaf)
 
