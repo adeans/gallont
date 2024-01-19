@@ -305,6 +305,7 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000005> "larval chamber"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://www.inaturalist.org/observations/139401882>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000040>))
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000041>))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000006> (detached chamber)
@@ -629,6 +630,7 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000040
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000040> "nutritive tissue"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000040> <https://doi.org/10.3390%2Finsects12100850>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000040> <http://purl.obolibrary.org/obo/PO_0009007>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GALLONT_0000005>))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000041> (larval cavity)
 
@@ -661,7 +663,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 # Class: <http://purl.obolibrary.org/obo/PATO_0000070> (amount)
 
 AnnotationAssertion(Annotation(dcterms:contributor "https://orcid.org/0000-0002-2119-4663") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000070> "The number of entities of this type that are part of the whole organism. For galls, the number of entities of some type that are part of or located in a whole gall."@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000070> <http://purl.obolibrary.org/obo/PATO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000117> (size)
 
@@ -730,11 +731,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000963> "opaque")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000963> <https://www.inaturalist.org/observations/130540535>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000963> <http://purl.obolibrary.org/obo/PATO_0000957>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001300> (optical quality)
 
@@ -908,10 +904,6 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001979> <
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001981> <https://www.inaturalist.org/observations/48456565>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001998> (conspicuousness)
-
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001998> <http://purl.obolibrary.org/obo/PATO_0000001>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0002021> (conical)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002021> <https://www.inaturalist.org/observations/61704917>)
@@ -1013,22 +1005,12 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0040022> <
 
 # Class: <http://purl.obolibrary.org/obo/PO_0000055> (bud)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0000055> "An undeveloped shoot system (PO:0009006)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0000055> "bud"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0000055> <https://www.inaturalist.org/observations/48455720>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0000055> <http://purl.obolibrary.org/obo/PO_0009011>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0005597> (cambium)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0005597> "A lateral meristem (PO:0020145) that has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0005597> "cambium"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0005597> <http://purl.obolibrary.org/obo/PO_0009011>)
-
-# Class: <http://purl.obolibrary.org/obo/PO_0006001> (phyllome)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0006001> "A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0006001> "phyllome"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0006001> <http://purl.obolibrary.org/obo/PO_0025496>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0006018> (leaf adaxial epidermis)
 
@@ -1036,7 +1018,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0006018> "upper leaf"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0006018> "adaxial leaf epidermis"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0006018> <https://www.inaturalist.org/observations/53324962>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0006018> <http://purl.obolibrary.org/obo/PO_0009011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0006019> (leaf abaxial epidermis)
@@ -1046,36 +1027,19 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0006019> "lower leaf"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0006019> "abaxial leaf epidermis"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0006019> <https://www.inaturalist.org/observations/33275250>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0006019> <http://purl.obolibrary.org/obo/PO_0009011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
-
-# Class: <http://purl.obolibrary.org/obo/PO_0006504> (leaf trichome)
-
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0006504> <http://purl.obolibrary.org/obo/PO_0009011>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009001> (fruit)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009001> "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009001> "fruit"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009001> <https://www.inaturalist.org/observations/138563159>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0009001> <http://purl.obolibrary.org/obo/PO_0025496>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009005> (root)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009005> "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009005> "root"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009005> <https://www.inaturalist.org/observations/139148692>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0009005> <http://purl.obolibrary.org/obo/PO_0025496>)
-
-# Class: <http://purl.obolibrary.org/obo/PO_0009007> (portion of plant tissue)
-
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0009007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GALLONT_0000005>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009011> "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant."@en)
 AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) rdfs:comment <http://purl.obolibrary.org/obo/PO_0009011> "These terms (i.e., subclasses of plant structure) can be used to describe the location of a plant gall (e.g., on leaf or stem) and also the parts of a gall (e.g., nectary, larval chamber)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plant structure")
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009035> (nectary)
 
@@ -1084,10 +1048,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009035> "nect
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009047> (stem)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009047> "A shoot axis (PO:0025029) that is the primary axis of a plant."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009047> "stem"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009047> <https://www.inaturalist.org/observations/125859005>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0009047> <http://purl.obolibrary.org/obo/PO_0025496>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009049> (inflorescence)
 
@@ -1099,37 +1060,22 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0009049> <http://purl.obolibrary.o
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020038> "A stalk (PO:0025066) of a vascular leaf (PO:0009025)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020038> "petiole"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020038> <https://www.inaturalist.org/observations/32852385>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020038> <http://purl.obolibrary.org/obo/PO_0009011>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020039> (leaf lamina)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020039> "A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020039> "leaf lamina"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020039> <https://www.inaturalist.org/observations/62631563>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020039> <http://purl.obolibrary.org/obo/PO_0009011>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020049> (leaflet)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020049> "A cardinal organ part (PO:0025001) that is one of the ultimate segments of a compound leaf (PO:0020043)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020049> "leaflet"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020049> <https://www.inaturalist.org/observations/90131758>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020049> <http://purl.obolibrary.org/obo/PO_0025496>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
-
-# Class: <http://purl.obolibrary.org/obo/PO_0020054> (bud scale leaf)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020054> "A scale leaf that surrounds a dormant or perennating bud."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020054> "bud scale leaf"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020054> <http://purl.obolibrary.org/obo/PO_0006001>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020128> (leaf margin)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020128> "A phyllome margin (PO:0025018) that is part of a leaf (PO:0025034)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020128> "leaf margin"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020128> <http://purl.obolibrary.org/obo/PO_0009011>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020138> (leaf lamina vein)
 
@@ -1137,7 +1083,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0020138> "leaf lamina vein"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020138> "leaf vein"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020138> <https://www.inaturalist.org/observations/54078107>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020138> <http://purl.obolibrary.org/obo/PO_0009011>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020139> (leaf midvein)
 
@@ -1160,25 +1105,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0020140> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/PO_0025034> (leaf)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0025034> "A phyllome (PO:0006001) that is not associated with a reproductive structure."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025034> "leaf"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025034> <https://www.inaturalist.org/observations/60861819>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0025034> <http://purl.obolibrary.org/obo/PO_0006001>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0025073> (branch)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0025073> "A shoot axis (PO:00025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of a meristematic apical cell (PO:0030007)."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0025073> "stem"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0025073> "twig"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025073> "branch"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025073> <https://www.inaturalist.org/observations/28377541>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0025073> <http://purl.obolibrary.org/obo/PO_0025496>)
-
-# Class: <http://purl.obolibrary.org/obo/PO_0025496> (multi-tissue plant structure)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0025496> "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025496> "multi-tissue plant structure")
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0025496> <http://purl.obolibrary.org/obo/PO_0009011>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0030119> (catkin inflorescence)
 
