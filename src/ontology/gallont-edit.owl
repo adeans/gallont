@@ -1091,8 +1091,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0009047> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009049> (inflorescence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009049> "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009049> "inflorescence"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009049> <https://www.inaturalist.org/observations/118434796>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009049> <http://purl.obolibrary.org/obo/PO_0025496>)
 
@@ -1184,11 +1182,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0025496> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/PO_0030119> (catkin inflorescence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0030119> "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of indeterminate, first order inflorescence axes (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054)."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030119> "ament"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030119> "catkin"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0030119> "catkin inflorescence"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0030119> <http://purl.obolibrary.org/obo/PO_0009049>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0030121> (<http://purl.obolibrary.org/obo/PO_0030121>)
 
