@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gallont/gallont-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2023-08-02/gallont-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-01-19/gallont-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Gall ontology</dcterms:title>
-        <owl:versionInfo>2023-08-02</owl:versionInfo>
+        <owl:versionInfo>2024-01-19</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -29,12 +29,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     
 
 
@@ -145,9 +139,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/gallont.owl#induced_by -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/gallont.owl#induced_by">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </owl:ObjectProperty>
     
 
 
@@ -173,13 +181,19 @@
 
     <!-- http://purl.obolibrary.org/obo/CARO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:label xml:lang="en">asexual organism</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CARO_0000048 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000048"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:label xml:lang="en">gonochoristic organism</rdfs:label>
+    </owl:Class>
     
 
 
@@ -213,7 +227,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
-        <obo:IAO_0000115 xml:lang="en">An anatomical space that is an opening through which a gall-inducing organism has emerged.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An anatomical space that is an opening through which a gall-inhabiting organism has emerged.</obo:IAO_0000115>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-19T19:43:46Z</dce:date>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-2119-4663"/>
         <rdfs:label xml:lang="en">emergence hole</rdfs:label>
@@ -407,7 +421,7 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002266"/>
         <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s having a shape resembling a canelé, a French pastry.</obo:IAO_0000115>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-25T00:21:14Z</dce:date>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-2119-4663"/>
@@ -420,7 +434,7 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002266"/>
         <obo:IAO_0000115 xml:lang="en">A shape inhering in a bearer by virtue of the bearer resembling a cup, with a depression and rim-like edge apically.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">cup-like</obo:IAO_0000118>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-25T00:30:40Z</dce:date>
@@ -434,7 +448,7 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002266"/>
         <obo:IAO_0000115 xml:lang="en">A shape trait in which a gall has radiating, spine-like processes that resemble the spines of a sea urchin (cf. Cidaridae).</obo:IAO_0000115>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-25T00:38:13Z</dce:date>
         <rdfs:label xml:lang="en">echinoform</rdfs:label>
@@ -460,12 +474,13 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001865"/>
         <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s being shaped like a lentil, with convex upper and lower surfaces.</obo:IAO_0000115>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-25T00:52:58Z</dce:date>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-2119-4663"/>
         <dcterms:source rdf:resource="https://en.wikipedia.org/w/index.php?title=Glossary_of_botanical_terms&amp;oldid=1161474424#lenticular"/>
         <rdfs:label xml:lang="en">lenticular</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/PATO_0000409"/>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/30408125"/>
     </owl:Class>
     
@@ -666,7 +681,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006504"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A plant gall that is induced by mites (Acari) on leaves and which consists of an area of leaf epidermis that has increased hairiness.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness.</obo:IAO_0000115>
         <dce:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-01T21:56:59Z</dce:date>
         <dcterms:source rdf:resource="https://lccn.loc.gov/41001073"/>
@@ -794,6 +809,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6946 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6946">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <rdfs:label xml:lang="en">Acariformes</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C48440 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C48440">
@@ -805,6 +835,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001"/>
@@ -813,72 +849,47 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <obo:IAO_0000115 xml:lang="en">A time quality inhering in a bearer by virtue of how long the bearer has existed.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">age</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000011"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001300"/>
-        <obo:IAO_0000115>A composite chromatic quality composed of hue, saturation and intensity parts.</obo:IAO_0000115>
-        <rdfs:label>color</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000014"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000060"/>
-        <obo:IAO_0000115 xml:lang="en">A chromatic property that is the relative position of different hues or degrees of saturation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">color pattern</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000019"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115 xml:lang="en">A quality of a single physical entity inhering in the bearer by virtue of the bearer&apos;s size or shape or structure.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">morphology</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000052 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <obo:IAO_0000115 xml:lang="en">A morphological quality inhering in a bearer by virtue of the bearer&apos;s ratios of distances between its features (points, edges, surfaces and also holes etc.)</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">shape</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000052"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <obo:IAO_0000115 xml:lang="en">A spatial quality inhering in a bearer by virtue of the bearer&apos;s exhibiting repetition of placement of its parts.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">distribution</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">spatial pattern</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000066 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000150"/>
-        <obo:IAO_0000115 xml:lang="en">A texture quality inhering in a bearer by virtue of the bearer&apos;s having hair or bristles.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">pilosity</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000066"/>
     
 
 
@@ -887,7 +898,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">The number of entities of this type that are part of the whole organism. For galls, the number of entities of some type that are part of or located in a whole gall.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">amount</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000070"/>
@@ -910,51 +920,31 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000119 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000119">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
-        <obo:IAO_0000115 xml:lang="en">A 1-D extent quality inhering in a bearer by virtue of the bearer&apos;s vertical dimension of extension.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">height</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000119"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
-        <obo:IAO_0000115 xml:lang="en">A 1-D extent quality which is equal to the distance between two points.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">length</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000140 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000140">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <obo:IAO_0000115 xml:lang="en">A spatial quality inhering in a bearer by virtue of the bearer&apos;s spatial location relative to other objects in the vicinity.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">position</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">location</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000140"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000150 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000150">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <obo:IAO_0000115 xml:lang="en">A morphologic quality inhering in a bearer by virtue of the bearer&apos;s relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">texture</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000150"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000309 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000309">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">An age which is relatively low.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">young</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/127002034"/>
     </owl:Class>
     
@@ -962,50 +952,31 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000317 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000317">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
-        <obo:IAO_0000115>A color that lacks any hues as parts.</obo:IAO_0000115>
-        <rdfs:label>black</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000317"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000320 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000320">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
-        <obo:IAO_0000115>A color hue with medium-low wavelength of that portion of the visible spectrum lying between yellow and blue, evoked in the human observer by radiant energy with wavelengths of approximately 490 to 570 nanometers.</obo:IAO_0000115>
-        <rdfs:label>green</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000320"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000322 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000322">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
-        <obo:IAO_0000115>A color hue with high wavelength of the long-wave end of the visible spectrum, evoked in the human observer by radiant energy with wavelengths of approximately 630 to 750 nanometers.</obo:IAO_0000115>
-        <rdfs:label>red</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000322"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000324 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000324">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
-        <obo:IAO_0000115>A color hue with medium wavelength of that portion of the visible spectrum lying between orange and green, evoked in the human observer by radiant energy with wavelengths of approximately 570 to 590 nanometers.</obo:IAO_0000115>
-        <rdfs:label>yellow</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000324"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000329">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s being marked with irregularly shaped spots or blots of a different hue or degree of saturation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">blotchy</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/93589998"/>
     </owl:Class>
     
@@ -1014,9 +985,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000333 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000333">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s being marked with a round area of different hue or degree of saturation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">spotted</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/62655170"/>
     </owl:Class>
     
@@ -1025,10 +993,16 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000406 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000406">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A curvature quality inhering in a bearer by virtue of the bearer&apos;s having or being marked by a curve or smoothly rounded bend.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">curved</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/73691614"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000409">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001865"/>
+        <rdfs:seeAlso>lenticular</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1036,9 +1010,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000453 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000453">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000066"/>
-        <obo:IAO_0000115 xml:lang="en">A pilosity quality inhering in a bearer by virtue of the bearer&apos;s lack of hairs or bristles.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">glabrous</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/129032167"/>
     </owl:Class>
     
@@ -1047,10 +1018,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000454 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000454">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000066"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PATO_0002442"/>
-        <obo:IAO_0000115 xml:lang="en">A pilosity quality inhering in a bearer by virtue of the bearer&apos;s being covered with hair or hairlike projections.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">hairy</rdfs:label>
     </owl:Class>
     
 
@@ -1058,9 +1026,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000463 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000463">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001998"/>
         <obo:IAO_0000115 xml:lang="en">A quality inhering in a bearer by virtue of being clearly visible. For a gall, a quality in which the gall is clearly visible externally.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">conspicuous</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/118068854"/>
     </owl:Class>
     <owl:Axiom>
@@ -1075,10 +1041,8 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000464 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000464">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001998"/>
         <obo:IAO_0000115 xml:lang="en">A quality inhering in a bearer by virtue of not being clearly visible. For a gall, a quality in which the gall is not clearly visible externally.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">cryptic</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">inconspicuous</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/64672866"/>
     </owl:Class>
     <owl:Axiom>
@@ -1093,10 +1057,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000700 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000700">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000150"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PATO_0000701"/>
-        <obo:IAO_0000114 xml:lang="en">A texture quality inhering in a bearer by virtue of the bearer&apos;s irregular surface.</obo:IAO_0000114>
-        <rdfs:label xml:lang="en">rough</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/32852385"/>
     </owl:Class>
     
@@ -1105,41 +1066,26 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000701 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000701">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000150"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PATO_0001365"/>
-        <obo:IAO_0000115 xml:lang="en">A texture quality inhering in a bearer by virtue of the bearer&apos;s processing a surface free of roughness or irregularities.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">smooth</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000921 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000921">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
-        <obo:IAO_0000115 xml:lang="en">A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">width</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000921"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000952 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000952">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000014"/>
-        <obo:IAO_0000115>A color consisting of dark orange, red, of very low intensity.</obo:IAO_0000115>
-        <rdfs:label>brown</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000952"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000954 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000954">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000322"/>
-        <obo:IAO_0000115>Red color having medium to high brightness and low to moderate saturation.</obo:IAO_0000115>
-        <rdfs:label>pink</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000954"/>
     
 
 
@@ -1166,11 +1112,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <obo:IAO_0000115 xml:lang="en">A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.</obo:IAO_0000115>
-        <rdfs:label>physical quality</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
     
 
 
@@ -1178,7 +1120,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A quality which inheres in a continuant.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">physical object quality</rdfs:label>
     </owl:Class>
     
@@ -1186,48 +1127,31 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001246 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001246">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000952"/>
-        <obo:IAO_0000115>A color consisting of brown hue and high brightness.</obo:IAO_0000115>
-        <rdfs:label>light brown</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001246"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001250 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001250">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000320"/>
-        <obo:IAO_0000115>A color consisting of green hue and high brightness.</obo:IAO_0000115>
-        <rdfs:label>light green</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001250"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001264 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001264">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000324"/>
-        <obo:IAO_0000115>A color consisting of yellow hue and high brightness</obo:IAO_0000115>
-        <rdfs:label>light yellow</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001264"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001287 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001287">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000952"/>
-        <obo:IAO_0000115>A color consisting of red and brown hue.</obo:IAO_0000115>
-        <rdfs:label>red brown</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001287"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001300">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115 xml:lang="en">An EM radiation quality in which the EM radiation is within the fiat range of the spectrum visible deemed to be light.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">optical quality</rdfs:label>
     </owl:Class>
@@ -1237,9 +1161,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001332 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001332">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A morphology quality inhering in a bearer by virtue of the bearer&apos;s lack of distinct morphology.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">amorphous</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/62126917"/>
     </owl:Class>
     
@@ -1247,11 +1168,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001334 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001334">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
-        <obo:IAO_0000115 xml:lang="en">A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">diameter</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001334"/>
     
 
 
@@ -1270,8 +1187,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001359">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000700"/>
-        <obo:IAO_0000115 xml:lang="en">A surface feature shape quality inhering in a bearer by virtue of the bearer&apos;s having many wrinkles or creases on the surface.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">rugose</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61705956"/>
     </owl:Class>
     
@@ -1280,9 +1195,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001361 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001361">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000700"/>
-        <obo:IAO_0000115 xml:lang="en">Definition: A texture quality inhering in a bearer by virtue of the bearer&apos;s being covered with warts or projections that resemble warts resulting in a hard rough surface.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">warty</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/55941836"/>
     </owl:Class>
     
@@ -1293,8 +1205,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001365">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000150"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PATO_0002442"/>
-        <obo:IAO_0000115 xml:lang="en">A surface feature shape quality inhering in a bearer by virtue of the bearer&apos;s having spines, thorns or similar thin projections on its surface.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">spiny</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/83838615"/>
     </owl:Class>
     
@@ -1303,9 +1213,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001370 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001370">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002012"/>
-        <obo:IAO_0000115 xml:lang="en">A coating quality which is sticky or clammy.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">viscid</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/46296688"/>
     </owl:Class>
     
@@ -1314,9 +1221,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001409 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001409">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s resembling a long tapered rod.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">spindle-shaped</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/93643117"/>
     </owl:Class>
     
@@ -1324,20 +1228,13 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001435 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001435">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <obo:IAO_0000115 xml:lang="en">A structural quality inhering in a bearer by virtue of the bearer&apos;s having connection or association with another entity.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">attachment quality</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001435"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001436 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001436">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001435"/>
-        <obo:IAO_0000115 xml:lang="en">An attachment quality inhering in a flower (or gall) by virtue of the bearer&apos;s lacking a stalk, as in flowers or leaves (or galls) that grow directly from the stem.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">sessile (sensu botany)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/96365780"/>
     </owl:Class>
     
@@ -1346,9 +1243,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001438 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001438">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001435"/>
-        <obo:IAO_0000115 xml:lang="en">A attachment quality inhering in a bearer by virtue of the bearer&apos;s having or being supported by a pedicel or pedicle.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">pedicellate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/53325638"/>
     </owl:Class>
     
@@ -1358,9 +1252,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001480">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000007"/>
-        <obo:IAO_0000115 xml:lang="en">A structural quality inhering in a bearer by virtue of the bearer&apos;s resembling a sponge in elasticity, absorbency, or porousness.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">sponge-like</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">spongy</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/138124736"/>
     </owl:Class>
     
@@ -1369,9 +1261,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001487 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001487">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A time quality inhering in a bearer by virtue of the bearer&apos;s growing old; aging.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">senescent</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/138291646"/>
     </owl:Class>
     
@@ -1380,9 +1269,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001499 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001499">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000118 xml:lang="en">globular</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">spherical</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/134523229"/>
     </owl:Class>
     
@@ -1392,9 +1278,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001500">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s being gradually narrower or thinner toward one end.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">taper</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">tapered</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/165344292"/>
     </owl:Class>
     
@@ -1403,10 +1287,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001532 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001532">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000019"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of the bearer&apos;s having one hue.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">uniformly colored</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">mono-colored</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/62136736"/>
     </owl:Class>
     
@@ -1415,9 +1296,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001533 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001533">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000019"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s having two or more hues or degrees of saturation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">multi-colored</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61596659"/>
     </owl:Class>
     
@@ -1426,9 +1304,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001534 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001534">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s having 3 or more hues or degrees of saturations.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">motley</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61876229"/>
     </owl:Class>
     
@@ -1437,10 +1312,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001535 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001535">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s being marked with small spots, patches, or specks of hue or degree of saturation differing from that of the background.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">speckled</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">dappled</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/134980830"/>
     </owl:Class>
     
@@ -1449,7 +1320,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001543 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001543">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000115 xml:lang="en">A physical quality inhering in a bearer by virtue of the bearer&apos;s disposition to being turned, bowed, or twisted without breaking.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flexibility</rdfs:label>
     </owl:Class>
@@ -1459,7 +1329,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001544 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001544">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001543"/>
         <obo:IAO_0000115 xml:lang="en">A physical quality inhering in a bearer by virtue of the bearer&apos;s ability of being turned, bowed, or twisted without breaking.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flexible</rdfs:label>
     </owl:Class>
@@ -1469,9 +1338,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001609">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000060"/>
-        <obo:IAO_0000115 xml:lang="en">A spatial pattern inhering in a bearer by virtue of the bearer&apos;s being scattered; spread irregularly, and at a distance from each other.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">sparse</obo:IAO_0000118>
         <rdfs:label xml:lang="en">scattered</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/60738203"/>
     </owl:Class>
@@ -1481,10 +1347,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001629 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001629">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000060"/>
-        <obo:IAO_0000115 xml:lang="en">A spatial pattern inhering in a bearer by virtue of the bearer&apos;s being gathered or tending to gather into a mass or whole.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">aggregated</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">clustered</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/135839958"/>
     </owl:Class>
     
@@ -1492,21 +1354,14 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001729 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001729">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
-        <obo:IAO_0000115 xml:lang="en">An organismal quality inhering in a bearer by virtue of the bearer&apos;s disposition to lose an entity by natural process.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">shedability</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001729"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001730 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001730">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001729"/>
-        <obo:IAO_0000115 xml:lang="en">A quality inhering in a bearer by virtue of the bearer&apos;s disposition to shed body parts.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">detachable</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">deciduous</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/34366055"/>
     </owl:Class>
     
@@ -1515,8 +1370,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001732 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001732">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001729"/>
-        <obo:IAO_0000115 xml:lang="en">A quality inhering in a plant by virtue of the bearer&apos;s disposition to not shed any body part.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">integral</obo:IAO_0000118>
         <rdfs:label xml:lang="en">non-deciduous</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/64672768"/>
@@ -1527,20 +1380,20 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001851 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001851">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <obo:IAO_0000115 xml:lang="en">A structure quality inhering in a bearer by virtue of the bearer&apos;s exhibiting transient abnormal enlargement, not due to cell proliferation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">swollen</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61503871"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001865 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001865"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001871 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001871">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A concave 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s having the shape of a (human) kidney.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">reniform</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/29748241"/>
     </owl:Class>
     
@@ -1549,9 +1402,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001873 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001873">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A convex 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s exhibiting a consistently-sized round cross section</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cylindrical</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/111343832"/>
     </owl:Class>
     
@@ -1560,7 +1410,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001877 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001877">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
         <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s being shaped like a lance-head, considerably longer than wide, tapering towards the tip from below the middle; attached at the broad end.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lanceolate</rdfs:label>
     </owl:Class>
@@ -1570,11 +1419,8 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001878 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001878">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s consisting of two curves, in opposite directions. S-shaped.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">s-shaped</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">sigmoidal</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">sigmoid</rdfs:label>
     </owl:Class>
     
 
@@ -1582,10 +1428,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001883 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001883">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115>A concave 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s gradually becoming thicker towards the end.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">club-shaped</obo:IAO_0000118>
-        <rdfs:label>clavate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/93643117"/>
     </owl:Class>
     
@@ -1604,30 +1447,19 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001925 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001925">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A surface shape quality inhering in a bearer by virtue of the bearer&apos;s shape of features present on its surface or outer shell.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">surface feature shape</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001925"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001941 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001941">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000320"/>
-        <obo:IAO_0000115>A color consisting of yellow and green hues.</obo:IAO_0000115>
-        <rdfs:label>yellow green</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001941"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001946 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001946">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s exhibiting transverse stripes of one hue or degree of saturation crossing another.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">banded</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61502856"/>
     </owl:Class>
     
@@ -1636,10 +1468,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001947 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001947">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s being covered with reticulated lines of a different hue or degree of saturation.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">reticulated</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">netted</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/106192928"/>
     </owl:Class>
     
@@ -1648,9 +1476,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001949 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001949">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s terminating abruptly in a little point.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">pointleted</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61595801"/>
     </owl:Class>
     
@@ -1659,9 +1484,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001955 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001955">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s being narrowly triangular, wider at the apex and tapering toward the base.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">wedge-shaped</obo:IAO_0000118>
         <rdfs:label xml:lang="en">cuneate</rdfs:label>
     </owl:Class>
     
@@ -1670,9 +1492,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001979 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001979">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s being partly divided into a determinate number of regions.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">lobed</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/160895518"/>
     </owl:Class>
     
@@ -1681,9 +1500,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001981 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001981">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s having a shape resembling a (human) ear.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">auriculate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/48456565"/>
     </owl:Class>
     
@@ -1691,11 +1507,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
-        <obo:IAO_0000115 xml:lang="en">A quality that inheres in an entire organism or part of an organism.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">organismal quality</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995"/>
     
 
 
@@ -1703,38 +1515,25 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001998">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A quality inhering in a bearer by virtue of its visibility</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">conspicuousness</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000150"/>
-        <obo:IAO_0000115 xml:lang="en">A texture quality that exists through a liquid cover on the surface of the bearer.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">coating</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002012"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002020 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000954"/>
-        <obo:IAO_0000115>Pink color having high brightness and low saturation.</obo:IAO_0000115>
-        <rdfs:label>pale pink</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002020"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A convex 3-D shape quality inhering in a bearer by virtue of the bearer&apos;s resembling a cone (a 3-D shape with a round cross section that tapers).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">conical</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61704917"/>
     </owl:Class>
     
@@ -1743,9 +1542,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002063 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape inhering in a bearer by virtue of the bearer&apos;s being elongated and cylindrical.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">columnar</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/111432683"/>
     </owl:Class>
     
@@ -1755,8 +1551,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002078">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000007"/>
-        <obo:IAO_0000115 xml:lang="en">A quality inhering in a bearer by virtue of the bearer&apos;s having an empty space or cavity within. The space is present in addition to the larval chamber.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">hollow</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/117192961"/>
     </owl:Class>
     
@@ -1766,21 +1560,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A quality inhering in a bearer by virtue of the bearer&apos;s resembling small nipple like projection.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">papillary</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/91418114"/>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0002108"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
+        <rdfs:comment xml:lang="en">probably not the right class for galls with nipple-like projections</rdfs:comment>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002215 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002215">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s having the shape of a scythe or sickle.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">sickle-shaped</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">falciform</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002215"/>
     
 
 
@@ -1788,8 +1581,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002228">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001500"/>
-        <obo:IAO_0000115 xml:lang="en">A tapered shape quality inhering in a bearer by virtue of the bearer&apos;s (a gall) tapering gradually (apically) to a sharp point.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">acuminate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/54845032"/>
     </owl:Class>
     
@@ -1798,20 +1589,20 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002240 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002240">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s shape resembling falling drop (of water).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">teardrop-shaped</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/34366055"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002266"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002273 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002273">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">Multicolored quality inhering in a bearer by virtue of the bearer&apos;s being colored with a variegated pattern resembling marble.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">marbled</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/61596659"/>
     </owl:Class>
     
@@ -1820,9 +1611,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002274 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002274">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">Multicolored quality inhering in a bearer by virtue of the bearer&apos;s being dappled with spots, patches, or blotches of different colors.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">mottled</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/162989102"/>
     </owl:Class>
     
@@ -1831,9 +1619,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002276 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002276">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001533"/>
-        <obo:IAO_0000115 xml:lang="en">A color pattern inhering in a bearer by virtue of bearer&apos;s exhibiting vertical bars of one hue or degree of saturation crossing another.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">barred</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/45656874"/>
     </owl:Class>
     
@@ -1842,9 +1627,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002311 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002311">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">Having a fringe or border of hairlike or fingerlike projections.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fimbriated</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/14417106"/>
     </owl:Class>
     
@@ -1853,11 +1635,8 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002335 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002335">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer&apos;s being dome-shaped.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">dome-like</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">hemispheroid</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">tholiform</rdfs:label>
     </owl:Class>
     
 
@@ -1865,9 +1644,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002339 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002339">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000454"/>
-        <obo:IAO_0000115 xml:lang="en">A quality of being covered with stiff or rough hairs.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">hispid</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/64256556"/>
     </owl:Class>
     
@@ -1876,9 +1652,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002340 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002340">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002339"/>
-        <obo:IAO_0000115 xml:lang="en">A quality of being minutely hispid.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">hispidulous</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/27503910"/>
     </owl:Class>
     
@@ -1887,9 +1660,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002344 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002344">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000454"/>
-        <obo:IAO_0000115 xml:lang="en">A quality inhering in a bearer by virtue of the bearer&apos;s being characterized by fine, entangled hairs giving the appearance of cobweb.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">arachnose</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/62631894"/>
     </owl:Class>
     
@@ -1898,9 +1668,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002400 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002400">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">Having a spindle-like shape that is wide in the middle and tapers at both ends.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fusiform</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/47505522"/>
     </owl:Class>
     
@@ -1908,11 +1675,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0002411 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002411">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000952"/>
-        <obo:IAO_0000115>A color consisting of yellow and brown hue.</obo:IAO_0000115>
-        <rdfs:label>yellow brown</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002411"/>
     
 
 
@@ -1944,8 +1707,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0005002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">Having the shape of a pear; tapering near the top and bulging toward the base or bottom.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pear-shaped</rdfs:label>
     </owl:Class>
     
@@ -1954,14 +1715,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0005004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape that is almost an ellipse.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">egg-shaped</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">ellipsoid</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">oblong</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">ovate</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">ovular</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">subelliptical</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/91487515"/>
     </owl:Class>
     
@@ -1970,11 +1723,8 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0005014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0005014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A spheroid shape quality inhering in a bearer by virtue of the bearer&apos;s being nearly, but not perfectly, spherical.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">globose</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">globular</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">subspherical</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/84454407"/>
     </owl:Class>
     
@@ -1983,9 +1733,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0040022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000052"/>
-        <obo:IAO_0000115 xml:lang="en">A shape quality inhering in a bearer by virtue of the bearer being expanded laterally and or opened outward in shape.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">flared</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/105016514"/>
     </owl:Class>
     
@@ -2107,11 +1854,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PO_0009023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025117"/>
-        <obo:IAO_0000115 xml:lang="en">An axil that is the space between a shoot axis and a leaf that branches from the shoot axis.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">leaf axil</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009023"/>
     
 
 
@@ -2297,8 +2040,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">An anatomical space that is located on a plant.</obo:IAO_0000115>
-        <rdfs:label>plant anatomical space</rdfs:label>
     </owl:Class>
     
 
