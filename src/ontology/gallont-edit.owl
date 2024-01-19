@@ -82,6 +82,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000324>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000329>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000333>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000406>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000409>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000453>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000454>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000463>))
@@ -267,7 +268,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000002> (emergence hole)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000002> "An anatomical space that is an opening through which a gall-inducing organism has emerged."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000002> "An anatomical space that is an opening through which a gall-inhabiting organism has emerged."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000002> "2023-06-19T19:43:46Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000002> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000002> "emergence hole"@en)
@@ -378,7 +379,7 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000014> "2
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000014> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000014> <https://en.wikipedia.org/w/index.php?title=Canel%C3%A9&oldid=1160295465>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000014> "caneliform"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000014> <http://purl.obolibrary.org/obo/PATO_0000052>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000014> <http://purl.obolibrary.org/obo/PATO_0002266>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000015> (cupuliform)
 
@@ -388,7 +389,7 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000015> "2
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000015> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000015> <https://lccn.loc.gov/2011488555>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000015> "cupuliform"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000015> <http://purl.obolibrary.org/obo/PATO_0000052>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000015> <http://purl.obolibrary.org/obo/PATO_0002266>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000016> (echinoform)
 
@@ -396,7 +397,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000016> "2023-06-25T00:38:13Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000016> "echinoform"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000016> <https://www.inaturalist.org/observations/8139>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000016> <http://purl.obolibrary.org/obo/PATO_0000052>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000016> <http://purl.obolibrary.org/obo/PATO_0002266>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000017> (infundibuliform)
 
@@ -415,8 +416,9 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000018> "2
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000018> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000018> <https://en.wikipedia.org/w/index.php?title=Glossary_of_botanical_terms&oldid=1161474424#lenticular>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000018> "lenticular"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000018> <http://purl.obolibrary.org/obo/PATO_0000409>)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000018> <https://www.inaturalist.org/observations/30408125>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000018> <http://purl.obolibrary.org/obo/PATO_0000052>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000018> <http://purl.obolibrary.org/obo/PATO_0001865>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000019> (semiterete)
 
@@ -627,53 +629,17 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCIT_C48440> "sol
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCIT_C48440> <https://www.inaturalist.org/observations/53326034>)
 SubClassOf(<http://purl.obolibrary.org/obo/NCIT_C48440> <http://purl.obolibrary.org/obo/PATO_0000060>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000011> (age)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000011> "A time quality inhering in a bearer by virtue of how long the bearer has existed."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000011> "age"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000011> <http://purl.obolibrary.org/obo/PATO_0001018>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000014> (color)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000014> "A composite chromatic quality composed of hue, saturation and intensity parts.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000014> "color")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000014> <http://purl.obolibrary.org/obo/PATO_0001300>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000019> (color pattern)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000019> "A chromatic property that is the relative position of different hues or degrees of saturation."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000019> "color pattern"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000019> <http://purl.obolibrary.org/obo/PATO_0000060>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000051> "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000051> "morphology"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000051> <http://purl.obolibrary.org/obo/PATO_0001241>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000052> (shape)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000052> "A morphological quality inhering in a bearer by virtue of the bearer's ratios of distances between its features (points, edges, surfaces and also holes etc.)"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000052> "shape"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000052> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000060> (spatial pattern)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000060> "A spatial quality inhering in a bearer by virtue of the bearer's exhibiting repetition of placement of its parts."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0000060> "distribution"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000060> "spatial pattern"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000060> <http://purl.obolibrary.org/obo/PATO_0000051>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000066> (pilosity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000066> "A texture quality inhering in a bearer by virtue of the bearer's having hair or bristles."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000066> "pilosity"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000066> <http://purl.obolibrary.org/obo/PATO_0000150>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000070> (amount)
 
 AnnotationAssertion(Annotation(dcterms:contributor "https://orcid.org/0000-0002-2119-4663") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000070> "The number of entities of this type that are part of the whole organism. For galls, the number of entities of some type that are part of or located in a whole gall."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000070> "amount"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000070> <http://purl.obolibrary.org/obo/PATO_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000117> (size)
@@ -682,144 +648,54 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000117> "size"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000117> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000119> (height)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000119> "A 1-D extent quality inhering in a bearer by virtue of the bearer's vertical dimension of extension."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000119> "height"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000119> <http://purl.obolibrary.org/obo/PATO_0000117>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000122> (length)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000122> "A 1-D extent quality which is equal to the distance between two points."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000122> "length"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000122> <http://purl.obolibrary.org/obo/PATO_0000117>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000140> (location)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000140> "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0000140> "position"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000140> "location"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000140> <http://purl.obolibrary.org/obo/PATO_0001018>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000150> (texture)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000150> "A morphologic quality inhering in a bearer by virtue of the bearer's relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000150> "texture"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000150> <http://purl.obolibrary.org/obo/PATO_0000051>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0000309> (young)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000309> "An age which is relatively low."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000309> "young"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000309> <https://www.inaturalist.org/observations/127002034>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000309> <http://purl.obolibrary.org/obo/PATO_0000011>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000317> (black)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000317> "A color that lacks any hues as parts.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000317> "black")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000317> <http://purl.obolibrary.org/obo/PATO_0000014>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000320> (green)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000320> "A color hue with medium-low wavelength of that portion of the visible spectrum lying between yellow and blue, evoked in the human observer by radiant energy with wavelengths of approximately 490 to 570 nanometers.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000320> "green")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000320> <http://purl.obolibrary.org/obo/PATO_0000014>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000322> (red)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000322> "A color hue with high wavelength of the long-wave end of the visible spectrum, evoked in the human observer by radiant energy with wavelengths of approximately 630 to 750 nanometers.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000322> "red")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000322> <http://purl.obolibrary.org/obo/PATO_0000014>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000324> (yellow)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000324> "A color hue with medium wavelength of that portion of the visible spectrum lying between orange and green, evoked in the human observer by radiant energy with wavelengths of approximately 570 to 590 nanometers.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000324> "yellow")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000324> <http://purl.obolibrary.org/obo/PATO_0000014>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000329> (blotchy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000329> "A color pattern inhering in a bearer by virtue of bearer's being marked with irregularly shaped spots or blots of a different hue or degree of saturation."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000329> "blotchy"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000329> <https://www.inaturalist.org/observations/93589998>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000329> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000333> (spotted)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000333> "A color pattern inhering in a bearer by virtue of bearer's being marked with a round area of different hue or degree of saturation."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000333> "spotted"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000333> <https://www.inaturalist.org/observations/62655170>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000333> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000406> (curved)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000406> "A curvature quality inhering in a bearer by virtue of the bearer's having or being marked by a curve or smoothly rounded bend."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000406> "curved"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000406> <https://www.inaturalist.org/observations/73691614>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000406> <http://purl.obolibrary.org/obo/PATO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000409> (<http://purl.obolibrary.org/obo/PATO_0000409>)
+
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000409> "lenticular")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000409> <http://purl.obolibrary.org/obo/PATO_0001865>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000453> (glabrous)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000453> "A pilosity quality inhering in a bearer by virtue of the bearer's lack of hairs or bristles."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000453> "glabrous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000453> <https://www.inaturalist.org/observations/129032167>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000453> <http://purl.obolibrary.org/obo/PATO_0000066>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000454> (hairy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000454> "A pilosity quality inhering in a bearer by virtue of the bearer's being covered with hair or hairlike projections."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000454> "hairy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000454> <http://purl.obolibrary.org/obo/PATO_0000066>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0000454> <http://purl.obolibrary.org/obo/PATO_0002442>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000463> (conspicuous)
 
 AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000463> "A quality inhering in a bearer by virtue of being clearly visible. For a gall, a quality in which the gall is clearly visible externally."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000463> "conspicuous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000463> <https://www.inaturalist.org/observations/118068854>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000463> <http://purl.obolibrary.org/obo/PATO_0001998>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000464> (inconspicuous)
 
 AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000464> "A quality inhering in a bearer by virtue of not being clearly visible. For a gall, a quality in which the gall is not clearly visible externally."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0000464> "cryptic"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000464> "inconspicuous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000464> <https://www.inaturalist.org/observations/64672866>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000464> <http://purl.obolibrary.org/obo/PATO_0001998>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000700> (rough)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/PATO_0000700> "A texture quality inhering in a bearer by virtue of the bearer's irregular surface."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000700> "rough"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000700> <https://www.inaturalist.org/observations/32852385>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000700> <http://purl.obolibrary.org/obo/PATO_0000150>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0000700> <http://purl.obolibrary.org/obo/PATO_0000701>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000701> (smooth)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000701> "A texture quality inhering in a bearer by virtue of the bearer's processing a surface free of roughness or irregularities."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000701> "smooth"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000701> <http://purl.obolibrary.org/obo/PATO_0000150>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0000701> <http://purl.obolibrary.org/obo/PATO_0001365>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000921> (width)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000921> "A 1-D extent quality which is equal to the distance from one side of an object to another side which is opposite."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000921> "width"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000921> <http://purl.obolibrary.org/obo/PATO_0000117>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000952> (brown)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000952> "A color consisting of dark orange, red, of very low intensity.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000952> "brown")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000952> <http://purl.obolibrary.org/obo/PATO_0000014>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0000954> (pink)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000954> "Red color having medium to high brightness and low to moderate saturation.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000954> "pink")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000954> <http://purl.obolibrary.org/obo/PATO_0000322>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000957> (opacity)
 
@@ -834,60 +710,19 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000963> "op
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000963> <https://www.inaturalist.org/observations/130540535>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000963> <http://purl.obolibrary.org/obo/PATO_0000957>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001018> (physical quality)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001018> "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001018> "physical quality")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001018> <http://purl.obolibrary.org/obo/PATO_0001241>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0001241> (physical object quality)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001241> "A quality which inheres in a continuant."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001241> "physical object quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001241> <http://purl.obolibrary.org/obo/PATO_0000001>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001246> (light brown)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001246> "A color consisting of brown hue and high brightness.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001246> "light brown")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001246> <http://purl.obolibrary.org/obo/PATO_0000952>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001250> (light green)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001250> "A color consisting of green hue and high brightness.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001250> "light green")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001250> <http://purl.obolibrary.org/obo/PATO_0000320>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001264> (light yellow)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001264> "A color consisting of yellow hue and high brightness")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001264> "light yellow")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001264> <http://purl.obolibrary.org/obo/PATO_0000324>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001287> (red brown)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001287> "A color consisting of red and brown hue.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001287> "red brown")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001287> <http://purl.obolibrary.org/obo/PATO_0000952>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001300> (optical quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001300> "An EM radiation quality in which the EM radiation is within the fiat range of the spectrum visible deemed to be light."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001300> "optical quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001300> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001332> (amorphous)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001332> "A morphology quality inhering in a bearer by virtue of the bearer's lack of distinct morphology."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001332> "amorphous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001332> <https://www.inaturalist.org/observations/62126917>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001332> <http://purl.obolibrary.org/obo/PATO_0000052>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001334> (diameter)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001334> "A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001334> "diameter"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001334> <http://purl.obolibrary.org/obo/PATO_0000117>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001354> (translucent)
 
@@ -898,212 +733,128 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001354> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001359> (rugose)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001359> "A surface feature shape quality inhering in a bearer by virtue of the bearer's having many wrinkles or creases on the surface."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001359> "rugose"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001359> <https://www.inaturalist.org/observations/61705956>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001359> <http://purl.obolibrary.org/obo/PATO_0000700>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001361> (warty)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001361> "Definition: A texture quality inhering in a bearer by virtue of the bearer's being covered with warts or projections that resemble warts resulting in a hard rough surface."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001361> "warty"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001361> <https://www.inaturalist.org/observations/55941836>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001361> <http://purl.obolibrary.org/obo/PATO_0000700>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001365> (spiny)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001365> "A surface feature shape quality inhering in a bearer by virtue of the bearer's having spines, thorns or similar thin projections on its surface."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001365> "spiny"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001365> <https://www.inaturalist.org/observations/83838615>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001365> <http://purl.obolibrary.org/obo/PATO_0000150>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0001365> <http://purl.obolibrary.org/obo/PATO_0002442>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001370> (viscid)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001370> "A coating quality which is sticky or clammy."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001370> "viscid"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001370> <https://www.inaturalist.org/observations/46296688>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001370> <http://purl.obolibrary.org/obo/PATO_0002012>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001409> (spindle-shaped)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001409> "A shape quality inhering in a bearer by virtue of the bearer's resembling a long tapered rod."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001409> "spindle-shaped"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001409> <https://www.inaturalist.org/observations/93643117>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001409> <http://purl.obolibrary.org/obo/PATO_0000052>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001435> (attachment quality)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001435> "A structural quality inhering in a bearer by virtue of the bearer's having connection or association with another entity."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001435> "attachment quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001435> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001436> (sessile (sensu botany))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001436> "An attachment quality inhering in a flower (or gall) by virtue of the bearer's lacking a stalk, as in flowers or leaves (or galls) that grow directly from the stem."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001436> "sessile (sensu botany)"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001436> <https://www.inaturalist.org/observations/96365780>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001436> <http://purl.obolibrary.org/obo/PATO_0001435>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001438> (pedicellate)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001438> "A attachment quality inhering in a bearer by virtue of the bearer's having or being supported by a pedicel or pedicle."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001438> "pedicellate"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001438> <https://www.inaturalist.org/observations/53325638>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001438> <http://purl.obolibrary.org/obo/PATO_0001435>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001480> (spongy)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001480> "A structural quality inhering in a bearer by virtue of the bearer's resembling a sponge in elasticity, absorbency, or porousness."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001480> "sponge-like"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001480> "spongy"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001480> <https://www.inaturalist.org/observations/138124736>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001480> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001487> (senescent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001487> "A time quality inhering in a bearer by virtue of the bearer's growing old; aging."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001487> "senescent"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001487> <https://www.inaturalist.org/observations/138291646>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001487> <http://purl.obolibrary.org/obo/PATO_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001499> (spherical)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001499> "globular"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001499> "spherical"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001499> <https://www.inaturalist.org/observations/134523229>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001499> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001500> (tapered)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001500> "A shape quality inhering in a bearer by virtue of the bearer's being gradually narrower or thinner toward one end."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001500> "taper"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001500> "tapered"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001500> <https://www.inaturalist.org/observations/165344292>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001500> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001532> (mono-colored)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001532> "A color pattern inhering in a bearer by virtue of the bearer's having one hue."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001532> "uniformly colored"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001532> "mono-colored"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001532> <https://www.inaturalist.org/observations/62136736>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001532> <http://purl.obolibrary.org/obo/PATO_0000019>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001533> (multi-colored)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001533> "A color pattern inhering in a bearer by virtue of bearer's having two or more hues or degrees of saturation."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001533> "multi-colored"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001533> <https://www.inaturalist.org/observations/61596659>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001533> <http://purl.obolibrary.org/obo/PATO_0000019>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001534> (motley)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001534> "A color pattern inhering in a bearer by virtue of bearer's having 3 or more hues or degrees of saturations."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001534> "motley"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001534> <https://www.inaturalist.org/observations/61876229>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001534> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001535> (dappled)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001535> "A color pattern inhering in a bearer by virtue of bearer's being marked with small spots, patches, or specks of hue or degree of saturation differing from that of the background."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001535> "speckled"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001535> "dappled"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001535> <https://www.inaturalist.org/observations/134980830>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001535> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001543> (flexibility)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001543> "A physical quality inhering in a bearer by virtue of the bearer's disposition to being turned, bowed, or twisted without breaking."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001543> "flexibility"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001543> <http://purl.obolibrary.org/obo/PATO_0001018>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001544> (flexible)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001544> "A physical quality inhering in a bearer by virtue of the bearer's ability of being turned, bowed, or twisted without breaking."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001544> "flexible"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001544> <http://purl.obolibrary.org/obo/PATO_0001543>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001609> (scattered)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001609> "A spatial pattern inhering in a bearer by virtue of the bearer's being scattered; spread irregularly, and at a distance from each other."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001609> "sparse"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001609> "scattered"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001609> <https://www.inaturalist.org/observations/60738203>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001609> <http://purl.obolibrary.org/obo/PATO_0000060>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001629> (clustered)
+# Class: <http://purl.obolibrary.org/obo/PATO_0001629> (aggregated)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001629> "A spatial pattern inhering in a bearer by virtue of the bearer's being gathered or tending to gather into a mass or whole."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001629> "aggregated"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001629> "clustered"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001629> <https://www.inaturalist.org/observations/135839958>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001629> <http://purl.obolibrary.org/obo/PATO_0000060>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001729> (shedability)
+# Class: <http://purl.obolibrary.org/obo/PATO_0001730> (deciduous (generic))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001729> "An organismal quality inhering in a bearer by virtue of the bearer's disposition to lose an entity by natural process."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001729> "shedability"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001729> <http://purl.obolibrary.org/obo/PATO_0001995>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001730> (deciduous)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001730> "A quality inhering in a bearer by virtue of the bearer's disposition to shed body parts."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001730> "detachable"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001730> "deciduous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001730> <https://www.inaturalist.org/observations/34366055>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001730> <http://purl.obolibrary.org/obo/PATO_0001729>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001732> (non-deciduous)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001732> "A quality inhering in a plant by virtue of the bearer's disposition to not shed any body part."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001732> "integral"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001732> "non-deciduous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001732> <https://www.inaturalist.org/observations/64672768>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001732> <http://purl.obolibrary.org/obo/PATO_0001729>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001851> (swollen)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001851> "A structure quality inhering in a bearer by virtue of the bearer's exhibiting transient abnormal enlargement, not due to cell proliferation."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001851> "swollen"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001851> <https://www.inaturalist.org/observations/61503871>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001851> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001871> (reniform)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001871> "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's having the shape of a (human) kidney."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001871> "reniform"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001871> <https://www.inaturalist.org/observations/29748241>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001871> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001873> (cylindrical)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001873> "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's exhibiting a consistently-sized round cross section"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001873> "cylindrical"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001873> <https://www.inaturalist.org/observations/111343832>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001873> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001877> (lanceolate)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001877> "A shape quality inhering in a bearer by virtue of the bearer's being shaped like a lance-head, considerably longer than wide, tapering towards the tip from below the middle; attached at the broad end."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001877> "lanceolate"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001877> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001878> (sigmoid)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001878> "A shape quality inhering in a bearer by virtue of the bearer's consisting of two curves, in opposite directions. S-shaped."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001878> "s-shaped"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001878> "sigmoidal"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001878> "sigmoid"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001878> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001883> (clavate)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001883> "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's gradually becoming thicker towards the end.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001883> "club-shaped"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001883> "clavate")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001883> <https://www.inaturalist.org/observations/93643117>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001883> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001907> (botryoidal)
 
@@ -1112,203 +863,97 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001907> "bo
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001907> <https://www.inaturalist.org/observations/161485438>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001907> <http://purl.obolibrary.org/obo/PATO_0001925>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001925> (surface feature shape)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001925> "A surface shape quality inhering in a bearer by virtue of the bearer's shape of features present on its surface or outer shell."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001925> "surface feature shape"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001925> <http://purl.obolibrary.org/obo/PATO_0000052>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001941> (yellow green)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001941> "A color consisting of yellow and green hues.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001941> "yellow green")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001941> <http://purl.obolibrary.org/obo/PATO_0000320>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0001946> (banded)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001946> "A color pattern inhering in a bearer by virtue of bearer's exhibiting transverse stripes of one hue or degree of saturation crossing another."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001946> "banded"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001946> <https://www.inaturalist.org/observations/61502856>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001946> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001947> (netted)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001947> "A color pattern inhering in a bearer by virtue of bearer's being covered with reticulated lines of a different hue or degree of saturation."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001947> "reticulated"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001947> "netted"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001947> <https://www.inaturalist.org/observations/106192928>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001947> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001949> (pointleted)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001949> "A shape quality inhering in a bearer by virtue of the bearer's terminating abruptly in a little point."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001949> "pointleted"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001949> <https://www.inaturalist.org/observations/61595801>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001949> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001955> (cuneate)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001955> "A shape quality inhering in a bearer by virtue of the bearer's being narrowly triangular, wider at the apex and tapering toward the base."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001955> "wedge-shaped"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001955> "cuneate"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001955> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001979> (lobed)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001979> "A shape quality inhering in a bearer by virtue of the bearer's being partly divided into a determinate number of regions."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001979> "lobed"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001979> <https://www.inaturalist.org/observations/160895518>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001979> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001981> (auriculate)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001981> "A shape quality inhering in a bearer by virtue of the bearer's having a shape resembling a (human) ear."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001981> "auriculate"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001981> <https://www.inaturalist.org/observations/48456565>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001981> <http://purl.obolibrary.org/obo/PATO_0000052>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0001995> (organismal quality)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001995> "A quality that inheres in an entire organism or part of an organism."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001995> "organismal quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001995> <http://purl.obolibrary.org/obo/PATO_0001241>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001998> (conspicuousness)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001998> "A quality inhering in a bearer by virtue of its visibility"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001998> "conspicuousness"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001998> <http://purl.obolibrary.org/obo/PATO_0000001>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0002012> (coating)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002012> "A texture quality that exists through a liquid cover on the surface of the bearer."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002012> "coating"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002012> <http://purl.obolibrary.org/obo/PATO_0000150>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0002020> (pale pink)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002020> "Pink color having high brightness and low saturation.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002020> "pale pink")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002020> <http://purl.obolibrary.org/obo/PATO_0000954>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002021> (conical)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002021> "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's resembling a cone (a 3-D shape with a round cross section that tapers)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002021> "conical"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002021> <https://www.inaturalist.org/observations/61704917>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002021> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002063> (columnar)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002063> "A shape inhering in a bearer by virtue of the bearer's being elongated and cylindrical."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002063> "columnar"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002063> <https://www.inaturalist.org/observations/111432683>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002063> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002078> (hollow)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002078> "A quality inhering in a bearer by virtue of the bearer's having an empty space or cavity within. The space is present in addition to the larval chamber."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002078> "hollow"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002078> <https://www.inaturalist.org/observations/117192961>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002078> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002108> (papillary)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002108> "A quality inhering in a bearer by virtue of the bearer's resembling small nipple like projection."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002108> "papillary"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002108> <https://www.inaturalist.org/observations/91418114>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002108> <http://purl.obolibrary.org/obo/PATO_0000052>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0002215> (falciform)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002215> "A shape quality inhering in a bearer by virtue of the bearer's having the shape of a scythe or sickle."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0002215> "sickle-shaped"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002215> "falciform"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002215> <http://purl.obolibrary.org/obo/PATO_0000052>)
+SubClassOf(Annotation(rdfs:comment "probably not the right class for galls with nipple-like projections"@en) <http://purl.obolibrary.org/obo/PATO_0002108> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002228> (acuminate)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002228> "A tapered shape quality inhering in a bearer by virtue of the bearer's (a gall) tapering gradually (apically) to a sharp point."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002228> "acuminate"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002228> <https://www.inaturalist.org/observations/54845032>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002228> <http://purl.obolibrary.org/obo/PATO_0001500>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002240> (teardrop-shaped)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002240> "A shape quality inhering in a bearer by virtue of the bearer's shape resembling falling drop (of water)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002240> "teardrop-shaped"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002240> <https://www.inaturalist.org/observations/34366055>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002240> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002273> (marbled)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002273> "Multicolored quality inhering in a bearer by virtue of the bearer's being colored with a variegated pattern resembling marble."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002273> "marbled"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002273> <https://www.inaturalist.org/observations/61596659>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002273> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002274> (mottled)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002274> "Multicolored quality inhering in a bearer by virtue of the bearer's being dappled with spots, patches, or blotches of different colors."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002274> "mottled"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002274> <https://www.inaturalist.org/observations/162989102>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002274> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002276> (barred)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002276> "A color pattern inhering in a bearer by virtue of bearer's exhibiting vertical bars of one hue or degree of saturation crossing another."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002276> "barred"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002276> <https://www.inaturalist.org/observations/45656874>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002276> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002311> (fimbriated)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002311> "Having a fringe or border of hairlike or fingerlike projections."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002311> "fimbriated"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002311> <https://www.inaturalist.org/observations/14417106>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002311> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002335> (tholiform)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002335> "A shape quality inhering in a bearer by virtue of the bearer's being dome-shaped."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0002335> "dome-like"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0002335> "hemispheroid"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002335> "tholiform"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002335> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002339> (hispid)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002339> "A quality of being covered with stiff or rough hairs."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002339> "hispid"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002339> <https://www.inaturalist.org/observations/64256556>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002339> <http://purl.obolibrary.org/obo/PATO_0000454>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002340> (hispidulous)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002340> "A quality of being minutely hispid."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002340> "hispidulous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002340> <https://www.inaturalist.org/observations/27503910>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002340> <http://purl.obolibrary.org/obo/PATO_0002339>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002344> (arachnose)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002344> "A quality inhering in a bearer by virtue of the bearer's being characterized by fine, entangled hairs giving the appearance of cobweb."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002344> "arachnose"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002344> <https://www.inaturalist.org/observations/62631894>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002344> <http://purl.obolibrary.org/obo/PATO_0000454>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002400> (fusiform)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002400> "Having a spindle-like shape that is wide in the middle and tapers at both ends."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002400> "fusiform"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002400> <https://www.inaturalist.org/observations/47505522>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002400> <http://purl.obolibrary.org/obo/PATO_0000052>)
-
-# Class: <http://purl.obolibrary.org/obo/PATO_0002411> (yellow brown)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002411> "A color consisting of yellow and brown hue.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002411> "yellow brown")
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002411> <http://purl.obolibrary.org/obo/PATO_0000952>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002427> (knobbled)
 
@@ -1329,37 +974,21 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002442> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0005002> (pear-shaped)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0005002> "Having the shape of a pear; tapering near the top and bulging toward the base or bottom."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0005002> "pear-shaped"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0005002> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0005004> (subelliptical)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0005004> "A shape that is almost an ellipse."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0005004> "egg-shaped"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0005004> "ellipsoid"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0005004> "oblong"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0005004> "ovate"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0005004> "ovular"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0005004> "subelliptical"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0005004> <https://www.inaturalist.org/observations/91487515>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0005004> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0005014> (subspherical)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0005014> "A spheroid shape quality inhering in a bearer by virtue of the bearer's being nearly, but not perfectly, spherical."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0005014> "globose"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0005014> "globular"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0005014> "subspherical"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0005014> <https://www.inaturalist.org/observations/84454407>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0005014> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0040022> (flared)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0040022> "A shape quality inhering in a bearer by virtue of the bearer being expanded laterally and or opened outward in shape."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0040022> "flared"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0040022> <https://www.inaturalist.org/observations/105016514>)
-SubClassOf(<http://purl.obolibrary.org/obo/PATO_0040022> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0000055> (bud)
 
@@ -1422,11 +1051,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0009005> <http://purl.obolibrary.o
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009011> "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant."@en)
 AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) rdfs:comment <http://purl.obolibrary.org/obo/PO_0009011> "These terms (i.e., subclasses of plant structure) can be used to describe the location of a plant gall (e.g., on leaf or stem) and also the parts of a gall (e.g., nectary, larval chamber)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plant structure")
-
-# Class: <http://purl.obolibrary.org/obo/PO_0009023> (leaf axil)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009023> "An axil that is the space between a shoot axis and a leaf that branches from the shoot axis."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009023> "leaf axil"@en)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009035> (nectary)
 
@@ -1531,8 +1155,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0025073> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/PO_0025117> (plant anatomical space)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0025117> "An anatomical space that is located on a plant."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025117> "plant anatomical space")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025117> <http://purl.obolibrary.org/obo/CARO_0000005>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0025496> (multi-tissue plant structure)
