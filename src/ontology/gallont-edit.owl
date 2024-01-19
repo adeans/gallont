@@ -58,6 +58,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000036>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_6946>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
@@ -195,6 +197,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030121>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(:induced_by))
 Declaration(AnnotationProperty(dce:creator))
@@ -296,12 +299,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000004> ObjectSomeValuesFrom
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000005> (larval chamber)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000005> "A gall structure wherein the gall inducer and/or its associates resides."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000005> "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000005> "2023-06-22T01:54:05Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000005> "larval chamber"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://www.inaturalist.org/observations/139401882>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000041>))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000006> (detached chamber)
 
@@ -617,6 +621,23 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> <http://purl.obolibr
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0000055>))
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006001>))
 
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000040> (nutritive tissue)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000040> <http://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000040> "2024-01-19T02:22:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000040> "A portion of plant tissue that is fed upon by a gall inhabitant."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000040> "nutritive tissue"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000040> <https://doi.org/10.3390%2Finsects12100850>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000040> <http://purl.obolibrary.org/obo/PO_0009007>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000041> (larval cavity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000041> "A cavity that is occupied by one or more gall inhabitants."@en)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000041> <http://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000041> "2024-01-19T02:27:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000041> "larval cavity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000041> <http://purl.obolibrary.org/obo/GALLONT_0000003>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_6946> (Acariformes)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_6946> "Acariformes"@en)
@@ -664,7 +685,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000333> <
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000406> <https://www.inaturalist.org/observations/73691614>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000409> (<http://purl.obolibrary.org/obo/PATO_0000409>)
+# Class: <http://purl.obolibrary.org/obo/PATO_0000409> (oblate)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0000409> "lenticular")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000409> <http://purl.obolibrary.org/obo/PATO_0001865>)
@@ -1009,7 +1030,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0006001> "phyllome"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006001> <http://purl.obolibrary.org/obo/PO_0025496>)
 
-# Class: <http://purl.obolibrary.org/obo/PO_0006018> (adaxial leaf epidermis)
+# Class: <http://purl.obolibrary.org/obo/PO_0006018> (leaf adaxial epidermis)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0006018> "A portion of leaf epidermis (PO:0006016) that covers the adaxial/upper surface of a leaf."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0006018> "upper leaf"@en)
@@ -1018,7 +1039,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0006018> <ht
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006018> <http://purl.obolibrary.org/obo/PO_0009011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
-# Class: <http://purl.obolibrary.org/obo/PO_0006019> (abaxial leaf epidermis)
+# Class: <http://purl.obolibrary.org/obo/PO_0006019> (leaf abaxial epidermis)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0006019> "A portion of leaf epidermis (PO:0006016) that covers the abaxial/lower surface of a leaf."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0006019> "leaf underside"@en)
@@ -1046,6 +1067,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009005> "root
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009005> <https://www.inaturalist.org/observations/139148692>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009005> <http://purl.obolibrary.org/obo/PO_0025496>)
 
+# Class: <http://purl.obolibrary.org/obo/PO_0009007> (portion of plant tissue)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GALLONT_0000005>))
+
 # Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009011> "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant."@en)
@@ -1056,7 +1081,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plan
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009035> "A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009035> "nectary"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0009035> <http://purl.obolibrary.org/obo/PO_0009011>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009047> (stem)
 
@@ -1109,14 +1133,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020128> "leaf
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020128> <http://purl.obolibrary.org/obo/PO_0009011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
-# Class: <http://purl.obolibrary.org/obo/PO_0020138> (leaf vein)
+# Class: <http://purl.obolibrary.org/obo/PO_0020138> (leaf lamina vein)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020138> "A phyllome lamina vein (PO:0025348) that is part of a leaf lamina vascular system (PO:0000048)."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0020138> "leaf lamina vein"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020138> "leaf vein"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0020138> <https://www.inaturalist.org/observations/54078107>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020138> <http://purl.obolibrary.org/obo/PO_0009011>)
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0020138> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020139> (leaf midvein)
 
@@ -1153,10 +1176,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025073> "bran
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025073> <https://www.inaturalist.org/observations/28377541>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025073> <http://purl.obolibrary.org/obo/PO_0025496>)
 
-# Class: <http://purl.obolibrary.org/obo/PO_0025117> (plant anatomical space)
-
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0025117> <http://purl.obolibrary.org/obo/CARO_0000005>)
-
 # Class: <http://purl.obolibrary.org/obo/PO_0025496> (multi-tissue plant structure)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0025496> "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types."@en)
@@ -1170,6 +1189,10 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030119> "catkin"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0030119> "catkin inflorescence"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0030119> <http://purl.obolibrary.org/obo/PO_0009049>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0030121> (<http://purl.obolibrary.org/obo/PO_0030121>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0030121> <http://purl.obolibrary.org/obo/PO_0009049>)
 
 
 )
