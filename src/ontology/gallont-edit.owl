@@ -199,7 +199,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030121>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
-Declaration(ObjectProperty(:induced_by))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
 Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:description))
@@ -226,9 +226,13 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Object Properties
 ############################
 
-# Object Property: :induced_by (:induced_by)
+# Object Property: <http://purl.obolibrary.org/obo/GALLONT_0000000> (has associate)
 
-SubObjectPropertyOf(:induced_by <http://purl.obolibrary.org/obo/RO_0000057>)
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000000> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000000> "2024-01-24T01:49:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000000> "Relationship that specifies which organism is associated with a class.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000000> "has associate"@en)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000000> <http://purl.obolibrary.org/obo/OBI_0100026>)
 
 
 
@@ -560,9 +564,7 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000033> "2
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000033> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000033> "erineum"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000033> <https://www.inaturalist.org/observations/79701805>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000033> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000033> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000000> <http://purl.obolibrary.org/obo/NCBITaxon_6946>)))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000034> (blister gall)
 
@@ -582,8 +584,7 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000035> "2
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000035> "bud gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://www.inaturalist.org/observations/48455720>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000035> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0000055>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000035> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0000055>)))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000036> (bullet gall)
 
@@ -593,9 +594,7 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000036> "2
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000036> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000036> "bullet gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000036> <https://www.inaturalist.org/observations/58434690>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000036> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>))
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000012>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000036> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000012>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000031>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001865>)))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000037> (roly-poly gall)
 
@@ -605,9 +604,7 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000037> "2
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000037> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000037> "roly-poly gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000037> <https://www.inaturalist.org/observations/117192961>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000037> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000006>))
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000037> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0002078>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000037> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000006>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0002078>)))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000038> (rosette gall)
 
