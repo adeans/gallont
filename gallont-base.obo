@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: gallont/releases/2024-01-19/gallont-base.owl
+data-version: gallont/releases/2024-01-25/gallont-base.owl
 ontology: gallont/gallont-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/title "Gall ontology" xsd:string
-property_value: owl:versionInfo "2024-01-19" xsd:string
+property_value: owl:versionInfo "2024-01-25" xsd:string
 
 [Term]
 id: CARO:0000005
@@ -35,7 +35,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/81385187
 id: GALLONT:0000001
 name: plant gall
 def: "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism." []
-is_a: PO:0025496 ! multi-tissue plant structure
+is_a: PO:0025496
 property_value: http://purl.org/dc/elements/1.1/date "2023-06-19T19:39:13Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2119-4663
 property_value: seeAlso https://www.inaturalist.org/observations/62135900
@@ -62,7 +62,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/117192961
 id: GALLONT:0000004
 name: kapéllo
 def: "A gall structure that is attractive to another organism, usually ants, and which facilitates dispersal of the gall" []
-is_a: PO:0025496 ! multi-tissue plant structure
+is_a: PO:0025496
 relationship: BFO:0000050 GALLONT:0000001 ! plant gall
 property_value: http://purl.org/dc/elements/1.1/date "2023-06-22T01:51:19Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2119-4663
@@ -71,8 +71,10 @@ property_value: seeAlso https://www.inaturalist.org/observations/61878883
 [Term]
 id: GALLONT:0000005
 name: larval chamber
-def: "A gall structure wherein the gall inducer and/or its associates resides." []
-is_a: PO:0025496 ! multi-tissue plant structure
+def: "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue." []
+is_a: PO:0025496
+relationship: BFO:0000051 GALLONT:0000040 ! nutritive tissue
+relationship: BFO:0000051 GALLONT:0000041 ! larval cavity
 property_value: http://purl.org/dc/elements/1.1/date "2023-06-22T01:54:05Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2119-4663
 property_value: seeAlso https://www.inaturalist.org/observations/139401882
@@ -325,9 +327,10 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 id: GALLONT:0000033
 name: erineum
 def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
-is_a: GALLONT:0000001 ! plant gall
-relationship: BFO:0000050 PO:0025034 ! leaf
-relationship: BFO:0000051 PO:0006504
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: BFO:0000050 PO:0025034
+intersection_of: BFO:0000051 PO:0006504
+intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T21:56:59Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
@@ -338,7 +341,7 @@ id: GALLONT:0000034
 name: blister gall
 def: "A plant gall that is part of a leaf and which appears as a portion of swollen tissue, similar to a blister." []
 is_a: GALLONT:0000001 ! plant gall
-relationship: BFO:0000050 PO:0025034 ! leaf
+relationship: BFO:0000050 PO:0025034
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:15:28Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
@@ -347,8 +350,8 @@ property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 id: GALLONT:0000035
 name: bud gall
 def: "A plant gall that is located on a bud." []
-is_a: GALLONT:0000001 ! plant gall
-relationship: BFO:0000050 PO:0000055 ! bud
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: BFO:0000050 PO:0000055
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:23:57Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
@@ -358,9 +361,11 @@ property_value: seeAlso https://www.inaturalist.org/observations/48455720
 id: GALLONT:0000036
 name: bullet gall
 def: "A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape." []
-is_a: GALLONT:0000001 ! plant gall
-relationship: RO:0000086 GALLONT:0000009 ! monothalamous
-relationship: RO:0000086 GALLONT:0000012 ! solid
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: RO:0000086 GALLONT:0000009 ! monothalamous
+intersection_of: RO:0000086 GALLONT:0000012 ! solid
+intersection_of: RO:0000086 GALLONT:0000031 ! semideciduous
+intersection_of: RO:0000086 PATO:0001865
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:28:40Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
@@ -370,9 +375,9 @@ property_value: seeAlso https://www.inaturalist.org/observations/58434690
 id: GALLONT:0000037
 name: roly-poly gall
 def: "A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall." []
-is_a: GALLONT:0000001 ! plant gall
-relationship: BFO:0000051 GALLONT:0000006 ! detached chamber
-relationship: RO:0000086 PATO:0002078
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: BFO:0000051 GALLONT:0000006 ! detached chamber
+intersection_of: RO:0000086 PATO:0002078
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-02T01:35:34Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
@@ -383,13 +388,31 @@ id: GALLONT:0000038
 name: rosette gall
 def: "A plant gall that is located on a bud and which consists of layers of scale leaves or similar phyllomes that surround the inducer's chamber." []
 is_a: GALLONT:0000001 ! plant gall
-relationship: BFO:0000050 PO:0000055 ! bud
-relationship: BFO:0000051 PO:0006001 ! phyllome
+relationship: BFO:0000050 PO:0000055
+relationship: BFO:0000051 PO:0006001
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-02T01:43:13Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: IAO:0000118 "bunch gall" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/33495996
+
+[Term]
+id: GALLONT:0000040
+name: nutritive tissue
+comment: A portion of plant tissue that is fed upon by a gall inhabitant.
+is_a: PO:0009007
+relationship: BFO:0000050 GALLONT:0000005 ! larval chamber
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/elements/1.1/date "2024-01-19T02:22:00Z" xsd:dateTime
+property_value: seeAlso https://doi.org/10.3390%2Finsects12100850
+
+[Term]
+id: GALLONT:0000041
+name: larval cavity
+def: "A cavity that is occupied by one or more gall inhabitants." []
+is_a: GALLONT:0000003 ! cavity
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/elements/1.1/date "2024-01-19T02:27:40Z" xsd:dateTime
 
 [Term]
 id: NCBITaxon:6946
@@ -414,7 +437,6 @@ property_value: IAO:0000118 "distribution" xsd:string
 [Term]
 id: PATO:0000070
 def: "The number of entities of this type that are part of the whole organism. For galls, the number of entities of some type that are part of or located in a whole gall." [] {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
-is_a: PATO:0000001
 
 [Term]
 id: PATO:0000117
@@ -483,11 +505,6 @@ name: opaque
 def: "A optical quality inhering in a bearer by virtue of the bearer's not being clear; not transmitting or reflecting light or radiant energy." []
 is_a: PATO:0000957 ! opacity
 property_value: seeAlso https://www.inaturalist.org/observations/130540535
-
-[Term]
-id: PATO:0001241
-name: physical object quality
-is_a: PATO:0000001
 
 [Term]
 id: PATO:0001300
@@ -662,10 +679,6 @@ id: PATO:0001981
 property_value: seeAlso https://www.inaturalist.org/observations/48456565
 
 [Term]
-id: PATO:0001998
-is_a: PATO:0000001
-
-[Term]
 id: PATO:0002021
 property_value: seeAlso https://www.inaturalist.org/observations/61704917
 
@@ -766,30 +779,19 @@ property_value: seeAlso https://www.inaturalist.org/observations/105016514
 
 [Term]
 id: PO:0000055
-name: bud
-def: "An undeveloped shoot system (PO:0009006)." []
-is_a: PO:0009011 ! plant structure
 property_value: seeAlso https://www.inaturalist.org/observations/48455720
 
 [Term]
 id: PO:0005597
 name: cambium
 def: "A lateral meristem (PO:0020145) that has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files." []
-is_a: PO:0009011 ! plant structure
-
-[Term]
-id: PO:0006001
-name: phyllome
-def: "A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148)." []
-is_a: PO:0025496 ! multi-tissue plant structure
 
 [Term]
 id: PO:0006018
 name: adaxial leaf epidermis
 def: "A portion of leaf epidermis (PO:0006016) that covers the adaxial/upper surface of a leaf." []
 synonym: "upper leaf" RELATED []
-is_a: PO:0009011 ! plant structure
-relationship: BFO:0000050 PO:0025034 ! leaf
+relationship: BFO:0000050 PO:0025034
 property_value: seeAlso https://www.inaturalist.org/observations/53324962
 
 [Term]
@@ -798,98 +800,62 @@ name: abaxial leaf epidermis
 def: "A portion of leaf epidermis (PO:0006016) that covers the abaxial/lower surface of a leaf." []
 synonym: "leaf underside" EXACT []
 synonym: "lower leaf" RELATED []
-is_a: PO:0009011 ! plant structure
-relationship: BFO:0000050 PO:0025034 ! leaf
+relationship: BFO:0000050 PO:0025034
 property_value: seeAlso https://www.inaturalist.org/observations/33275250
 
 [Term]
-id: PO:0006504
-is_a: PO:0009011 ! plant structure
-
-[Term]
 id: PO:0009001
-name: fruit
-def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)." []
-is_a: PO:0025496 ! multi-tissue plant structure
 property_value: seeAlso https://www.inaturalist.org/observations/138563159
 
 [Term]
 id: PO:0009005
-name: root
-def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately." []
-is_a: PO:0025496 ! multi-tissue plant structure
 property_value: seeAlso https://www.inaturalist.org/observations/139148692
 
 [Term]
 id: PO:0009011
-name: plant structure
-def: "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant." []
 comment: These terms (i.e., subclasses of plant structure) can be used to describe the location of a plant gall (e.g., on leaf or stem) and also the parts of a gall (e.g., nectary, larval chamber). {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
 
 [Term]
 id: PO:0009035
 name: nectary
 def: "A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars." []
-is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PO:0009047
-name: stem
-def: "A shoot axis (PO:0025029) that is the primary axis of a plant." []
-is_a: PO:0025496 ! multi-tissue plant structure
 property_value: seeAlso https://www.inaturalist.org/observations/125859005
 
 [Term]
 id: PO:0009049
-name: inflorescence
-def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." []
-is_a: PO:0025496 ! multi-tissue plant structure
+is_a: PO:0025496
 property_value: seeAlso https://www.inaturalist.org/observations/118434796
 
 [Term]
 id: PO:0020038
 name: petiole
 def: "A stalk (PO:0025066) of a vascular leaf (PO:0009025)." []
-is_a: PO:0009011 ! plant structure
-relationship: BFO:0000050 PO:0025034 ! leaf
 property_value: seeAlso https://www.inaturalist.org/observations/32852385
 
 [Term]
 id: PO:0020039
-name: leaf lamina
-def: "A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present." []
-is_a: PO:0009011 ! plant structure
-relationship: BFO:0000050 PO:0025034 ! leaf
 property_value: seeAlso https://www.inaturalist.org/observations/62631563
 
 [Term]
 id: PO:0020049
 name: leaflet
 def: "A cardinal organ part (PO:0025001) that is one of the ultimate segments of a compound leaf (PO:0020043)." []
-is_a: PO:0025496 ! multi-tissue plant structure
-relationship: BFO:0000050 PO:0025034 ! leaf
+relationship: BFO:0000050 PO:0025034
 property_value: seeAlso https://www.inaturalist.org/observations/90131758
-
-[Term]
-id: PO:0020054
-name: bud scale leaf
-def: "A scale leaf that surrounds a dormant or perennating bud." []
-is_a: PO:0006001 ! phyllome
 
 [Term]
 id: PO:0020128
 name: leaf margin
 def: "A phyllome margin (PO:0025018) that is part of a leaf (PO:0025034)." []
-is_a: PO:0009011 ! plant structure
-relationship: BFO:0000050 PO:0025034 ! leaf
 
 [Term]
 id: PO:0020138
 name: leaf vein
 def: "A phyllome lamina vein (PO:0025348) that is part of a leaf lamina vascular system (PO:0000048)." []
 synonym: "leaf lamina vein" EXACT []
-is_a: PO:0009011 ! plant structure
-relationship: BFO:0000050 PO:0025034 ! leaf
 property_value: seeAlso https://www.inaturalist.org/observations/54078107
 
 [Term]
@@ -913,39 +879,28 @@ property_value: seeAlso https://www.inaturalist.org/observations/54078107
 
 [Term]
 id: PO:0025034
-name: leaf
-def: "A phyllome (PO:0006001) that is not associated with a reproductive structure." []
-is_a: PO:0006001 ! phyllome
 property_value: seeAlso https://www.inaturalist.org/observations/60861819
 
 [Term]
 id: PO:0025073
-name: branch
-def: "A shoot axis (PO:00025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of a meristematic apical cell (PO:0030007)." []
 synonym: "stem" RELATED []
 synonym: "twig" RELATED []
-is_a: PO:0025496 ! multi-tissue plant structure
 property_value: seeAlso https://www.inaturalist.org/observations/28377541
 
 [Term]
-id: PO:0025117
-is_a: CARO:0000005 ! anatomical space
-
-[Term]
-id: PO:0025496
-name: multi-tissue plant structure
-def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." []
-is_a: PO:0009011 ! plant structure
-
-[Term]
 id: PO:0030119
-name: catkin inflorescence
-def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of indeterminate, first order inflorescence axes (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054)." []
 synonym: "ament" EXACT []
 synonym: "catkin" EXACT []
-is_a: PO:0009049 ! inflorescence
+
+[Term]
+id: PO:0030121
+is_a: PO:0009049
 
 [Typedef]
-id: induced_by
-is_a: RO:0000057
+id: GALLONT:0000000
+name: has associate
+comment: Relationship that specifies which organism is associated with a class.
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/elements/1.1/date "2024-01-24T01:49:45Z" xsd:dateTime
+range: OBI:0100026
 

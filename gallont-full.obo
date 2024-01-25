@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: gallont/releases/2024-01-19/gallont-full.owl
+data-version: gallont/releases/2024-01-25/gallont-full.owl
 subsetdef: 3_STAR ""
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
@@ -57,7 +57,7 @@ ontology: gallont/gallont-full
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/title "Gall ontology" xsd:string
-property_value: owl:versionInfo "2024-01-19" xsd:string
+property_value: owl:versionInfo "2024-01-25" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -209,9 +209,11 @@ property_value: seeAlso https://www.inaturalist.org/observations/61878883
 [Term]
 id: GALLONT:0000005
 name: larval chamber
-def: "A gall structure wherein the gall inducer and/or its associates resides." []
+def: "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue." []
 is_a: PO:0025496 ! multi-tissue plant structure
 relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
+relationship: has_part GALLONT:0000040 ! nutritive tissue
+relationship: has_part GALLONT:0000041 ! larval cavity
 property_value: http://purl.org/dc/elements/1.1/date "2023-06-22T01:54:05Z" xsd:dateTime
 property_value: seeAlso https://www.inaturalist.org/observations/139401882
 
@@ -465,7 +467,12 @@ name: erineum
 def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
 is_a: GALLONT:0000001 ! plant gall
 is_a: UBERON:0001062 ! anatomical entity
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
+intersection_of: has_part PO:0006504 ! leaf trichome
+intersection_of: part_of PO:0025034 ! leaf
 relationship: dc-creator http://orcid.org/0000-0002-2119-4663
+relationship: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
 relationship: has_part PO:0006504 ! leaf trichome
 relationship: part_of PO:0025034 ! leaf
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T21:56:59Z" xsd:dateTime
@@ -487,6 +494,8 @@ id: GALLONT:0000035
 name: bud gall
 def: "A plant gall that is located on a bud." []
 is_a: GALLONT:0000001 ! plant gall
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: part_of PO:0000055 ! bud
 relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: part_of PO:0000055 ! bud
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:23:57Z" xsd:dateTime
@@ -498,9 +507,16 @@ id: GALLONT:0000036
 name: bullet gall
 def: "A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape." []
 is_a: GALLONT:0000001 ! plant gall
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: has_quality GALLONT:0000009 ! monothalamous
+intersection_of: has_quality GALLONT:0000012 ! solid
+intersection_of: has_quality GALLONT:0000031 ! semideciduous
+intersection_of: has_quality PATO:0001865 ! spheroid
 relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: has_quality GALLONT:0000009 ! monothalamous
 relationship: has_quality GALLONT:0000012 ! solid
+relationship: has_quality GALLONT:0000031 ! semideciduous
+relationship: has_quality PATO:0001865 ! spheroid
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:28:40Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: seeAlso https://www.inaturalist.org/observations/58434690
@@ -510,6 +526,9 @@ id: GALLONT:0000037
 name: roly-poly gall
 def: "A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall." []
 is_a: GALLONT:0000001 ! plant gall
+intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: has_part GALLONT:0000006 ! detached chamber
+intersection_of: has_quality PATO:0002078 ! hollow
 relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: has_part GALLONT:0000006 ! detached chamber
 relationship: has_quality PATO:0002078 ! hollow
@@ -521,15 +540,32 @@ property_value: seeAlso https://www.inaturalist.org/observations/117192961
 id: GALLONT:0000038
 name: rosette gall
 def: "A plant gall that is located on a bud and which consists of layers of scale leaves or similar phyllomes that surround the inducer's chamber." []
-is_a: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000035 ! bud gall
 is_a: UBERON:0001062 ! anatomical entity
 relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: has_part PO:0006001 ! phyllome
-relationship: part_of PO:0000055 ! bud
 property_value: http://purl.org/dc/elements/1.1/date "2023-08-02T01:43:13Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: IAO:0000118 "bunch gall" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/33495996
+
+[Term]
+id: GALLONT:0000040
+name: nutritive tissue
+comment: A portion of plant tissue that is fed upon by a gall inhabitant.
+is_a: PO:0009007 ! portion of plant tissue
+relationship: dc-creator http://orcid.org/0000-0002-2119-4663
+relationship: part_of GALLONT:0000005 ! larval chamber
+property_value: http://purl.org/dc/elements/1.1/date "2024-01-19T02:22:00Z" xsd:dateTime
+property_value: seeAlso https://doi.org/10.3390%2Finsects12100850
+
+[Term]
+id: GALLONT:0000041
+name: larval cavity
+def: "A cavity that is occupied by one or more gall inhabitants." []
+is_a: GALLONT:0000003 ! cavity
+relationship: dc-creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/elements/1.1/date "2024-01-19T02:27:40Z" xsd:dateTime
 
 [Term]
 id: GO:0003674
@@ -2584,7 +2620,6 @@ relationship: part_of PO:0020038 ! petiole
 id: PO:0000055
 name: bud
 namespace: plant_anatomy
-def: "An undeveloped shoot system (PO:0009006)." []
 def: "An undeveloped shoot system (PO:0009006)." [POC:curators]
 subset: TraitNet
 synonym: "adventitious bud (narrow)" NARROW [FNA:0eed275a-5dae-414a-bf36-81a08e6c6ba9]
@@ -2838,7 +2873,6 @@ id: PO:0006001
 name: phyllome
 namespace: plant_anatomy
 def: "A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148)." [POC:curators]
-def: "A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148)." []
 subset: reference
 subset: TraitNet
 synonym: "filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3039,7 +3073,6 @@ alt_id: PO:0020082
 alt_id: PO:0020083
 alt_id: PO:0020087
 alt_id: PO:0020107
-def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)." []
 def: "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:curators, POC:Laurel_Cooper]
 comment: A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.
 subset: Angiosperm
@@ -3093,7 +3126,6 @@ name: root
 namespace: plant_anatomy
 alt_id: PO:0003006
 def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately." [ISBN:978-0879015329, ISBN:9780964022157, NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:curators, POC:Laurel_Cooper]
-def: "A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately." []
 comment: Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the substrate and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually positively geotropic and found underground, although there are many exceptions such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).
 subset: Angiosperm
 subset: Gymnosperms
@@ -3177,7 +3209,6 @@ is_a: PO:0025496 ! multi-tissue plant structure
 id: PO:0009011
 name: plant structure
 namespace: plant_anatomy
-def: "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant." []
 def: "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant." [CARO:0000003, PO:cooperl, POC:curators]
 comment: 'Part' includes both proper parts and the whole plant. CARO:0000003 'connected anatomical structure' is defined as: Material anatomical entity that is a single connected structure with inherent 3D shape, generated by coordinated expression of the organism's own genome.
 comment: These terms (i.e., subclasses of plant structure) can be used to describe the location of a plant gall (e.g., on leaf or stem) and also the parts of a gall (e.g., nectary, larval chamber). {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
@@ -3350,7 +3381,6 @@ relationship: develops_from PO:0000229 ! flower meristem
 id: PO:0009047
 name: stem
 namespace: plant_anatomy
-def: "A shoot axis (PO:0025029) that is the primary axis of a plant." []
 def: "A shoot axis (PO:0025029) that is the primary axis of a plant." [POC:curators]
 comment: A stem often bears leaves and buds. It is usually above ground, and is more or less negatively geotropic.
 subset: reference
@@ -3399,7 +3429,6 @@ alt_id: PO:0020117
 alt_id: PO:0020118
 alt_id: PO:0020119
 alt_id: PO:0020120
-def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." []
 def: "A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, POC:Laurel_Cooper, POC:Ramona_Walls]
 comment: An inflorescence is a reproductive shoot system from which at least two flowers develop. The growth pattern of an inflorescence may be monopodial (single main shoot axis), sympodial (growth only occurs from axillary meristems), or both. An inflorescence axis (PO:0020122) can be determinate or indeterminate. An inflorescence flower pedicel (PO:0009052) is the ultimate axis in an inflorescence. The flower (PO:0009046) of many plants, for example Magnolia spp., is solitary.
 subset: Angiosperm
@@ -3481,7 +3510,6 @@ property_value: seeAlso https://www.inaturalist.org/observations/32852385
 id: PO:0020039
 name: leaf lamina
 namespace: plant_anatomy
-def: "A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present." []
 def: "A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present." [POC:curators]
 comment: A leaf lamina is usually dorsiventrally flattened, but may be flattened in a median plant (perpendicular to the axis) in the case of phyllodes (PO:0025335) or other ensiform leaves (PO:0025333). This term should not be used for leaves that are not laminar (flat), like round leaves in Allium or needle-like leaves in Pinus or some Proteaceae. If you are annotating to this term, please add an additional annotation to vascular leaf (PO:0009025) or non-vascular leaf (PO:0025075), depending on the species. All annotations for angiosperms, gymnosperms, and pteridophytes should go to vascular leaf and all annotations for bryophytes should go to non-vascular leaf.
 subset: TraitNet
@@ -3520,7 +3548,6 @@ xref: FNA:6e19c80b-c4a0-4d62-bf40-3206dce4af1c
 xref: FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44
 xref: PO_GIT:70
 is_a: PO:0025001 ! cardinal organ part
-is_a: PO:0025496 ! multi-tissue plant structure
 relationship: part_of PO:0020043 ! compound leaf
 property_value: seeAlso https://www.inaturalist.org/observations/90131758
 
@@ -3528,7 +3555,6 @@ property_value: seeAlso https://www.inaturalist.org/observations/90131758
 id: PO:0020054
 name: bud scale leaf
 namespace: plant_anatomy
-def: "A scale leaf that surrounds a dormant or perennating bud." []
 def: "A scale leaf that surrounds a dormant or perennating bud." [UMSL_curator:tk]
 synonym: "bud scale (exact)" EXACT []
 synonym: "escama de la yema (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3807,7 +3833,6 @@ creation_date: 2010-07-01T03:46:35Z
 id: PO:0025034
 name: leaf
 namespace: plant_anatomy
-def: "A phyllome (PO:0006001) that is not associated with a reproductive structure." []
 def: "A phyllome (PO:0006001) that is not associated with a reproductive structure." [POC:curators]
 subset: TraitNet
 synonym: "hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3859,7 +3884,6 @@ creation_date: 2009-12-18T10:09:17Z
 id: PO:0025073
 name: branch
 namespace: plant_anatomy
-def: "A shoot axis (PO:00025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of a meristematic apical cell (PO:0030007)." []
 def: "A shoot axis (PO:00025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of a meristematic apical cell (PO:0030007)." [POC:curators]
 comment: In vascular plants, branches arise from an axillary bud meristem (PO:0000232) and from divisions of the meristematic apical cell (PO:0030007) in non-vascular plants.
 subset: TraitNet
@@ -3910,7 +3934,6 @@ xref: FNA:8e5eb686-8308-4cd7-aaee-75fe9a36d042
 xref: FNA:b069a022-2be0-43b4-8efa-4ad13ff17639
 xref: FNA:e3941c37-b2f0-468f-b857-0c3d095d71b1
 xref: PO_GIT:203
-is_a: CARO:0000005 ! anatomical space
 is_a: PO:0025131 ! plant anatomical entity
 created_by: rwalls
 creation_date: 2010-11-10T11:57:16Z
@@ -4247,7 +4270,6 @@ id: PO:0025496
 name: multi-tissue plant structure
 namespace: plant_anatomy
 def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." [CARO:0000055, POC:curators]
-def: "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." []
 comment: Most multi-tissue plant structures have at least a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).  Refers to CARO:0000055 multi-tissue structure, def'n: Anatomical structure that has as parts two or more portions of tissue of at least two different types, and which through specific morphogenetic processes, form a single distinct structural unit demarcated by bona-fide boundries from other structural units of differnt types.
 synonym: "estructura vegetal con m&#250ltiples tejidos (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "複数の組織からなる植物構造 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4364,7 +4386,6 @@ creation_date: 2010-07-15T02:56:11Z
 id: PO:0030119
 name: catkin inflorescence
 namespace: plant_anatomy
-def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of indeterminate, first order inflorescence axes (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054)." []
 def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of indeterminate, first order inflorescence axes (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Examples include poplars (including Populus trichocarpa, Salicaceae) and birches (Betula spp., Betulaceae). Catkin inflorescences are often pendulate.
 synonym: "ament" EXACT []
@@ -4376,10 +4397,33 @@ created_by: NYBG:Brandon_Sinn
 creation_date: 2017-04-20T12:48:27Z
 
 [Term]
+id: PO:0030121
+name: capitulum inflorescence
+namespace: plant_anatomy
+def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged, determinate, first order inflorescence axis (PO:0025104) with sessile flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
+comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
+synonym: "calathidium (exact)" EXACT []
+synonym: "capitula (exact)" EXACT [] {synonymtypedef="Plural"}
+synonym: "capitulum (exact)" EXACT []
+synonym: "head (broad)" BROAD []
+synonym: "hypanthodium (narrow)" NARROW []
+is_a: PO:0009049 ! inflorescence
+created_by: NYBG:Brandon_Sinn
+creation_date: 2017-04-20T12:53:49Z
+
+[Term]
 id: UBERON:0001062
 name: anatomical entity
 def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." [FMA:62955, http://orcid.org/0000-0001-9114-8737]
 is_a: BFO:0000004 ! independent continuant
+
+[Typedef]
+id: GALLONT:0000000
+name: has associate
+comment: Relationship that specifies which organism is associated with a class.
+property_value: dc-creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/elements/1.1/date "2024-01-24T01:49:45Z" xsd:dateTime
+range: OBI:0100026 ! organism
 
 [Typedef]
 id: RO:0000052
@@ -5586,10 +5630,6 @@ property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
 property_value: RO:0002575 BFO:0000063
 is_a: precedes ! precedes
-
-[Typedef]
-id: induced_by
-is_a: has_participant ! has participant
 
 [Typedef]
 id: input_of

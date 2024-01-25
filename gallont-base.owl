@@ -11,12 +11,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gallont/gallont-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-01-19/gallont-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-01-25/gallont-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Gall ontology</dcterms:title>
-        <owl:versionInfo>2024-01-19</owl:versionInfo>
+        <owl:versionInfo>2024-01-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -139,23 +139,21 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+    <!-- http://purl.obolibrary.org/obo/GALLONT_0000000 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000000">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <dce:creator rdf:resource="https://orcid.org/0000-0002-2119-4663"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-24T01:49:45Z</dce:date>
+        <rdfs:comment>Relationship that specifies which organism is associated with a class.</rdfs:comment>
+        <rdfs:label xml:lang="en">has associate</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/gallont.owl#induced_by -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/gallont.owl#induced_by">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-    </owl:ObjectProperty>
     
 
 
@@ -272,7 +270,19 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <obo:IAO_0000115 xml:lang="en">A gall structure wherein the gall inducer and/or its associates resides.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue.</obo:IAO_0000115>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-22T01:54:05Z</dce:date>
         <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-2119-4663"/>
         <rdfs:label xml:lang="en">larval chamber</rdfs:label>
@@ -668,19 +678,25 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006504"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006504"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000000"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6946"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness.</obo:IAO_0000115>
         <dce:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-01T21:56:59Z</dce:date>
@@ -713,13 +729,17 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000055"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000055"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">A plant gall that is located on a bud.</obo:IAO_0000115>
         <dce:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-01T22:23:57Z</dce:date>
@@ -733,19 +753,29 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000012"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000009"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000012"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000031"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001865"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape.</obo:IAO_0000115>
         <dce:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-01T22:28:40Z</dce:date>
@@ -759,19 +789,21 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000006"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002078"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall.</obo:IAO_0000115>
         <dce:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
         <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-02T01:35:34Z</dce:date>
@@ -805,6 +837,37 @@
         <dcterms:source rdf:resource="https://lccn.loc.gov/41001073"/>
         <rdfs:label xml:lang="en">rosette gall</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/33495996"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GALLONT_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dce:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-19T02:22:00Z</dce:date>
+        <rdfs:comment xml:lang="en">A portion of plant tissue that is fed upon by a gall inhabitant.</rdfs:comment>
+        <rdfs:label xml:lang="en">nutritive tissue</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.3390%2Finsects12100850"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GALLONT_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A cavity that is occupied by one or more gall inhabitants.</obo:IAO_0000115>
+        <dce:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
+        <dce:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-19T02:27:40Z</dce:date>
+        <rdfs:label xml:lang="en">larval cavity</rdfs:label>
     </owl:Class>
     
 
@@ -896,7 +959,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000070">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115 xml:lang="en">The number of entities of this type that are part of the whole organism. For galls, the number of entities of some type that are part of or located in a whole gall.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
@@ -1118,10 +1180,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <rdfs:label xml:lang="en">physical object quality</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241"/>
     
 
 
@@ -1513,9 +1572,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001998 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001998">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001998"/>
     
 
 
@@ -1741,9 +1798,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0000055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0000055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <obo:IAO_0000115 xml:lang="en">An undeveloped shoot system (PO:0009006).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">bud</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/48455720"/>
     </owl:Class>
     
@@ -1752,7 +1806,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0005597 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0005597">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <obo:IAO_0000115 xml:lang="en">A lateral meristem (PO:0020145) that has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cambium</rdfs:label>
     </owl:Class>
@@ -1761,18 +1814,13 @@
 
     <!-- http://purl.obolibrary.org/obo/PO_0006001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <obo:IAO_0000115 xml:lang="en">A lateral plant organ (PO:0009008) produced by a shoot apical meristem (PO:0020148).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">phyllome</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006001"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PO_0006018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1790,7 +1838,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0006019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1808,18 +1855,13 @@
 
     <!-- http://purl.obolibrary.org/obo/PO_0006504 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006504">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0006504"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PO_0009001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <obo:IAO_0000115 xml:lang="en">A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fruit</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/138563159"/>
     </owl:Class>
     
@@ -1828,20 +1870,21 @@
     <!-- http://purl.obolibrary.org/obo/PO_0009005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <obo:IAO_0000115 xml:lang="en">A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">root</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/139148692"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009007"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PO_0009011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009011">
-        <obo:IAO_0000115 xml:lang="en">A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">These terms (i.e., subclasses of plant structure) can be used to describe the location of a plant gall (e.g., on leaf or stem) and also the parts of a gall (e.g., nectary, larval chamber).</rdfs:comment>
-        <rdfs:label>plant structure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
@@ -1861,7 +1904,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0009035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <obo:IAO_0000115 xml:lang="en">A portion of secretory tissue (PO:0005656) which is a multicellular glandular structure secreting a liquid containing organic substances, including sugars.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">nectary</rdfs:label>
     </owl:Class>
@@ -1871,9 +1913,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0009047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009047">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <obo:IAO_0000115 xml:lang="en">A shoot axis (PO:0025029) that is the primary axis of a plant.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">stem</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/125859005"/>
     </owl:Class>
     
@@ -1883,8 +1922,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <obo:IAO_0000115 xml:lang="en">A reproductive shoot system (PO:0025082) that has as parts all of the shoot axes (PO:0025029) and flowers (PO:0009046; must have two or more) distal to the most distal leaf (PO:0009025).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">inflorescence</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/118434796"/>
     </owl:Class>
     
@@ -1893,13 +1930,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0020038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A stalk (PO:0025066) of a vascular leaf (PO:0009025).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">petiole</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/32852385"/>
@@ -1910,15 +1940,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0020039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A phyllome lamina (PO:0025396) that is the part of a leaf (PO:0025034) exclusive of the petiole (PO:0020038) or leaf sheath (PO:0020104), if either is present.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">leaf lamina</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/62631563"/>
     </owl:Class>
     
@@ -1927,7 +1948,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0020049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1943,24 +1963,13 @@
 
     <!-- http://purl.obolibrary.org/obo/PO_0020054 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
-        <obo:IAO_0000115 xml:lang="en">A scale leaf that surrounds a dormant or perennating bud.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">bud scale leaf</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020054"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PO_0020128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A phyllome margin (PO:0025018) that is part of a leaf (PO:0025034).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">leaf margin</rdfs:label>
     </owl:Class>
@@ -1970,13 +1979,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0020138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020138">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A phyllome lamina vein (PO:0025348) that is part of a leaf lamina vascular system (PO:0000048).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">leaf lamina vein</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">leaf vein</rdfs:label>
@@ -2015,9 +2017,6 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0006001"/>
-        <obo:IAO_0000115 xml:lang="en">A phyllome (PO:0006001) that is not associated with a reproductive structure.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">leaf</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/60861819"/>
     </owl:Class>
     
@@ -2026,11 +2025,8 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025073 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <obo:IAO_0000115 xml:lang="en">A shoot axis (PO:00025029) that develops from an axillary bud meristem (PO:0000232) or from equal divisions of a meristematic apical cell (PO:0030007).</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym xml:lang="en">stem</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="en">twig</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">branch</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/28377541"/>
     </owl:Class>
     
@@ -2038,30 +2034,29 @@
 
     <!-- http://purl.obolibrary.org/obo/PO_0025117 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000005"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025117"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PO_0025496 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025496">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <obo:IAO_0000115 xml:lang="en">A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types.</obo:IAO_0000115>
-        <rdfs:label>multi-tissue plant structure</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025496"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PO_0030119 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030119">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
-        <obo:IAO_0000115 xml:lang="en">An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of indeterminate, first order inflorescence axes (PO:0025104) and sessile, unisexual flowers (PO:0009046) that are each subtended by conspicuous inflorescence bracts (PO:0009054).</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">ament</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">catkin</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">catkin inflorescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
     </owl:Class>
 </rdf:RDF>
 

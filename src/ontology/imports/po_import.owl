@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/gallont/imports/po_import.owl>
-<http://purl.obolibrary.org/obo/gallont/releases/2024-01-19/imports/po_import.owl>
+<http://purl.obolibrary.org/obo/gallont/releases/2024-01-25/imports/po_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/po/releases/2023-07-13/po.owl>)
-Annotation(owl:versionInfo "2024-01-19")
+Annotation(owl:versionInfo "2024-01-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -146,6 +146,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025530>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0028002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030121>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
@@ -700,7 +701,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002131> "over
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/RO_0002323>)
 SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002160> (only in taxon)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002160> (only_in_taxon)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002160> "x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0002160> "RO:0002160")
@@ -3481,6 +3482,22 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0030119> "Examples include poplars (including Populus trichocarpa, Salicaceae) and birches (Betula spp., Betulaceae). Catkin inflorescences are often pendulate.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0030119> "catkin inflorescence")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0030119> <http://purl.obolibrary.org/obo/PO_0009049>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0030121> (capitulum inflorescence)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NYBG:Brandon_Sinn") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NYBG:Dario_Cavaliere") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO:cooperl") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0030121> "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged, determinate, first order inflorescence axis (PO:0025104) with sessile flowers (PO:0009046).")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/PO_0030121> "NYBG:Brandon_Sinn")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PO_0030121> "2017-04-20T12:53:49Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/PO_0030121> "head (broad)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030121> "calathidium (exact)")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty> "Plural") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030121> "capitula (exact)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030121> "capitulum (exact)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/PO_0030121> "hypanthodium (narrow)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PO_0030121> "plant_anatomy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PO_0030121> "PO:0030121")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0030121> "Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0030121> "capitulum inflorescence")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0030121> <http://purl.obolibrary.org/obo/PO_0009049>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)
 
