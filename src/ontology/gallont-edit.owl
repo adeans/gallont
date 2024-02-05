@@ -14,7 +14,7 @@ Import(<http://purl.obolibrary.org/obo/gallont/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/gallont/imports/po_import.owl>)
 Import(<http://purl.obolibrary.org/obo/gallont/imports/ro_import.owl>)
 Annotation(dcterms:description "None")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "Gall ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000005>))
@@ -1115,7 +1115,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025073> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030119> "ament"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0030119> "catkin"@en)
 
-# Class: <http://purl.obolibrary.org/obo/PO_0030121> (<http://purl.obolibrary.org/obo/PO_0030121>)
+# Class: <http://purl.obolibrary.org/obo/PO_0030121> (capitulum inflorescence)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0030121> <http://purl.obolibrary.org/obo/PO_0009049>)
 
