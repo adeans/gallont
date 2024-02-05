@@ -15,7 +15,7 @@ Import(<http://purl.obolibrary.org/obo/gallont/imports/po_import.owl>)
 Import(<http://purl.obolibrary.org/obo/gallont/imports/ro_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
-Annotation(dcterms:title "Gall ontology")
+Annotation(dcterms:title "Plant Gall Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000030>))
