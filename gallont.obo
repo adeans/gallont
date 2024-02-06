@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-01-25
+data-version: releases/2024-02-06
 subsetdef: 3_STAR ""
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
@@ -54,10 +54,10 @@ synonymtypedef: Plural ""
 synonymtypedef: Spanish ""
 synonymtypedef: synonym ""
 ontology: gallont
-property_value: dcterms-license https://creativecommons.org/licenses/unspecified
+property_value: dcterms-license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/title "Gall ontology" xsd:string
-property_value: owl:versionInfo "2024-01-25" xsd:string
+property_value: owl:versionInfo "2024-02-06" xsd:string
 
 [Term]
 id: BFO:0000002

@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: gallont/releases/2024-01-25/gallont-base.owl
+data-version: gallont/releases/2024-02-06/gallont-base.owl
 ontology: gallont/gallont-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/title "Gall ontology" xsd:string
-property_value: owl:versionInfo "2024-01-25" xsd:string
+property_value: owl:versionInfo "2024-02-06" xsd:string
 
 [Term]
 id: CARO:0000005
