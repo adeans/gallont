@@ -1,6 +1,6 @@
 
 ![Build Status](https://github.com/adeans/gallont/workflows/CI/badge.svg)
-# Gall ontology
+# Plant Gall Ontology
 
 Description: Ontology of terms used to describe plant gall phenotypes, which are extended phenotypes of the inducers. 
 
