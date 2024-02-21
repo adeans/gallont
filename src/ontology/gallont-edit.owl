@@ -308,7 +308,7 @@ AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000005> "2
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000005> "larval chamber"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://www.inaturalist.org/observations/139401882>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> <http://purl.obolibrary.org/obo/PO_0025498>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000040>))
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000041>))
 
