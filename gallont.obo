@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-02-06
+data-version: releases/2024-03-13
 subsetdef: 3_STAR ""
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
@@ -50,14 +50,14 @@ synonymtypedef: equivalent_name ""
 synonymtypedef: genbank_common_name ""
 synonymtypedef: German ""
 synonymtypedef: Japanese ""
-synonymtypedef: Plural ""
+synonymtypedef: OMO:0003004 ""
 synonymtypedef: Spanish ""
 synonymtypedef: synonym ""
 ontology: gallont
 property_value: dcterms-license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/description "None" xsd:string
-property_value: http://purl.org/dc/terms/title "Gall ontology" xsd:string
-property_value: owl:versionInfo "2024-02-06" xsd:string
+property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
+property_value: owl:versionInfo "2024-03-13" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -79,7 +79,7 @@ def: "A continuant that is a bearer of quality and realizable entity entities, i
 def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
 comment: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
 is_a: BFO:0000002 ! continuant
-disjoint_from: BFO:0000020 ! specifically dependent continuant
+disjoint_from: BFO:0000020 ! characteristic
 relationship: part_of BFO:0000004 {all_only="true"} ! independent continuant
 
 [Term]
@@ -89,6 +89,7 @@ def: "An occurrent that has temporal proper parts and for some time t, p s-depen
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" []
 comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 is_a: BFO:0000003 ! occurrent
+relationship: part_of BFO:0000015 {all_only="true"} ! process
 
 [Term]
 id: BFO:0000016
@@ -98,26 +99,31 @@ disjoint_from: BFO:0000023 ! role
 
 [Term]
 id: BFO:0000017
+name: realizable
 name: realizable entity
 def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
-is_a: BFO:0000020 ! specifically dependent continuant
+is_a: BFO:0000020 ! characteristic
 disjoint_from: BFO:0000019 ! quality
 relationship: part_of BFO:0000017 {all_only="true"} ! realizable entity
 
 [Term]
 id: BFO:0000019
 name: quality
-is_a: BFO:0000020 ! specifically dependent continuant
+is_a: BFO:0000020 ! characteristic
 relationship: part_of BFO:0000019 {all_only="true"} ! quality
 
 [Term]
 id: BFO:0000020
+name: characteristic
 name: specifically dependent continuant
 def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
 def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" []
 comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
-relationship: part_of BFO:0000020 {all_only="true"} ! specifically dependent continuant
+relationship: has_part BFO:0000020 {all_only="true"} ! characteristic
+relationship: part_of BFO:0000020 {all_only="true"} ! characteristic
+property_value: seeAlso "https://github.com/OBOFoundry/COB/issues/65" xsd:string
+property_value: seeAlso "https://github.com/oborel/obo-relations/pull/284" xsd:string
 
 [Term]
 id: BFO:0000023
@@ -210,7 +216,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/61878883
 id: GALLONT:0000005
 name: larval chamber
 def: "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue." []
-is_a: PO:0025496 ! multi-tissue plant structure
+is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
 relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
 relationship: has_part GALLONT:0000040 ! nutritive tissue
 relationship: has_part GALLONT:0000041 ! larval cavity
@@ -569,11 +575,13 @@ property_value: http://purl.org/dc/elements/1.1/date "2024-01-19T02:27:40Z" xsd:
 
 [Term]
 id: GO:0003674
+name: gene product or complex activity
 name: molecular_function
 namespace: molecular_function
 alt_id: GO:0005554
 def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs." [GOC:pdt]
 comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
+comment: This is the same as GO molecular function
 subset: goslim_candida
 subset: goslim_chembl
 subset: goslim_metagenomics
@@ -582,7 +590,7 @@ subset: goslim_plant
 subset: goslim_yeast
 synonym: "molecular function" EXACT []
 is_a: BFO:0000015 ! process
-disjoint_from: GO:0008150 ! biological_process
+disjoint_from: GO:0008150 ! biological process
 
 [Term]
 id: GO:0003824
@@ -602,12 +610,15 @@ is_a: GO:0003674 ! molecular_function
 
 [Term]
 id: GO:0008150
+name: biological process
 name: biological_process
 namespace: biological_process
 alt_id: GO:0000004
 alt_id: GO:0007582
 alt_id: GO:0044699
 def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
+def: "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective." []
+comment: A biological process is an evolved process
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 subset: goslim_candida
 subset: goslim_chembl
@@ -622,6 +633,7 @@ synonym: "single organism process" RELATED []
 synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
+relationship: has_part GO:0003674 ! molecular_function
 property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/24968" xsd:anyURI
 created_by: jl
 creation_date: 2012-09-19T15:05:24Z
@@ -763,7 +775,7 @@ name: quality
 namespace: quality
 alt_id: PATO:0000072
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
-is_a: BFO:0000020 ! specifically dependent continuant
+is_a: BFO:0000020 ! characteristic
 
 [Term]
 id: PATO:0000011
@@ -2476,13 +2488,13 @@ synonym: "bush (narrow)" NARROW []
 synonym: "clonal colony (related)" RELATED []
 synonym: "colony (related)" RELATED []
 synonym: "frutex (narrow)" NARROW [FNA:e4dde193-57f7-4ab9-9d25-96b4ca0088ba]
-synonym: "frutices (narrow)" NARROW Plural [FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b]
+synonym: "frutices (narrow, plural)" NARROW OMO:0003004 [FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b]
 synonym: "gametophyte (narrow)" NARROW []
 synonym: "genet (broad)" BROAD []
 synonym: "herb (narrow)" NARROW []
 synonym: "liana (narrow)" NARROW []
 synonym: "planta entera (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "prothalli (narrow)" NARROW Plural [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
+synonym: "prothalli (narrow, plural)" NARROW OMO:0003004 [FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0]
 synonym: "prothallium (narrow)" NARROW []
 synonym: "prothallus (narrow)" NARROW [FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8]
 synonym: "ramet (broad)" BROAD []
@@ -2490,7 +2502,7 @@ synonym: "seedling (narrow)" NARROW []
 synonym: "shrub (narrow)" NARROW []
 synonym: "sporophyte (narrow)" NARROW []
 synonym: "suffrutex (narrow)" NARROW [FNA:99508f62-7116-4e2b-90c0-19ff55ebd967]
-synonym: "suffrutices (narrow)" NARROW Plural [FNA:ba1b1bd5-75bd-4195-b11c-3aba08da08c2]
+synonym: "suffrutices (narrow, plural)" NARROW OMO:0003004 [FNA:ba1b1bd5-75bd-4195-b11c-3aba08da08c2]
 synonym: "tree (narrow)" NARROW []
 synonym: "vine (narrow)" NARROW []
 synonym: "woody clump (narrow)" NARROW [FNA:c1ccca7d-2a98-4a9d-8603-c34b551935e0]
@@ -2514,7 +2526,7 @@ def: "A phyllome primordium (PO:0025128) that develops from a vascular leaf anla
 synonym: "leaf primordium (exact)" EXACT []
 synonym: "portion of vascular leaf primordium tissue (exact)" EXACT []
 synonym: "primordio de hoja (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "vascular leaf primordia (exact, plural)" EXACT []
+synonym: "vascular leaf primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "葉原基 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:466
 is_a: PO:0025128 ! phyllome primordium
@@ -2698,24 +2710,24 @@ comment: This class is the union of unicellular trichome (PO:0025537) and multic
 subset: TraitNet
 synonym: "barb trichome (broad)" BROAD [FNA:aa191087-e979-486f-ad87-0e050a83090f]
 synonym: "bristle (broad)" BROAD [FNA:78121d02-e7db-45eb-b1b7-011d5026beae]
-synonym: "capilli (narrow)" NARROW Plural [FNA:602c5ee8-6634-4093-bd2c-016dde8a350e]
+synonym: "capilli (narrow, plural)" NARROW OMO:0003004 [FNA:602c5ee8-6634-4093-bd2c-016dde8a350e]
 synonym: "capillus (narrow)" NARROW [FNA:43d66471-4955-4bc2-a70c-c88e33877c42]
-synonym: "cilia (narrow)" NARROW Plural [FNA:c358e298-5926-42d6-8d49-a918cdc72406]
+synonym: "cilia (narrow, plural)" NARROW OMO:0003004 [FNA:c358e298-5926-42d6-8d49-a918cdc72406]
 synonym: "cilium (narrow)" NARROW [FNA:12abd29b-5eae-47a2-baae-4059581e7eaa]
 synonym: "glochid (narrow)" NARROW [FNA:881fcb45-5dfd-4d06-8d6f-a111ba5e220a]
-synonym: "glochidia (narrow)" NARROW Plural [FNA:899a83bf-39bb-4128-b472-b0e27dcf5b35]
+synonym: "glochidia (narrow, plural)" NARROW OMO:0003004 [FNA:899a83bf-39bb-4128-b472-b0e27dcf5b35]
 synonym: "glochidium (narrow)" NARROW [FNA:99a6f711-b4da-4231-8dce-9ed171b87e9c]
 synonym: "hair (narrow)" NARROW [FNA:9ef3a0eb-f8e4-4a7b-911e-92952fc19956]
-synonym: "lepides (narrow)" NARROW Plural [FNA:e6a34ceb-a3e7-49f7-a4ac-cf0ea1552dc4]
+synonym: "lepides (narrow, plural)" NARROW OMO:0003004 [FNA:e6a34ceb-a3e7-49f7-a4ac-cf0ea1552dc4]
 synonym: "lepis (narrow)" NARROW [FNA:bb12cad4-db12-4e59-a9fc-1676f2558a0a]
 synonym: "non-secretory trichome (narrow)" NARROW []
 synonym: "scale (narrow)" NARROW [FNA:8c618dea-f3dd-434f-bb13-23273ea6c143]
 synonym: "seta (related)" RELATED [FNA:c751440c-a7b3-4997-aed8-47f8254fd05f]
 synonym: "setae (related)" RELATED [FNA:93b95b97-0f1a-4d26-9c86-ebede4157269]
 synonym: "squama (narrow)" NARROW [FNA:6cb9e7af-32a7-413a-8f80-9e40d3ae462a]
-synonym: "squamae (narrow)" NARROW Plural [FNA:cbb9ceb5-a404-4b5c-9c8f-4cf0ca6bade2]
+synonym: "squamae (narrow, plural)" NARROW OMO:0003004 [FNA:cbb9ceb5-a404-4b5c-9c8f-4cf0ca6bade2]
 synonym: "squamella (narrow)" NARROW [FNA:ead20a1b-057b-4008-9466-bdb8e283aa82]
-synonym: "squamellae (narrow)" NARROW Plural [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
+synonym: "squamellae (narrow, plural)" NARROW OMO:0003004 [FNA:c5765385-917c-465e-83f8-b4fe5d693146]
 synonym: "squamule (narrow)" NARROW [FNA:f18da584-2b0b-4b03-a614-40140a1cb89e]
 synonym: "tricoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "毛茸、糸状体、毛 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -2817,7 +2829,7 @@ def: "A primordium (PO:0025127) that develops from a root anlagen (PO:0025433) a
 comment: A root primordium may arise from cells of a pericycle (PO:0006203) in a root in most seed plant (pericyclic lateral root primordium; PO:0025492), from cells of an endodermis (PO:0000252) in ferns and some seed plants (non-pericyclic lateral root primordium: PO:0025493), or from cells of a shoot axis (PO:0025029), in the case of a basal root primordium (PO:0025479) or shoot-borne root primordium (PO:0025480). Transition from root primordium to root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147).
 synonym: "portion of root primordium tissue (exact)" EXACT []
 synonym: "primordio de ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "root primordia (exact, plural)" EXACT []
+synonym: "root primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "根原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:467
 is_a: PO:0025127 ! primordium
@@ -2858,9 +2870,9 @@ comment: The epidermis can be composed of one or more layers of cells. In some s
 subset: TraitNet
 synonym: "dermal tissue (exact)" EXACT []
 synonym: "epidermal layer (exact)" EXACT []
-synonym: "epidermides (exact, plural)" EXACT [FNA:35df04e5-fde5-465e-b79e-ae7d5e1537bb]
+synonym: "epidermides (exact, plural)" EXACT OMO:0003004 [FNA:35df04e5-fde5-465e-b79e-ae7d5e1537bb]
 synonym: "epidermis (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "epidermises (exact, plural)" EXACT [FNA:0d1bd0e6-c039-4de3-a162-68299a2f342a]
+synonym: "epidermises (exact, plural)" EXACT OMO:0003004 [FNA:0d1bd0e6-c039-4de3-a162-68299a2f342a]
 synonym: "multiseriate epidermis (related)" RELATED []
 synonym: "portion of epidermal tissue (exact)" EXACT []
 synonym: "表皮 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3139,7 +3151,7 @@ subset: TraitNet
 synonym: "aerial root (narrow)" NARROW []
 synonym: "climbing root (narrow)" NARROW [FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f]
 synonym: "ra&#237z (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "radices (exact, plural)" EXACT [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d]
+synonym: "radices (exact, plural)" EXACT OMO:0003004 [FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d]
 synonym: "radix (exact)" EXACT [FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd]
 synonym: "根 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f
@@ -3160,7 +3172,7 @@ subset: TraitNet
 synonym: "Poaceae crown (related)" RELATED []
 synonym: "shoot (related)" RELATED []
 synonym: "sistema de epiblasto (epiblastema) (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "thalli (related)" RELATED Plural [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
+synonym: "thalli (related, plural)" RELATED OMO:0003004 [FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85]
 synonym: "thallus (related)" RELATED [FNA:02756ad4-a09c-48d7-8754-903254e557a9]
 synonym: "tree crown (narrow)" NARROW []
 synonym: "シュート系、苗条系 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -3321,7 +3333,7 @@ synonym: "pitcher-blade (narrow)" NARROW [FNA:30c47c20-f459-4518-8657-feed7eb92f
 synonym: "scale-like leaf (narrow)" NARROW []
 synonym: "sterile frond (narrow)" NARROW [FNA:a4dc40f4-92f9-4ba5-b616-a84564f63fed]
 synonym: "trophophyll (narrow)" NARROW [FNA:8654d268-1e4c-4edf-b937-82a965b4edef]
-synonym: "vascular leaves (exact, plural)" EXACT [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
+synonym: "vascular leaves (exact, plural)" EXACT OMO:0003004 [FNA:c7d9d167-4121-43b0-b2fe-bb1ae9d6d3a6]
 synonym: "維管束のある葉, または維管束植物の葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:06544712-db97-4208-b188-c4b756a53c72
 xref: FNA:30c47c20-f459-4518-8657-feed7eb92fe4
@@ -3389,7 +3401,7 @@ synonym: "bole (narrow)" NARROW [FNA:a5ba9e16-e0af-4430-a3a0-7aeb052fbffd]
 synonym: "ca&#241a (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "cane (narrow)" NARROW []
 synonym: "caudex (narrow)" NARROW [FNA:cea24c10-d5ff-435f-aa40-db77dcbd27f0]
-synonym: "caudices (narrow)" NARROW Plural [FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8]
+synonym: "caudices (narrow, plural)" NARROW OMO:0003004 [FNA:3c0e37e8-e363-4962-847e-5f9f2906d0f8]
 synonym: "core (narrow)" NARROW []
 synonym: "culm (exact)" EXACT []
 synonym: "eje primario (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
@@ -3470,7 +3482,7 @@ subset: TraitNet
 synonym: "apocarpous gynoecium (narrow)" NARROW []
 synonym: "ginoecio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "gynaecium (exact)" EXACT [FNA:03f034c5-6bd6-4846-8ef7-c5190d09008c]
-synonym: "gynoecia (exact, plural)" EXACT [FNA:226a743c-7988-4b66-b163-2ce80d7c8a70]
+synonym: "gynoecia (exact, plural)" EXACT OMO:0003004 [FNA:226a743c-7988-4b66-b163-2ce80d7c8a70]
 synonym: "gynoecium of ear floret (narrow)" NARROW []
 synonym: "gynoecium of lower floret of pedicellate spikelet of ear (narrow)" NARROW []
 synonym: "gynoecium of lower floret of pedicellate spikelet of tassel (narrow)" NARROW []
@@ -3540,7 +3552,7 @@ def: "A cardinal organ part (PO:0025001) that is one of the ultimate segments of
 subset: TraitNet
 synonym: "fol&#237olo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "pinna (narrow)" NARROW [FNA:9fc865bf-ac88-4ea9-a4e9-0d7b2b31cf44]
-synonym: "pinnae (narrow)" NARROW Plural [FNA:1d6bb560-f346-409b-b078-9bd2fd30e472]
+synonym: "pinnae (narrow, plural)" NARROW OMO:0003004 [FNA:1d6bb560-f346-409b-b078-9bd2fd30e472]
 synonym: "pinnule (narrow)" NARROW [FNA:6e19c80b-c4a0-4d62-bf40-3206dce4af1c]
 synonym: "小葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:1d6bb560-f346-409b-b078-9bd2fd30e472
@@ -3609,7 +3621,7 @@ synonym: "mid-rib (broad)" BROAD []
 synonym: "midrib" RELATED []
 synonym: "midrib (broad)" BROAD []
 synonym: "vascular leaf costa (related)" RELATED [FNA:e05450e0-b820-465a-ba99-ced17c5a34b0]
-synonym: "vascular leaf costae (related)" RELATED Plural [FNA:d0ce6c67-625d-4187-bd50-3af01e6e68a6]
+synonym: "vascular leaf costae (related, plural)" RELATED OMO:0003004 [FNA:d0ce6c67-625d-4187-bd50-3af01e6e68a6]
 synonym: "vascular leaf midvein" EXACT []
 synonym: "vascular leaf midvein (exact)" EXACT []
 synonym: "vena media" EXACT []
@@ -3711,7 +3723,7 @@ def: "An axial plant organ (PO:0009008)." [POC:curators]
 comment: Includes roots and shoots.
 subset: TraitNet
 synonym: "eje de la planta (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "plant axes (exact, plural)" EXACT [FNA:2355281f-ab10-4ae2-a3d8-672cace068a8]
+synonym: "plant axes (exact, plural)" EXACT OMO:0003004 [FNA:2355281f-ab10-4ae2-a3d8-672cace068a8]
 synonym: "植物軸（軸柱） (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 is_a: PO:0009008 ! plant organ
 created_by: rwalls
@@ -3853,7 +3865,7 @@ comment: PATO:0000407 (flat) and PATO:0000592 (thin).
 subset: TraitNet
 synonym: "blade (exact)" EXACT [FNA:7dd0c248-f531-4cfe-b196-882e99f4c32b]
 synonym: "l&#225mina (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "laminae (exact, plural)" EXACT [FNA:12cea564-84fd-40c9-9671-1db2ec4eac90]
+synonym: "laminae (exact, plural)" EXACT OMO:0003004 [FNA:12cea564-84fd-40c9-9671-1db2ec4eac90]
 synonym: "葉身、葉片 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:428
 xref: PO_GIT:70
@@ -3925,9 +3937,9 @@ def: "An anatomical space that is part of a plant." [CARO:0000005, PO:cooperl, P
 comment: CARO:0000005 'anatomical space' is defined as: An immaterial anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes, and is bounded by an anatomical surface.
 synonym: "espacio anat&#243mico vegetal (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "lacuna (narrow)" NARROW [FNA:8e5eb686-8308-4cd7-aaee-75fe9a36d042]
-synonym: "lacunae (narrow)" NARROW Plural [FNA:322646fb-30bf-422d-8373-9f91f48fd28b]
+synonym: "lacunae (narrow, plural)" NARROW OMO:0003004 [FNA:322646fb-30bf-422d-8373-9f91f48fd28b]
 synonym: "lumen (narrow)" NARROW [FNA:b069a022-2be0-43b4-8efa-4ad13ff17639]
-synonym: "lumina (narrow)" NARROW Plural [FNA:e3941c37-b2f0-468f-b857-0c3d095d71b1]
+synonym: "lumina (narrow, plural)" NARROW OMO:0003004 [FNA:e3941c37-b2f0-468f-b857-0c3d095d71b1]
 synonym: "植物 解剖学（形態）的空間 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:322646fb-30bf-422d-8373-9f91f48fd28b
 xref: FNA:8e5eb686-8308-4cd7-aaee-75fe9a36d042
@@ -3946,7 +3958,7 @@ def: "A portion of meristem tissue (PO:0009013) that has as parts protoderm (PO:
 comment: A primordium appears as a protrusion and is the first distinct form of a plant organ (PO:0009008), cardinal organ part (PO:0025001), or collective plant organ structure (PO:0025007). The transition from a primordium to the plant structure it develops into is marked by the development of non-meristematic cells, although meristematic cells may be present after the transition.
 synonym: "portion of primordial tissue (exact)" EXACT []
 synonym: "portion of primordium tissue (exact)" EXACT []
-synonym: "primordia (exact, plural)" EXACT []
+synonym: "primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "primordio (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:186
@@ -3960,7 +3972,7 @@ name: phyllome primordium
 namespace: plant_anatomy
 def: "A primordium (PO:0025127) that develops from a phyllome anlagen (PO:0025430) and is part of a shoot apex (PO:0000037) and is committed to the development of a phyllome (PO:0006001)." [PMID:11572953, POC:curators]
 comment: The transition from phyllome primordium to phyllome occurs when the first non-meristematic tissue develops begins to develop.
-synonym: "phyllome primordia (exact, plural)" EXACT []
+synonym: "phyllome primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of phyllome primordium tissue (exact)" EXACT []
 synonym: "primordio del filoma (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "フィロム原基（可視的）  (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4255,7 +4267,7 @@ namespace: plant_anatomy
 def: "A primordium (PO:0025127) that is committed to the development of a floral organ (PO:0025395) and is part of a reproductive shoot apex (PO:0025222)." [POC:curators]
 comment: If annotating to a primordium of a floral structure, it is better to use the more specific term, such as petal primordium (PO:0000021) or anther primordium (PO:0006089).
 subset: Angiosperm
-synonym: "floral structure primordia (exact, plural)" EXACT []
+synonym: "floral structure primordia (exact, plural)" EXACT OMO:0003004 []
 synonym: "portion of floral structure primordium tissue (exact)" EXACT []
 synonym: "primordio de organo floral (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
 synonym: "花器官原基 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
@@ -4403,7 +4415,7 @@ namespace: plant_anatomy
 def: "An inflorescence (PO:0009049) with a monopodial growth habit, which at flowering stage (PO:0007616) is composed of a radially-enlarged, determinate, first order inflorescence axis (PO:0025104) with sessile flowers (PO:0009046)." [NYBG:Brandon_Sinn, NYBG:Dario_Cavaliere, PO:cooperl]
 comment: Many capitulum inflorescences have basal involucral bracts (PO:0009045) and are often discoid or globose in shape. Examples include sunflowers (Helianthus spp.; Asteraceae) and teasels (Dipsacus spp.; Dipsacaceae).
 synonym: "calathidium (exact)" EXACT []
-synonym: "capitula (exact)" EXACT [] {synonymtypedef="Plural"}
+synonym: "capitula (exact, plural)" EXACT OMO:0003004 []
 synonym: "capitulum (exact)" EXACT []
 synonym: "head (broad)" BROAD []
 synonym: "hypanthodium (narrow)" NARROW []
@@ -4690,7 +4702,7 @@ property_value: IAO:0000118 "inheres in part of" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
-holds_over_chain: RO:0000052 part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: RO:0000052 part_of {RO:0002582="true"}
 is_a: RO:0002502 ! depends on
 transitive_over: part_of ! part_of
 
@@ -4737,7 +4749,7 @@ name: part of structure that is capable of
 def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "false" xsd:boolean
-holds_over_chain: part_of capable_of {http://purl.obolibrary.org/obo/RO_0002581="true"}
+holds_over_chain: part_of capable_of {RO:0002581="true"}
 is_a: functionally_related_to ! functionally related to
 
 [Typedef]
@@ -5246,7 +5258,8 @@ property_value: IAO:0000116 "A bearer can have many dependents, and its dependen
 property_value: IAO:0000118 "bearer_of" xsd:string
 property_value: IAO:0000118 "is bearer of" xsd:string
 property_value: RO:0001900 RO:0001901
-range: BFO:0000020 ! specifically dependent continuant
+property_value: seeAlso "https://github.com/oborel/obo-relations/pull/284" xsd:string
+range: BFO:0000020 ! characteristic
 is_inverse_functional: true
 
 [Typedef]
@@ -5278,7 +5291,7 @@ xref: RO:0002216
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "has function in" xsd:string
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
-holds_over_chain: capable_of part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: capable_of part_of {RO:0002582="true"}
 is_a: functionally_related_to ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 
@@ -5556,6 +5569,7 @@ property_value: IAO:0000112 "this process has participant this input material (o
 property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
 property_value: IAO:0000118 "has_participant" xsd:string
 domain: BFO:0000003 ! occurrent
+domain: BFO:0000015 ! process
 range: BFO:0000002 ! continuant
 holds_over_chain: has_part has_participant
 
@@ -5703,7 +5717,7 @@ xref: RO:0002131
 property_value: IAO:0000114 IAO:0000125
 property_value: RO:0001900 RO:0001901
 holds_over_chain: has_part overlaps
-holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: has_part part_of {RO:0002582="true"}
 holds_over_chain: part_of part_of
 is_symmetric: true
 is_a: RO:0002323 ! mereotopologically related to

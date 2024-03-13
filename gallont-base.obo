@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: gallont/releases/2024-02-06/gallont-base.owl
+data-version: gallont/releases/2024-03-13/gallont-base.owl
 ontology: gallont/gallont-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
-property_value: http://purl.org/dc/terms/title "Gall ontology" xsd:string
-property_value: owl:versionInfo "2024-02-06" xsd:string
+property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
+property_value: owl:versionInfo "2024-03-13" xsd:string
 
 [Term]
 id: CARO:0000005
@@ -72,7 +72,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/61878883
 id: GALLONT:0000005
 name: larval chamber
 def: "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue." []
-is_a: PO:0025496
+is_a: PO:0025498
 relationship: BFO:0000051 GALLONT:0000040 ! nutritive tissue
 relationship: BFO:0000051 GALLONT:0000041 ! larval cavity
 property_value: http://purl.org/dc/elements/1.1/date "2023-06-22T01:54:05Z" xsd:dateTime
