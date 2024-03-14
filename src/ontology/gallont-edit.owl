@@ -431,7 +431,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000017> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000018> (lenticular)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000018> "A shape quality inhering in a bearer by virtue of the bearer's being shaped like a lentil, with convex upper and lower surfaces."@en)
-AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/GALLONT_0000018> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000018> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000018> "2023-06-25T00:52:58Z")
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000018> <https://en.wikipedia.org/w/index.php?title=Glossary_of_botanical_terms&oldid=1161474424#lenticular>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000018> "lenticular"@en)
