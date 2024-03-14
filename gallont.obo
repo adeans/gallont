@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-03-13
+data-version: releases/2024-03-14
 subsetdef: 3_STAR ""
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
@@ -57,7 +57,7 @@ ontology: gallont
 property_value: dcterms-license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-13" xsd:string
+property_value: owl:versionInfo "2024-03-14" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -171,7 +171,7 @@ id: FLOPO:0900042
 name: succulent
 def: "A gall trait in which the gall parenchyma is juicy, as in the tissue of some fruits (for example grapes, starfruit)." []
 is_a: GALLONT:0000007 ! internal quality
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/2011488555
 property_value: seeAlso https://www.inaturalist.org/observations/81385187
 
@@ -180,8 +180,8 @@ id: GALLONT:0000001
 name: plant gall
 def: "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism." []
 is_a: PO:0025496 ! multi-tissue plant structure
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-19T19:39:13Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-19T19:39:13Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/62135900
 
 [Term]
@@ -189,8 +189,8 @@ id: GALLONT:0000002
 name: emergence hole
 def: "An anatomical space that is an opening through which a gall-inhabiting organism has emerged." []
 is_a: PO:0025117 ! plant anatomical space
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-19T19:43:46Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-19T19:43:46Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/33275700
 
 [Term]
@@ -198,8 +198,8 @@ id: GALLONT:0000003
 name: cavity
 def: "A plant anatomical space that is located inside a gall." []
 is_a: PO:0025117 ! plant anatomical space
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-19T19:44:42Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-19T19:44:42Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/117192961
 
 [Term]
@@ -207,9 +207,9 @@ id: GALLONT:0000004
 name: kapéllo
 def: "A gall structure that is attractive to another organism, usually ants, and which facilitates dispersal of the gall" []
 is_a: PO:0025496 ! multi-tissue plant structure
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
 relationship: part_of GALLONT:0000001 ! plant gall
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-22T01:51:19Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-22T01:51:19Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/61878883
 
 [Term]
@@ -217,10 +217,10 @@ id: GALLONT:0000005
 name: larval chamber
 def: "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue." []
 is_a: PO:0025498 ! cardinal part of multi-tissue plant structure
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
 relationship: has_part GALLONT:0000040 ! nutritive tissue
 relationship: has_part GALLONT:0000041 ! larval cavity
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-22T01:54:05Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-22T01:54:05Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/139401882
 
 [Term]
@@ -228,7 +228,8 @@ id: GALLONT:0000006
 name: detached chamber
 def: "A larval chamber that is detached from the plant but enclosed in a cavity." []
 is_a: GALLONT:0000005 ! larval chamber
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-22T02:01:48Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-22T02:01:48Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/117192961
 
 [Term]
@@ -236,40 +237,45 @@ id: GALLONT:0000007
 name: internal quality
 def: "A quality that inheres in the portion of a gall that is internal." []
 is_a: PATO:0000051 ! morphology
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-23T21:16:13Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-23T21:16:13Z" xsd:string
 
 [Term]
 id: GALLONT:0000008
 name: filamentous
-def: "A gall trait in which a larval chamber is suspended medially in the parenchyma by radiating plant fibers inside a largely hollow chamber." [] {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
+def: "A gall trait in which a larval chamber is suspended medially in the parenchyma by radiating plant fibers inside a largely hollow chamber." []
 is_a: GALLONT:0000007 ! internal quality
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-24T01:32:39Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-24T01:32:39Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/168120575
 
 [Term]
 id: GALLONT:0000009
 name: monothalamous
-def: "An internal gall trait in which a gall has a single larval chamber for the gall-inducing insect." [] {comment="https://orcid.org/0000-0002-2119-4663"}
+def: "An internal gall trait in which a gall has a single larval chamber for the gall-inducing insect." []
 is_a: GALLONT:0000007 ! internal quality
 disjoint_from: GALLONT:0000011 ! polythalamous
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-24T01:37:35Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-24T01:37:35Z" xsd:string
 property_value: IAO:0000118 "single chambered" xsd:string
 property_value: IAO:0000118 "unilocular" xsd:string
 
 [Term]
 id: GALLONT:0000010
 name: pithy
-def: "An internal gall trait in which the tissue is reminiscent of pith, the relatively soft tissue at the center of a shoot axis." [] {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
+def: "An internal gall trait in which the tissue is reminiscent of pith, the relatively soft tissue at the center of a shoot axis." []
 is_a: GALLONT:0000007 ! internal quality
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-24T01:41:48Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-24T01:41:48Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/138512674
 
 [Term]
 id: GALLONT:0000011
 name: polythalamous
-def: "An internal gall trait in which more than one larval chamber is present for the inducer species." [] {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
+def: "An internal gall trait in which more than one larval chamber is present for the inducer species." []
 is_a: GALLONT:0000007 ! internal quality
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-24T01:44:34Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-24T01:44:34Z" xsd:string
 property_value: IAO:0000118 "multi-celled" xsd:string
 property_value: IAO:0000118 "multichambered" xsd:string
 property_value: IAO:0000118 "multilocular" xsd:string
@@ -278,18 +284,20 @@ property_value: seeAlso https://www.inaturalist.org/observations/33275700
 [Term]
 id: GALLONT:0000012
 name: solid
-def: "An internal gall trait in which the gall lacks macroscopic anatomical space(s) that is/are not the larval chamber." [] {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
+def: "An internal gall trait in which the gall lacks macroscopic anatomical space(s) that is/are not the larval chamber." []
 is_a: GALLONT:0000007 ! internal quality
 disjoint_from: PATO:0002078 ! hollow
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-24T01:58:04Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-24T01:58:04Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/138512674
 
 [Term]
 id: GALLONT:0000013
 name: nectarous
-def: "A gall quality in which a gall has nectaries present." [] {http://purl.org/dc/terms/contributor="https://orcid.org/0000-0002-2119-4663"}
+def: "A gall quality in which a gall has nectaries present." []
 is_a: PATO:0000051 ! morphology
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-24T02:13:52Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-24T02:13:52Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/47182384
 
 [Term]
@@ -297,8 +305,8 @@ id: GALLONT:0000014
 name: caneliform
 def: "A shape quality inhering in a bearer by virtue of the bearer's having a shape resembling a canelé, a French pastry." []
 is_a: PATO:0002266 ! 3-D shape
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T00:21:14Z" xsd:dateTime
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T00:21:14Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://en.wikipedia.org/w/index.php?title=Canel%C3%A9&oldid=1160295465
 
 [Term]
@@ -306,8 +314,8 @@ id: GALLONT:0000015
 name: cupuliform
 def: "A shape inhering in a bearer by virtue of the bearer resembling a cup, with a depression and rim-like edge apically." []
 is_a: PATO:0002266 ! 3-D shape
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T00:30:40Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T00:30:40Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/2011488555
 property_value: IAO:0000118 "cup-like" xsd:string
 
@@ -316,7 +324,8 @@ id: GALLONT:0000016
 name: echinoform
 def: "A shape trait in which a gall has radiating, spine-like processes that resemble the spines of a sea urchin (cf. Cidaridae)." []
 is_a: PATO:0002266 ! 3-D shape
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T00:38:13Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T00:38:13Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/8139
 
 [Term]
@@ -324,8 +333,8 @@ id: GALLONT:0000017
 name: infundibuliform
 def: "A shape quality inhering in a bearer by virtue of the bearer being shaped like a funnel, abruptly widening from a narrow cylindrical part, to a wider distal part." []
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T00:47:37Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T00:47:37Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/2011488555
 property_value: seeAlso https://www.inaturalist.org/observations/105016514
 
@@ -334,8 +343,8 @@ id: GALLONT:0000018
 name: lenticular
 def: "A shape quality inhering in a bearer by virtue of the bearer's being shaped like a lentil, with convex upper and lower surfaces." []
 is_a: PATO:0001865 ! spheroid
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T00:52:58Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T00:52:58Z" xsd:string
 property_value: http://purl.org/dc/terms/source lenticular
 property_value: seeAlso https://www.inaturalist.org/observations/30408125
 property_value: seeAlso PATO:0000409
@@ -345,8 +354,8 @@ id: GALLONT:0000019
 name: semiterete
 def: "A shape quality inhering in a bearer by virtue of the bearer's appearing semicircular in cross-section, flat on one side, rounded on the other." []
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T02:03:26Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T02:03:26Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/2011488555
 
 [Term]
@@ -354,8 +363,8 @@ id: GALLONT:0000020
 name: confluent
 def: "A spatial pattern (or gall arrangement) in which adjacent objects (galls) are positioned in such a way that each gall cannot readily be distinguished as an individual." []
 is_a: PATO:0000060 ! spatial pattern
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T19:44:11Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T19:44:11Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/48455940
 
 [Term]
@@ -363,8 +372,8 @@ id: GALLONT:0000021
 name: linear color gradient
 def: "A color pattern inhering in a bearer by virtue of bearer's being marked with one hue or degree of saturation near one pole and a different hue or degree of saturation at the opposite pole and a color gradient between the two poles." []
 is_a: PATO:0001533 ! multi-colored
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-25T20:11:58Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-25T20:11:58Z" xsd:string
 
 [Term]
 id: GALLONT:0000022
@@ -372,8 +381,8 @@ name: corrugated
 def: "A texture quality in which the surface is marked by alternating parallel ridges and grooves." []
 is_a: PATO:0000150 ! texture
 disjoint_from: PATO:0002442 ! unornamented
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-26T21:21:38Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-26T21:21:38Z" xsd:string
 property_value: http://purl.org/dc/terms/source PORO:0000234
 property_value: IAO:0000118 "ribbed" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/46514828
@@ -383,8 +392,8 @@ id: GALLONT:0000023
 name: crackled
 def: "A texture quality in which the surface is marked by a network of cracks, as in craquelure." []
 is_a: PATO:0000700 ! rough
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-26T21:25:58Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-26T21:25:58Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://en.wikipedia.org/w/index.php?title=Craquelure&oldid=1117468584
 property_value: seeAlso https://www.inaturalist.org/observations/61507036
 
@@ -394,8 +403,8 @@ name: dimpled
 def: "A surface feature shape in which a surface has a dimple, a depression or indentation on a surface." []
 is_a: PATO:0001925 ! surface feature shape
 disjoint_from: PATO:0002442 ! unornamented
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-26T21:30:22Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-26T21:30:22Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://dictionary.cambridge.org/us/dictionary/english/dimpled
 property_value: seeAlso https://www.inaturalist.org/observations/47442195
 
@@ -404,8 +413,8 @@ id: GALLONT:0000026
 name: faceted
 def: "A texture quality in which a surface is covered or partially by with facets." []
 is_a: PATO:0000150 ! texture
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-26T21:35:23Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-26T21:35:23Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/33275277
 
 [Term]
@@ -415,8 +424,8 @@ def: "A texture quality in which a surface has the appearance and/or consistency
 is_a: PATO:0000150 ! texture
 disjoint_from: PATO:0000701 ! smooth
 disjoint_from: PATO:0002442 ! unornamented
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-26T21:41:40Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-26T21:41:40Z" xsd:string
 property_value: IAO:0000118 "mossy" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/134718736
 
@@ -425,8 +434,8 @@ id: GALLONT:0000028
 name: papery
 def: "A texture quality in which a surface has the consistency and thickness of a paper bag (thin and dry)." []
 is_a: PATO:0000150 ! texture
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-26T21:48:32Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-26T21:48:32Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/62933356
 
 [Term]
@@ -434,8 +443,8 @@ id: GALLONT:0000029
 name: felt-like
 def: "A quality inhering in a bearer by virtue of the bearer's being covered in short, dense, fine hairs, which give the appearance of felt." []
 is_a: PATO:0000454 ! hairy
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-26T22:01:09Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-26T22:01:09Z" xsd:string
 property_value: IAO:0000118 "felted" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/54851258
 
@@ -445,8 +454,8 @@ name: pruinose
 def: "A coating quality in which a surface is covered in a whitish, powdery film or dust." []
 is_a: PATO:0002012 ! coating
 disjoint_from: PATO:0002442 ! unornamented
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-27T00:31:53Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-27T00:31:53Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://en.wikipedia.org/w/index.php?title=Pruinescence&oldid=1068715610
 property_value: seeAlso https://www.inaturalist.org/observations/64626028
 
@@ -455,8 +464,8 @@ id: GALLONT:0000031
 name: semideciduous
 def: "A shedability quality in which a part can readily be detached from its location but it normally (in nature) stays attached; detachable." []
 is_a: PATO:0001729 ! shedability
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-27T01:16:14Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-27T01:16:14Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/167537899
 
 [Term]
@@ -464,8 +473,8 @@ id: GALLONT:0000032
 name: brittle
 def: "A structural quality inhering in an object by virtue of the object's susceptibility to breaks, without significant deformation (strain) when subjected to stress." []
 is_a: PATO:0001543 ! flexibility
-relationship: dc-contributor https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2023-06-27T01:41:01Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-06-27T01:41:01Z" xsd:string
 
 [Term]
 id: GALLONT:0000033
@@ -477,11 +486,11 @@ intersection_of: GALLONT:0000001 ! plant gall
 intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
 intersection_of: has_part PO:0006504 ! leaf trichome
 intersection_of: part_of PO:0025034 ! leaf
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
 relationship: has_part PO:0006504 ! leaf trichome
 relationship: part_of PO:0025034 ! leaf
-property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T21:56:59Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-01T21:56:59Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: seeAlso https://www.inaturalist.org/observations/79701805
 
@@ -490,9 +499,9 @@ id: GALLONT:0000034
 name: blister gall
 def: "A plant gall that is part of a leaf and which appears as a portion of swollen tissue, similar to a blister." []
 is_a: GALLONT:0000001 ! plant gall
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: part_of PO:0025034 ! leaf
-property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:15:28Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-01T22:15:28Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 
 [Term]
@@ -502,9 +511,9 @@ def: "A plant gall that is located on a bud." []
 is_a: GALLONT:0000001 ! plant gall
 intersection_of: GALLONT:0000001 ! plant gall
 intersection_of: part_of PO:0000055 ! bud
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: part_of PO:0000055 ! bud
-property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:23:57Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-01T22:23:57Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: seeAlso https://www.inaturalist.org/observations/48455720
 
@@ -518,12 +527,12 @@ intersection_of: has_quality GALLONT:0000009 ! monothalamous
 intersection_of: has_quality GALLONT:0000012 ! solid
 intersection_of: has_quality GALLONT:0000031 ! semideciduous
 intersection_of: has_quality PATO:0001865 ! spheroid
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: has_quality GALLONT:0000009 ! monothalamous
 relationship: has_quality GALLONT:0000012 ! solid
 relationship: has_quality GALLONT:0000031 ! semideciduous
 relationship: has_quality PATO:0001865 ! spheroid
-property_value: http://purl.org/dc/elements/1.1/date "2023-08-01T22:28:40Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-01T22:28:40Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: seeAlso https://www.inaturalist.org/observations/58434690
 
@@ -535,10 +544,10 @@ is_a: GALLONT:0000001 ! plant gall
 intersection_of: GALLONT:0000001 ! plant gall
 intersection_of: has_part GALLONT:0000006 ! detached chamber
 intersection_of: has_quality PATO:0002078 ! hollow
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: has_part GALLONT:0000006 ! detached chamber
 relationship: has_quality PATO:0002078 ! hollow
-property_value: http://purl.org/dc/elements/1.1/date "2023-08-02T01:35:34Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-02T01:35:34Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: seeAlso https://www.inaturalist.org/observations/117192961
 
@@ -548,9 +557,9 @@ name: rosette gall
 def: "A plant gall that is located on a bud and which consists of layers of scale leaves or similar phyllomes that surround the inducer's chamber." []
 is_a: GALLONT:0000035 ! bud gall
 is_a: UBERON:0001062 ! anatomical entity
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: has_part PO:0006001 ! phyllome
-property_value: http://purl.org/dc/elements/1.1/date "2023-08-02T01:43:13Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-02T01:43:13Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 property_value: IAO:0000118 "bunch gall" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/33495996
@@ -560,9 +569,9 @@ id: GALLONT:0000040
 name: nutritive tissue
 comment: A portion of plant tissue that is fed upon by a gall inhabitant.
 is_a: PO:0009007 ! portion of plant tissue
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
 relationship: part_of GALLONT:0000005 ! larval chamber
-property_value: http://purl.org/dc/elements/1.1/date "2024-01-19T02:22:00Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-01-19T02:22:00Z" xsd:string
 property_value: seeAlso https://doi.org/10.3390%2Finsects12100850
 
 [Term]
@@ -570,8 +579,8 @@ id: GALLONT:0000041
 name: larval cavity
 def: "A cavity that is occupied by one or more gall inhabitants." []
 is_a: GALLONT:0000003 ! cavity
-relationship: dc-creator http://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2024-01-19T02:27:40Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-01-19T02:27:40Z" xsd:string
 
 [Term]
 id: GO:0003674
@@ -4433,8 +4442,8 @@ is_a: BFO:0000004 ! independent continuant
 id: GALLONT:0000000
 name: has associate
 comment: Relationship that specifies which organism is associated with a class.
-property_value: dc-creator https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/elements/1.1/date "2024-01-24T01:49:45Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-01-24T01:49:45Z" xsd:string
 range: OBI:0100026 ! organism
 
 [Typedef]

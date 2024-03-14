@@ -1,0 +1,1105 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/gallont/gallont-base.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/type",
+        "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "None"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "https://creativecommons.org/publicdomain/zero/1.0/"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Plant Gall Ontology"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2024-03-14"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-03-14/gallont-base.json"
+    },
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000000",
+      "lbl" : "has associate",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "Relationship that specifies which organism is associated with a class." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-01-24T01:49:45Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000001",
+      "lbl" : "plant gall",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-19T19:39:13Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/62135900"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000002",
+      "lbl" : "emergence hole",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An anatomical space that is an opening through which a gall-inhabiting organism has emerged."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-19T19:43:46Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/33275700"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000003",
+      "lbl" : "cavity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant anatomical space that is located inside a gall."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-19T19:44:42Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/117192961"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000004",
+      "lbl" : "kapéllo",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A gall structure that is attractive to another organism, usually ants, and which facilitates dispersal of the gall"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-22T01:51:19Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/61878883"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000005",
+      "lbl" : "larval chamber",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-22T01:54:05Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/139401882"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000006",
+      "lbl" : "detached chamber",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A larval chamber that is detached from the plant but enclosed in a cavity."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-22T02:01:48Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/117192961"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000007",
+      "lbl" : "internal quality",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A quality that inheres in the portion of a gall that is internal."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-23T21:16:13Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000008",
+      "lbl" : "filamentous",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A gall trait in which a larval chamber is suspended medially in the parenchyma by radiating plant fibers inside a largely hollow chamber."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-24T01:32:39Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/168120575"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000009",
+      "lbl" : "monothalamous",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An internal gall trait in which a gall has a single larval chamber for the gall-inducing insect."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "single chambered"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "unilocular"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-24T01:37:35Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000010",
+      "lbl" : "pithy",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An internal gall trait in which the tissue is reminiscent of pith, the relatively soft tissue at the center of a shoot axis."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-24T01:41:48Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/138512674"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000011",
+      "lbl" : "polythalamous",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An internal gall trait in which more than one larval chamber is present for the inducer species."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "multi-celled"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "multichambered"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "multilocular"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-24T01:44:34Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/33275700"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000012",
+      "lbl" : "solid",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An internal gall trait in which the gall lacks macroscopic anatomical space(s) that is/are not the larval chamber."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-24T01:58:04Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/138512674"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000013",
+      "lbl" : "nectarous",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A gall quality in which a gall has nectaries present."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-24T02:13:52Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/47182384"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000014",
+      "lbl" : "caneliform",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shape quality inhering in a bearer by virtue of the bearer's having a shape resembling a canelé, a French pastry."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T00:21:14Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://en.wikipedia.org/w/index.php?title=Canel%C3%A9&oldid=1160295465"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000015",
+      "lbl" : "cupuliform",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shape inhering in a bearer by virtue of the bearer resembling a cup, with a depression and rim-like edge apically."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "cup-like"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T00:30:40Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/2011488555"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000016",
+      "lbl" : "echinoform",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shape trait in which a gall has radiating, spine-like processes that resemble the spines of a sea urchin (cf. Cidaridae)."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T00:38:13Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/8139"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000017",
+      "lbl" : "infundibuliform",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shape quality inhering in a bearer by virtue of the bearer being shaped like a funnel, abruptly widening from a narrow cylindrical part, to a wider distal part."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T00:47:37Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/2011488555"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/105016514"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000018",
+      "lbl" : "lenticular",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shape quality inhering in a bearer by virtue of the bearer's being shaped like a lentil, with convex upper and lower surfaces."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T00:52:58Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://en.wikipedia.org/w/index.php?title=Glossary_of_botanical_terms&oldid=1161474424#lenticular"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "http://purl.obolibrary.org/obo/PATO_0000409"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/30408125"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000019",
+      "lbl" : "semiterete",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shape quality inhering in a bearer by virtue of the bearer's appearing semicircular in cross-section, flat on one side, rounded on the other."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T02:03:26Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/2011488555"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000020",
+      "lbl" : "confluent",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A spatial pattern (or gall arrangement) in which adjacent objects (galls) are positioned in such a way that each gall cannot readily be distinguished as an individual."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T19:44:11Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/48455940"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000021",
+      "lbl" : "linear color gradient",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A color pattern inhering in a bearer by virtue of bearer's being marked with one hue or degree of saturation near one pole and a different hue or degree of saturation at the opposite pole and a color gradient between the two poles."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-25T20:11:58Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000022",
+      "lbl" : "corrugated",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A texture quality in which the surface is marked by alternating parallel ridges and grooves."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "ribbed"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-26T21:21:38Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "http://purl.obolibrary.org/obo/PORO_0000234"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/46514828"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000023",
+      "lbl" : "crackled",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A texture quality in which the surface is marked by a network of cracks, as in craquelure."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-26T21:25:58Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://en.wikipedia.org/w/index.php?title=Craquelure&oldid=1117468584"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/61507036"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000024",
+      "lbl" : "dimpled",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A surface feature shape in which a surface has a dimple, a depression or indentation on a surface."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-26T21:30:22Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://dictionary.cambridge.org/us/dictionary/english/dimpled"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/47442195"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000026",
+      "lbl" : "faceted",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A texture quality in which a surface is covered or partially by with facets."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-26T21:35:23Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/33275277"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000027",
+      "lbl" : "moss-like",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A texture quality in which a surface has the appearance and/or consistency of moss, especially those species in Polytrichaceae (Bryophyta)."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "mossy"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-26T21:41:40Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/134718736"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000028",
+      "lbl" : "papery",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A texture quality in which a surface has the consistency and thickness of a paper bag (thin and dry)."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-26T21:48:32Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/62933356"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000029",
+      "lbl" : "felt-like",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A quality inhering in a bearer by virtue of the bearer's being covered in short, dense, fine hairs, which give the appearance of felt."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "felted"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-26T22:01:09Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/54851258"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000030",
+      "lbl" : "pruinose",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A coating quality in which a surface is covered in a whitish, powdery film or dust."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-27T00:31:53Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://en.wikipedia.org/w/index.php?title=Pruinescence&oldid=1068715610"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/64626028"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000031",
+      "lbl" : "semideciduous",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shedability quality in which a part can readily be detached from its location but it normally (in nature) stays attached; detachable."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-27T01:16:14Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/167537899"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000032",
+      "lbl" : "brittle",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A structural quality inhering in an object by virtue of the object's susceptibility to breaks, without significant deformation (strain) when subjected to stress."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-06-27T01:41:01Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
+      "lbl" : "erineum",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-08-01T21:56:59Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/41001073"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/79701805"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000034",
+      "lbl" : "blister gall",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant gall that is part of a leaf and which appears as a portion of swollen tissue, similar to a blister."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-08-01T22:15:28Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/41001073"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
+      "lbl" : "bud gall",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant gall that is located on a bud."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-08-01T22:23:57Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/41001073"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/48455720"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
+      "lbl" : "bullet gall",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-08-01T22:28:40Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/41001073"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/58434690"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
+      "lbl" : "roly-poly gall",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-08-02T01:35:34Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/41001073"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/117192961"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000038",
+      "lbl" : "rosette gall",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant gall that is located on a bud and which consists of layers of scale leaves or similar phyllomes that surround the inducer's chamber."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "bunch gall"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-08-02T01:43:13Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://lccn.loc.gov/41001073"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/33495996"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000040",
+      "lbl" : "nutritive tissue",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "A portion of plant tissue that is fed upon by a gall inhabitant." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-01-19T02:22:00Z"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://doi.org/10.3390%2Finsects12100850"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000041",
+      "lbl" : "larval cavity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A cavity that is occupied by one or more gall inhabitants."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-01-19T02:27:40Z"
+        } ]
+      }
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000001",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025496"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000002",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025117"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025117"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025496"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000004",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025498"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000005",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000005",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000041"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000013",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002266"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000015",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002266"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002266"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000052"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000018",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001865"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000052"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000060"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001533"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000022",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000700"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001925"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000027",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000028",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000029",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000454"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001729"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001543"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0001062"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0006504"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
+      "pred" : "http://purl.obolibrary.org/obo/GALLONT_0000000",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_6946"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000034",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000034",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000009"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001865"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000086",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002078"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000035"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0001062"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000038",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0006001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000040",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0009007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000040",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000041",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000003"
+    } ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/PO_0025034"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000051",
+        "fillerId" : "http://purl.obolibrary.org/obo/PO_0006504"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/GALLONT_0000000",
+        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_6946"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "fillerId" : "http://purl.obolibrary.org/obo/PO_0000055"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000086",
+        "fillerId" : "http://purl.obolibrary.org/obo/GALLONT_0000009"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000086",
+        "fillerId" : "http://purl.obolibrary.org/obo/GALLONT_0000012"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000086",
+        "fillerId" : "http://purl.obolibrary.org/obo/GALLONT_0000031"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000086",
+        "fillerId" : "http://purl.obolibrary.org/obo/PATO_0001865"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000051",
+        "fillerId" : "http://purl.obolibrary.org/obo/GALLONT_0000006"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000086",
+        "fillerId" : "http://purl.obolibrary.org/obo/PATO_0002078"
+      } ]
+    } ]
+  } ]
+}
