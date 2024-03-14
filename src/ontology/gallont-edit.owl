@@ -202,6 +202,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
 Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:date))
+Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -258,7 +259,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000048> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/FLOPO_0900042> (succulent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FLOPO_0900042> "A gall trait in which the gall parenchyma is juicy, as in the tissue of some fruits (for example grapes, starfruit)."@en)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/FLOPO_0900042> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/FLOPO_0900042> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/FLOPO_0900042> <https://lccn.loc.gov/2011488555>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FLOPO_0900042> "succulent"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FLOPO_0900042> <https://www.inaturalist.org/observations/81385187>)
@@ -268,7 +269,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FLOPO_0900042> <http://purl.obolibrar
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000001> "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism."@en)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000001> "2023-06-19T19:39:13Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000001> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000001> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000001> "plant gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000001> <https://www.inaturalist.org/observations/62135900>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> <http://purl.obolibrary.org/obo/PO_0025496>)
@@ -276,8 +277,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000001> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000002> (emergence hole)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000002> "An anatomical space that is an opening through which a gall-inhabiting organism has emerged."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000002> "2023-06-19T19:43:46Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000002> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000002> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000002> "2023-06-19T19:43:46Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000002> "emergence hole"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000002> <https://www.inaturalist.org/observations/33275700>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000002> <http://purl.obolibrary.org/obo/PO_0025117>)
@@ -285,8 +286,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000002> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000003> (cavity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000003> "A plant anatomical space that is located inside a gall."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000003> "2023-06-19T19:44:42Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000003> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000003> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000003> "2023-06-19T19:44:42Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000003> "cavity"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000003> <https://www.inaturalist.org/observations/117192961>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000003> <http://purl.obolibrary.org/obo/PO_0025117>)
@@ -294,8 +295,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000003> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000004> (kapéllo)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000004> "A gall structure that is attractive to another organism, usually ants, and which facilitates dispersal of the gall"@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000004> "2023-06-22T01:51:19Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000004> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000004> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000004> "2023-06-22T01:51:19Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000004> "kapéllo"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000004> <https://www.inaturalist.org/observations/61878883>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000004> <http://purl.obolibrary.org/obo/PO_0025496>)
@@ -304,8 +305,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000004> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000005> (larval chamber)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000005> "A gall structure wherein the gall inducer and/or its associates resides and which includes a portion of nutritive tissue."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000005> "2023-06-22T01:54:05Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000005> "2023-06-22T01:54:05Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000005> "larval chamber"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000005> <https://www.inaturalist.org/observations/139401882>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> <http://purl.obolibrary.org/obo/PO_0025498>)
@@ -315,7 +316,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000005> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000006> (detached chamber)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000006> "A larval chamber that is detached from the plant but enclosed in a cavity."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000006> "2023-06-22T02:01:48Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000006> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000006> "2023-06-22T02:01:48Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000006> "detached chamber"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000006> <https://www.inaturalist.org/observations/117192961>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000006> <http://purl.obolibrary.org/obo/GALLONT_0000005>)
@@ -323,51 +325,57 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000006> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000007> (internal quality)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000007> "A quality that inheres in the portion of a gall that is internal."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000007> "2023-06-23T21:16:13Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000007> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000007> "2023-06-23T21:16:13Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000007> "internal quality"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000007> <http://purl.obolibrary.org/obo/PATO_0000051>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000008> (filamentous)
 
-AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000008> "A gall trait in which a larval chamber is suspended medially in the parenchyma by radiating plant fibers inside a largely hollow chamber."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000008> "2023-06-24T01:32:39Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000008> "A gall trait in which a larval chamber is suspended medially in the parenchyma by radiating plant fibers inside a largely hollow chamber."@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000008> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000008> "2023-06-24T01:32:39Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000008> "filamentous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000008> <https://www.inaturalist.org/observations/168120575>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000008> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000009> (monothalamous)
 
-AnnotationAssertion(Annotation(rdfs:comment <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000009> "An internal gall trait in which a gall has a single larval chamber for the gall-inducing insect."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000009> "An internal gall trait in which a gall has a single larval chamber for the gall-inducing insect."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000009> "single chambered"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000009> "unilocular"@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000009> "2023-06-24T01:37:35Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000009> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000009> "2023-06-24T01:37:35Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000009> "monothalamous"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000009> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
 DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000009> <http://purl.obolibrary.org/obo/GALLONT_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000010> (pithy)
 
-AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000010> "An internal gall trait in which the tissue is reminiscent of pith, the relatively soft tissue at the center of a shoot axis."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000010> "2023-06-24T01:41:48Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000010> "An internal gall trait in which the tissue is reminiscent of pith, the relatively soft tissue at the center of a shoot axis."@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000010> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000010> "2023-06-24T01:41:48Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000010> "pithy"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000010> <https://www.inaturalist.org/observations/138512674>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000010> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000011> (polythalamous)
 
-AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000011> "An internal gall trait in which more than one larval chamber is present for the inducer species."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000011> "An internal gall trait in which more than one larval chamber is present for the inducer species."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000011> "multi-celled"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000011> "multichambered"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000011> "multilocular"@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000011> "2023-06-24T01:44:34Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000011> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000011> "2023-06-24T01:44:34Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000011> "polythalamous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000011> <https://www.inaturalist.org/observations/33275700>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000011> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000012> (solid)
 
-AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000012> "An internal gall trait in which the gall lacks macroscopic anatomical space(s) that is/are not the larval chamber."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000012> "2023-06-24T01:58:04Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000012> "An internal gall trait in which the gall lacks macroscopic anatomical space(s) that is/are not the larval chamber."@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000012> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000012> "2023-06-24T01:58:04Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000012> "solid"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000012> <https://www.inaturalist.org/observations/138512674>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000012> <http://purl.obolibrary.org/obo/GALLONT_0000007>)
@@ -375,8 +383,9 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000012> <http://purl.ob
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000013> (nectarous)
 
-AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000013> "A gall quality in which a gall has nectaries present."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000013> "2023-06-24T02:13:52Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000013> "A gall quality in which a gall has nectaries present."@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000013> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000013> "2023-06-24T02:13:52Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000013> "nectarous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000013> <https://www.inaturalist.org/observations/47182384>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000013> <http://purl.obolibrary.org/obo/PATO_0000051>)
@@ -441,8 +450,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000019> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000020> (confluent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000020> "A spatial pattern (or gall arrangement) in which adjacent objects (galls) are positioned in such a way that each gall cannot readily be distinguished as an individual."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000020> "2023-06-25T19:44:11Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000020> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000020> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000020> "2023-06-25T19:44:11Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000020> "confluent"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000020> <https://www.inaturalist.org/observations/48455940>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000020> <http://purl.obolibrary.org/obo/PATO_0000060>)
@@ -450,8 +459,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000020> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000021> (linear color gradient)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000021> "A color pattern inhering in a bearer by virtue of bearer's being marked with one hue or degree of saturation near one pole and a different hue or degree of saturation at the opposite pole and a color gradient between the two poles."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000021> "2023-06-25T20:11:58Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000021> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000021> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000021> "2023-06-25T20:11:58Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000021> "linear color gradient"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000021> <http://purl.obolibrary.org/obo/PATO_0001533>)
 
@@ -459,8 +468,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000021> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000022> "A texture quality in which the surface is marked by alternating parallel ridges and grooves."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000022> "ribbed"@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000022> "2023-06-26T21:21:38Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000022> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000022> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000022> "2023-06-26T21:21:38Z")
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000022> <http://purl.obolibrary.org/obo/PORO_0000234>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000022> "corrugated"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000022> <https://www.inaturalist.org/observations/46514828>)
@@ -470,8 +479,8 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000022> <http://purl.ob
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000023> (crackled)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000023> "A texture quality in which the surface is marked by a network of cracks, as in craquelure."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000023> "2023-06-26T21:25:58Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000023> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000023> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000023> "2023-06-26T21:25:58Z")
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000023> <https://en.wikipedia.org/w/index.php?title=Craquelure&oldid=1117468584>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000023> "crackled"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000023> <https://www.inaturalist.org/observations/61507036>)
@@ -491,8 +500,8 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000024> <http://purl.ob
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000026> (faceted)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000026> "A texture quality in which a surface is covered or partially by with facets."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000026> "2023-06-26T21:35:23Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000026> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000026> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000026> "2023-06-26T21:35:23Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000026> "faceted"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000026> <https://www.inaturalist.org/observations/33275277>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000026> <http://purl.obolibrary.org/obo/PATO_0000150>)
@@ -501,8 +510,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000026> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000027> "A texture quality in which a surface has the appearance and/or consistency of moss, especially those species in Polytrichaceae (Bryophyta)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000027> "mossy"@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000027> "2023-06-26T21:41:40Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000027> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000027> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000027> "2023-06-26T21:41:40Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000027> "moss-like"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000027> <https://www.inaturalist.org/observations/134718736>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000027> <http://purl.obolibrary.org/obo/PATO_0000150>)
@@ -512,8 +521,8 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000027> <http://purl.ob
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000028> (papery)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000028> "A texture quality in which a surface has the consistency and thickness of a paper bag (thin and dry)."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000028> "2023-06-26T21:48:32Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000028> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000028> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000028> "2023-06-26T21:48:32Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000028> "papery"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000028> <https://www.inaturalist.org/observations/62933356>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000028> <http://purl.obolibrary.org/obo/PATO_0000150>)
@@ -522,8 +531,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000028> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000029> "A quality inhering in a bearer by virtue of the bearer's being covered in short, dense, fine hairs, which give the appearance of felt."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000029> "felted"@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000029> "2023-06-26T22:01:09Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000029> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000029> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000029> "2023-06-26T22:01:09Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000029> "felt-like"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000029> <https://www.inaturalist.org/observations/54851258>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000029> <http://purl.obolibrary.org/obo/PATO_0000454>)
@@ -542,8 +551,8 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000030> <http://purl.ob
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000031> (semideciduous)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000031> "A shedability quality in which a part can readily be detached from its location but it normally (in nature) stays attached; detachable."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000031> "2023-06-27T01:16:14Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000031> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000031> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000031> "2023-06-27T01:16:14Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000031> "semideciduous"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000031> <https://www.inaturalist.org/observations/167537899>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000031> <http://purl.obolibrary.org/obo/PATO_0001729>)
@@ -551,16 +560,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000031> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000032> (brittle)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000032> "A structural quality inhering in an object by virtue of the object's susceptibility to breaks, without significant deformation (strain) when subjected to stress."@en)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000032> "2023-06-27T01:41:01Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/GALLONT_0000032> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000032> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000032> "2023-06-27T01:41:01Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000032> "brittle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000032> <http://purl.obolibrary.org/obo/PATO_0001543>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000033> (erineum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000033> "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness."@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000033> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000033> "2023-08-01T21:56:59Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000033> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000033> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000033> "erineum"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000033> <https://www.inaturalist.org/observations/79701805>)
@@ -569,8 +578,8 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000033> ObjectInterse
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000034> (blister gall)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000034> "A plant gall that is part of a leaf and which appears as a portion of swollen tissue, similar to a blister."@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000034> <http://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000034> "2023-08-01T22:15:28Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000034> <http://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000034> "2023-08-01T22:15:28Z")
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000034> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000034> "blister gall"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000034> <http://purl.obolibrary.org/obo/GALLONT_0000001>)
@@ -579,8 +588,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000034> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000035> (bud gall)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000035> "A plant gall that is located on a bud."@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000035> <http://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000035> "2023-08-01T22:23:57Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000035> <http://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000035> "2023-08-01T22:23:57Z")
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000035> "bud gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://www.inaturalist.org/observations/48455720>)
@@ -589,8 +598,8 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000035> ObjectInterse
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000036> (bullet gall)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000036> "A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape."@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000036> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000036> "2023-08-01T22:28:40Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000036> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000036> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000036> "bullet gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000036> <https://www.inaturalist.org/observations/58434690>)
@@ -599,8 +608,8 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000036> ObjectInterse
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000037> (roly-poly gall)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000037> "A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall."@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000037> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000037> "2023-08-02T01:35:34Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000037> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000037> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000037> "roly-poly gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000037> <https://www.inaturalist.org/observations/117192961>)
@@ -610,8 +619,8 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000037> ObjectInterse
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000038> "A plant gall that is located on a bud and which consists of layers of scale leaves or similar phyllomes that surround the inducer's chamber."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/GALLONT_0000038> "bunch gall"@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000038> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000038> "2023-08-02T01:43:13Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000038> <http://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000038> <https://lccn.loc.gov/41001073>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000038> "rosette gall"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000038> <https://www.inaturalist.org/observations/33495996>)
@@ -632,8 +641,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000040> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000041> (larval cavity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000041> "A cavity that is occupied by one or more gall inhabitants."@en)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000041> <http://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000041> "2024-01-19T02:27:40Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000041> <http://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000041> "2024-01-19T02:27:40Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000041> "larval cavity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000041> <http://purl.obolibrary.org/obo/GALLONT_0000003>)
 
@@ -823,7 +832,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001543> "fl
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001544> "A physical quality inhering in a bearer by virtue of the bearer's ability of being turned, bowed, or twisted without breaking."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001544> "flexible"@en)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001609> (scattered)
+# Class: <http://purl.obolibrary.org/obo/PATO_0001609> (sparse)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001609> "scattered"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001609> <https://www.inaturalist.org/observations/60738203>)
@@ -837,7 +846,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001629> <
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001730> "detachable"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001730> <https://www.inaturalist.org/observations/34366055>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001732> (non-deciduous)
+# Class: <http://purl.obolibrary.org/obo/PATO_0001732> (non-deciduous (any body part))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PATO_0001732> "integral"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001732> "non-deciduous"@en)
@@ -982,7 +991,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002442> "un
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002442> <https://www.inaturalist.org/observations/32783899>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002442> <http://purl.obolibrary.org/obo/PATO_0001925>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0005002> (pear-shaped)
+# Class: <http://purl.obolibrary.org/obo/PATO_0005002> (pear shaped)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0005002> "pear-shaped"@en)
 
@@ -1009,7 +1018,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0000055> <ht
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0005597> "A lateral meristem (PO:0020145) that has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0005597> "cambium"@en)
 
-# Class: <http://purl.obolibrary.org/obo/PO_0006018> (leaf adaxial epidermis)
+# Class: <http://purl.obolibrary.org/obo/PO_0006018> (adaxial leaf epidermis)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0006018> "A portion of leaf epidermis (PO:0006016) that covers the adaxial/upper surface of a leaf."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0006018> "upper leaf"@en)
@@ -1017,7 +1026,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0006018> "adax
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0006018> <https://www.inaturalist.org/observations/53324962>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
-# Class: <http://purl.obolibrary.org/obo/PO_0006019> (leaf abaxial epidermis)
+# Class: <http://purl.obolibrary.org/obo/PO_0006019> (abaxial leaf epidermis)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0006019> "A portion of leaf epidermis (PO:0006016) that covers the abaxial/lower surface of a leaf."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0006019> "leaf underside"@en)
@@ -1074,7 +1083,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0020049> ObjectSomeValuesFrom(<htt
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020128> "A phyllome margin (PO:0025018) that is part of a leaf (PO:0025034)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020128> "leaf margin"@en)
 
-# Class: <http://purl.obolibrary.org/obo/PO_0020138> (leaf lamina vein)
+# Class: <http://purl.obolibrary.org/obo/PO_0020138> (leaf vein)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020138> "A phyllome lamina vein (PO:0025348) that is part of a leaf lamina vascular system (PO:0000048)."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0020138> "leaf lamina vein"@en)
