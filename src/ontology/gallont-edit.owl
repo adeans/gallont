@@ -61,7 +61,20 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1389465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1540852>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33406>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3503>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3511>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3513>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_50557>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_6946>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7147>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_73401>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7399>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
@@ -655,10 +668,83 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000041
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000041> "larval cavity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000041> <http://purl.obolibrary.org/obo/GALLONT_0000003>)
 
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000042> (Quercus sect. Quercus)
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000042> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000042> "2024-03-25T01:26:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000042> "Quercus sect. Quercus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000042> <http://purl.obolibrary.org/obo/NCBITaxon_3511>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000043> (Disholcaspis quercusglobulus (sexgen))
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000043> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000043> "2024-03-25T01:28:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000043> "Disholcaspis quercusglobulus (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000043> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000043> <http://purl.obolibrary.org/obo/NCBITaxon_1540852>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000044> (Disholcaspis quercusglobulus (agamic))
+
+AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000044> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000044> "2024-03-25T01:28:48Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000044> "Disholcaspis quercusglobulus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000044> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000044> <http://purl.obolibrary.org/obo/NCBITaxon_1540852>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1389465> (Disholcaspis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1389465> "Disholcaspis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1389465> <http://purl.obolibrary.org/obo/NCBITaxon_73401>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1540852> (Disholcaspis quercusglobulus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1540852> "Disholcaspis quercusglobulus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1540852> <http://purl.obolibrary.org/obo/NCBITaxon_1389465>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33406> (Cecidomyiidae)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33406> "Cecidomyiidae")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33406> <http://purl.obolibrary.org/obo/NCBITaxon_7147>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3503> (Fagaceae)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3503> "Fagaceae")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3503> <http://purl.obolibrary.org/obo/NCBITaxon_33090>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3511> (Quercus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3511> "Quercus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3511> <http://purl.obolibrary.org/obo/NCBITaxon_3503>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3513> (Quercus alba)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3513> "Quercus alba")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3513> <http://purl.obolibrary.org/obo/GALLONT_0000042>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_50557> (Insecta)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_50557> "Insecta")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_50557> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_6946> (Acariformes)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_6946> "Acariformes"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_6946> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7147> (Diptera)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7147> "Diptera")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7147> <http://purl.obolibrary.org/obo/NCBITaxon_50557>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_73401> (Cynipidae)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_73401> "Cynipidae")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_73401> <http://purl.obolibrary.org/obo/NCBITaxon_7399>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7399> (Hymenoptera)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7399> "Hymenoptera")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7399> <http://purl.obolibrary.org/obo/NCBITaxon_50557>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C48440> (solitary)
 
