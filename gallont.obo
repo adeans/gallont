@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-03-14
+data-version: releases/2024-03-25
 subsetdef: 3_STAR ""
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
@@ -49,6 +49,7 @@ synonymtypedef: common_name ""
 synonymtypedef: equivalent_name ""
 synonymtypedef: genbank_common_name ""
 synonymtypedef: German ""
+synonymtypedef: in_part ""
 synonymtypedef: Japanese ""
 synonymtypedef: OMO:0003004 ""
 synonymtypedef: Spanish ""
@@ -57,7 +58,7 @@ ontology: gallont
 property_value: dcterms-license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-14" xsd:string
+property_value: owl:versionInfo "2024-03-25" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -177,12 +178,10 @@ property_value: seeAlso https://www.inaturalist.org/observations/81385187
 
 [Term]
 id: GALLONT:0000001
-name: plant gall
-def: "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism." []
-is_a: PO:0025496 ! multi-tissue plant structure
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/terms/date "2023-06-19T19:39:13Z" xsd:string
-property_value: seeAlso https://www.inaturalist.org/observations/62135900
+name: DEPRECATED plant gall
+comment: Updated the class definition to reflect that this structure is a response to biotic stress
+property_value: seeAlso GALLONT:0000025
+is_obsolete: true
 
 [Term]
 id: GALLONT:0000002
@@ -207,7 +206,7 @@ id: GALLONT:0000004
 name: kapéllo
 def: "A gall structure that is attractive to another organism, usually ants, and which facilitates dispersal of the gall" []
 is_a: PO:0025496 ! multi-tissue plant structure
-relationship: part_of GALLONT:0000001 ! plant gall
+relationship: part_of GALLONT:0000025 ! plant gall
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2023-06-22T01:51:19Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/61878883
@@ -409,6 +408,15 @@ property_value: http://purl.org/dc/terms/source https://dictionary.cambridge.org
 property_value: seeAlso https://www.inaturalist.org/observations/47442195
 
 [Term]
+id: GALLONT:0000025
+name: plant gall
+def: "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000004)." []
+is_a: PO:0025496 ! multi-tissue plant structure
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-24T21:38:29Z" xsd:string
+property_value: seeAlso https://www.inaturalist.org/observations/62135900
+
+[Term]
 id: GALLONT:0000026
 name: faceted
 def: "A texture quality in which a surface is covered or partially by with facets." []
@@ -480,9 +488,9 @@ property_value: http://purl.org/dc/terms/date "2023-06-27T01:41:01Z" xsd:string
 id: GALLONT:0000033
 name: erineum
 def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
-is_a: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
 is_a: UBERON:0001062 ! anatomical entity
-intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
 intersection_of: has_part PO:0006504 ! leaf trichome
 intersection_of: part_of PO:0025034 ! leaf
@@ -498,7 +506,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/79701805
 id: GALLONT:0000034
 name: blister gall
 def: "A plant gall that is part of a leaf and which appears as a portion of swollen tissue, similar to a blister." []
-is_a: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
 relationship: part_of PO:0025034 ! leaf
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2023-08-01T22:15:28Z" xsd:string
@@ -508,8 +516,8 @@ property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 id: GALLONT:0000035
 name: bud gall
 def: "A plant gall that is located on a bud." []
-is_a: GALLONT:0000001 ! plant gall
-intersection_of: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: part_of PO:0000055 ! bud
 relationship: part_of PO:0000055 ! bud
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
@@ -521,8 +529,8 @@ property_value: seeAlso https://www.inaturalist.org/observations/48455720
 id: GALLONT:0000036
 name: bullet gall
 def: "A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape." []
-is_a: GALLONT:0000001 ! plant gall
-intersection_of: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: has_quality GALLONT:0000009 ! monothalamous
 intersection_of: has_quality GALLONT:0000012 ! solid
 intersection_of: has_quality GALLONT:0000031 ! semideciduous
@@ -540,8 +548,8 @@ property_value: seeAlso https://www.inaturalist.org/observations/58434690
 id: GALLONT:0000037
 name: roly-poly gall
 def: "A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall." []
-is_a: GALLONT:0000001 ! plant gall
-intersection_of: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: has_part GALLONT:0000006 ! detached chamber
 intersection_of: has_quality PATO:0002078 ! hollow
 relationship: has_part GALLONT:0000006 ! detached chamber
@@ -565,6 +573,14 @@ property_value: IAO:0000118 "bunch gall" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/33495996
 
 [Term]
+id: GALLONT:0000039
+name: Acraspis erinacei (agamic)
+is_a: CARO:0000030 ! asexual organism
+is_a: NCBITaxon:2714064 ! Acraspis erinacei
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:27:00Z" xsd:dateTime
+
+[Term]
 id: GALLONT:0000040
 name: nutritive tissue
 comment: A portion of plant tissue that is fed upon by a gall inhabitant.
@@ -581,6 +597,51 @@ def: "A cavity that is occupied by one or more gall inhabitants." []
 is_a: GALLONT:0000003 ! cavity
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2024-01-19T02:27:40Z" xsd:string
+
+[Term]
+id: GALLONT:0000042
+name: Quercus sect. Quercus
+is_a: NCBITaxon:3511 ! Quercus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T01:26:41Z" xsd:string
+
+[Term]
+id: GALLONT:0000043
+name: Disholcaspis quercusglobulus (sexgen)
+is_a: CARO:0000048 ! gonochoristic organism
+is_a: NCBITaxon:1540852 ! Disholcaspis quercusglobulus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T01:28:09Z" xsd:string
+
+[Term]
+id: GALLONT:0000044
+name: Disholcaspis quercusglobulus (agamic)
+is_a: CARO:0000030 ! asexual organism
+is_a: NCBITaxon:1540852 ! Disholcaspis quercusglobulus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T01:28:48Z" xsd:string
+
+[Term]
+id: GALLONT:0000045
+name: Acraspis erinacei (sexgen)
+is_a: CARO:0000048 ! gonochoristic organism
+is_a: NCBITaxon:2714064 ! Acraspis erinacei
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:27:17Z" xsd:dateTime
+
+[Term]
+id: GALLONT:0000046
+name: Aceria triplacis
+is_a: NCBITaxon:109362 ! Aceria
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:39:17Z" xsd:dateTime
+
+[Term]
+id: GALLONT:0000047
+name: Acraspis gemula
+is_a: NCBITaxon:131567 ! cellular organisms
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:40:19Z" xsd:dateTime
 
 [Term]
 id: GO:0003674
@@ -715,12 +776,66 @@ xref: GC_ID:1
 is_a: OBI:0100026 ! organism
 
 [Term]
+id: NCBITaxon:109362
+name: Aceria
+is_a: NCBITaxon:70320 ! Eriophyidae
+
+[Term]
+id: NCBITaxon:1206794
+name: Ecdysozoa
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:33317 ! Protostomia
+property_value: has_rank NCBITaxon:clade
+
+[Term]
 id: NCBITaxon:131567
 name: cellular organisms
 namespace: ncbi_taxonomy
 synonym: "biota" RELATED synonym []
 xref: GC_ID:1
 is_a: NCBITaxon:1 ! root
+
+[Term]
+id: NCBITaxon:1389465
+name: Disholcaspis
+is_a: NCBITaxon:75144 ! Cynipini
+
+[Term]
+id: NCBITaxon:1540852
+name: Disholcaspis quercusglobulus
+is_a: NCBITaxon:1389465 ! Disholcaspis
+
+[Term]
+id: NCBITaxon:1934078
+name: Acraspis
+is_a: NCBITaxon:75144 ! Cynipini
+
+[Term]
+id: NCBITaxon:197562
+name: Pancrustacea
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+xref: PMID:10874751
+xref: PMID:11557979
+is_a: NCBITaxon:197563 ! Mandibulata
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:197563
+name: Mandibulata
+namespace: ncbi_taxonomy
+synonym: "mandibulates" EXACT common_name []
+xref: GC_ID:1
+xref: PMID:11557979
+xref: PMID:9727836
+is_a: NCBITaxon:6656 ! Arthropoda
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:2714064
+name: Acraspis erinacei
+is_a: NCBITaxon:1934078 ! Acraspis
 
 [Term]
 id: NCBITaxon:2759
@@ -742,18 +857,155 @@ property_value: has_rank NCBITaxon:superkingdom
 [Term]
 id: NCBITaxon:33090
 name: Viridiplantae
+namespace: ncbi_taxonomy
 synonym: "Chlorobionta" RELATED synonym []
 synonym: "Chlorophyta/Embryophyta group" EXACT equivalent_name []
 synonym: "chlorophyte/embryophyte group" EXACT equivalent_name []
 synonym: "Chloroplastida" RELATED synonym []
 synonym: "green plants" EXACT common_name []
 synonym: "green plants" RELATED blast_name []
+xref: GC_ID:1
+xref: PMID:16248873
+xref: PMID:30257078
 is_a: NCBITaxon:2759 ! Eukaryota
+property_value: has_rank NCBITaxon:kingdom
+
+[Term]
+id: NCBITaxon:33154
+name: Opisthokonta
+namespace: ncbi_taxonomy
+synonym: "Fungi/Metazoa group" RELATED synonym []
+synonym: "opisthokonts" RELATED synonym []
+xref: GC_ID:1
+is_a: NCBITaxon:2759 ! Eukaryota
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:33208
+name: Metazoa
+namespace: ncbi_taxonomy
+synonym: "Animalia" RELATED synonym []
+synonym: "animals" RELATED blast_name []
+synonym: "metazoans" EXACT genbank_common_name []
+synonym: "multicellular animals" EXACT common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:33154 ! Opisthokonta
+property_value: has_rank NCBITaxon:kingdom
+
+[Term]
+id: NCBITaxon:33213
+name: Bilateria
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:6072 ! Eumetazoa
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:33317
+name: Protostomia
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:33213 ! Bilateria
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:33406
+name: Cecidomyiidae
+is_a: NCBITaxon:7147 ! Diptera
+
+[Term]
+id: NCBITaxon:3503
+name: Fagaceae
+is_a: NCBITaxon:33090 ! Viridiplantae
+
+[Term]
+id: NCBITaxon:3511
+name: Quercus
+is_a: NCBITaxon:3503 ! Fagaceae
+
+[Term]
+id: NCBITaxon:3513
+name: Quercus alba
+is_a: GALLONT:0000042 ! Quercus sect. Quercus
+
+[Term]
+id: NCBITaxon:50557
+name: Insecta
+namespace: ncbi_taxonomy
+synonym: "insects" RELATED blast_name []
+synonym: "true insects" EXACT genbank_common_name []
+xref: GC_ID:1
+is_a: NCBITaxon:6960 ! Hexapoda
+property_value: has_rank NCBITaxon:class
+
+[Term]
+id: NCBITaxon:6072
+name: Eumetazoa
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:33208 ! Metazoa
+property_value: has_rank NCBITaxon:clade
+
+[Term]
+id: NCBITaxon:6656
+name: Arthropoda
+namespace: ncbi_taxonomy
+synonym: "arthropods" EXACT genbank_common_name []
+synonym: "arthropods" RELATED blast_name []
+xref: GC_ID:1
+is_a: NCBITaxon:88770 ! Panarthropoda
+property_value: has_rank NCBITaxon:phylum
 
 [Term]
 id: NCBITaxon:6946
 name: Acariformes
 is_a: NCBITaxon:2759 ! Eukaryota
+
+[Term]
+id: NCBITaxon:6960
+name: Hexapoda
+namespace: ncbi_taxonomy
+synonym: "Atelocerata" RELATED in_part []
+synonym: "hexapods" RELATED blast_name []
+synonym: "insects" EXACT genbank_common_name []
+synonym: "Tracheata" RELATED in_part []
+synonym: "Uniramia" RELATED in_part []
+xref: GC_ID:1
+is_a: NCBITaxon:197562 ! Pancrustacea
+property_value: has_rank NCBITaxon:subphylum
+
+[Term]
+id: NCBITaxon:70320
+name: Eriophyidae
+is_a: NCBITaxon:6946 ! Acariformes
+
+[Term]
+id: NCBITaxon:7147
+name: Diptera
+is_a: NCBITaxon:50557 ! Insecta
+
+[Term]
+id: NCBITaxon:73401
+name: Cynipidae
+is_a: NCBITaxon:7399 ! Hymenoptera
+
+[Term]
+id: NCBITaxon:7399
+name: Hymenoptera
+is_a: NCBITaxon:50557 ! Insecta
+
+[Term]
+id: NCBITaxon:75144
+name: Cynipini
+is_a: NCBITaxon:73401 ! Cynipidae
+
+[Term]
+id: NCBITaxon:88770
+name: Panarthropoda
+namespace: ncbi_taxonomy
+xref: GC_ID:1
+is_a: NCBITaxon:1206794 ! Ecdysozoa
+property_value: has_rank NCBITaxon:clade
 
 [Term]
 id: NCIT:C48440

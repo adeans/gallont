@@ -13,9 +13,9 @@
         "val" : "Plant Gall Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-14"
+        "val" : "2024-03-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-03-14/gallont-full.json"
+      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-03-25/gallont-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000125",
@@ -474,22 +474,15 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000001",
-      "lbl" : "plant gall",
+      "lbl" : "DEPRECATED plant gall",
       "type" : "CLASS",
       "meta" : {
-        "definition" : {
-          "val" : "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism."
-        },
+        "comments" : [ "Updated the class definition to reflect that this structure is a response to biotic stress" ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/creator",
-          "val" : "https://orcid.org/0000-0002-2119-4663"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2023-06-19T19:39:13Z"
-        }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-          "val" : "https://www.inaturalist.org/observations/62135900"
-        } ]
+          "val" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000002",
@@ -959,6 +952,25 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000025",
+      "lbl" : "plant gall",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000004)."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/pato#seeAlso",
+          "val" : "https://www.inaturalist.org/observations/62135900"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-24T21:38:29Z"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000026",
       "lbl" : "faceted",
       "type" : "CLASS",
@@ -1230,6 +1242,19 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000039",
+      "lbl" : "Acraspis erinacei (agamic)",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-25T19:27:00Z"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000040",
       "lbl" : "nutritive tissue",
       "type" : "CLASS",
@@ -1260,6 +1285,84 @@
         }, {
           "pred" : "http://purl.org/dc/terms/date",
           "val" : "2024-01-19T02:27:40Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000042",
+      "lbl" : "Quercus sect. Quercus",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-25T01:26:41Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000043",
+      "lbl" : "Disholcaspis quercusglobulus (sexgen)",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-25T01:28:09Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000044",
+      "lbl" : "Disholcaspis quercusglobulus (agamic)",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-25T01:28:48Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000045",
+      "lbl" : "Acraspis erinacei (sexgen)",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-25T19:27:17Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000046",
+      "lbl" : "Aceria triplacis",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-25T19:39:17Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000047",
+      "lbl" : "Acraspis gemula",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2024-03-25T19:40:19Z"
         } ]
       }
     }, {
@@ -1600,6 +1703,26 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_109362",
+      "lbl" : "Aceria",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_1206794",
+      "lbl" : "Ecdysozoa",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_131567",
       "lbl" : "cellular organisms",
       "type" : "CLASS",
@@ -1617,6 +1740,67 @@
           "val" : "ncbi_taxonomy"
         } ]
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_1389465",
+      "lbl" : "Disholcaspis",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_1540852",
+      "lbl" : "Disholcaspis quercusglobulus",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_1934078",
+      "lbl" : "Acraspis",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_197562",
+      "lbl" : "Pancrustacea",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        }, {
+          "val" : "PMID:10874751"
+        }, {
+          "val" : "PMID:11557979"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_197563",
+      "lbl" : "Mandibulata",
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#common_name",
+          "pred" : "hasExactSynonym",
+          "val" : "mandibulates"
+        } ],
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        }, {
+          "val" : "PMID:11557979"
+        }, {
+          "val" : "PMID:9727836"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2714064",
+      "lbl" : "Acraspis erinacei",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2759",
       "lbl" : "Eukaryota",
@@ -1695,12 +1879,271 @@
           "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#blast_name",
           "pred" : "hasRelatedSynonym",
           "val" : "green plants"
+        } ],
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        }, {
+          "val" : "PMID:16248873"
+        }, {
+          "val" : "PMID:30257078"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_kingdom"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_33154",
+      "lbl" : "Opisthokonta",
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#synonym",
+          "pred" : "hasRelatedSynonym",
+          "val" : "Fungi/Metazoa group"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#synonym",
+          "pred" : "hasRelatedSynonym",
+          "val" : "opisthokonts"
+        } ],
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_33208",
+      "lbl" : "Metazoa",
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name",
+          "pred" : "hasExactSynonym",
+          "val" : "metazoans"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#common_name",
+          "pred" : "hasExactSynonym",
+          "val" : "multicellular animals"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#synonym",
+          "pred" : "hasRelatedSynonym",
+          "val" : "Animalia"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#blast_name",
+          "pred" : "hasRelatedSynonym",
+          "val" : "animals"
+        } ],
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_kingdom"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_33213",
+      "lbl" : "Bilateria",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_33317",
+      "lbl" : "Protostomia",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_33406",
+      "lbl" : "Cecidomyiidae",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_3503",
+      "lbl" : "Fagaceae",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_3511",
+      "lbl" : "Quercus",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_3513",
+      "lbl" : "Quercus alba",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_50557",
+      "lbl" : "Insecta",
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name",
+          "pred" : "hasExactSynonym",
+          "val" : "true insects"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#blast_name",
+          "pred" : "hasRelatedSynonym",
+          "val" : "insects"
+        } ],
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_6072",
+      "lbl" : "Eumetazoa",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_6656",
+      "lbl" : "Arthropoda",
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name",
+          "pred" : "hasExactSynonym",
+          "val" : "arthropods"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#blast_name",
+          "pred" : "hasRelatedSynonym",
+          "val" : "arthropods"
+        } ],
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_phylum"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_6946",
       "lbl" : "Acariformes",
       "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_6960",
+      "lbl" : "Hexapoda",
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#genbank_common_name",
+          "pred" : "hasExactSynonym",
+          "val" : "insects"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#in_part",
+          "pred" : "hasRelatedSynonym",
+          "val" : "Atelocerata"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#in_part",
+          "pred" : "hasRelatedSynonym",
+          "val" : "Tracheata"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#in_part",
+          "pred" : "hasRelatedSynonym",
+          "val" : "Uniramia"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/ncbitaxon#blast_name",
+          "pred" : "hasRelatedSynonym",
+          "val" : "hexapods"
+        } ],
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_subphylum"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_70320",
+      "lbl" : "Eriophyidae",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_7147",
+      "lbl" : "Diptera",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_73401",
+      "lbl" : "Cynipidae",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_7399",
+      "lbl" : "Hymenoptera",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_75144",
+      "lbl" : "Cynipini",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_88770",
+      "lbl" : "Panarthropoda",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/ncbitaxon#has_rank",
+          "val" : "http://purl.obolibrary.org/obo/NCBITaxon_clade"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "ncbi_taxonomy"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NCIT_C48440",
       "lbl" : "solitary",
@@ -12536,10 +12979,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000007"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000001",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/PO_0025496"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000002",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PO_0025117"
@@ -12554,7 +12993,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000004",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000005",
       "pred" : "is_a",
@@ -12644,6 +13083,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0001925"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000025",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025496"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000026",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0000150"
@@ -12674,7 +13117,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
       "pred" : "is_a",
@@ -12694,7 +13137,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000034",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000034",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -12702,7 +13145,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -12710,7 +13153,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000086",
@@ -12730,7 +13173,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
@@ -12752,6 +13195,14 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/PO_0006001"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000039",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CARO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000039",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_2714064"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000040",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PO_0009007"
@@ -12763,6 +13214,42 @@
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000041",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000042",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_3511"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000043",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CARO_0000048"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000043",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_1540852"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000044",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CARO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000044",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_1540852"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000045",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CARO_0000048"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000045",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_2714064"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000046",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_109362"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000047",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_131567"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GO_0003674",
       "pred" : "is_a",
@@ -12796,9 +13283,41 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_109362",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_70320"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_1206794",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_33317"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_131567",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_1"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_1389465",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_75144"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_1540852",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_1389465"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_1934078",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_75144"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_197562",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_197563"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_197563",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_6656"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_2714064",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_1934078"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_2759",
       "pred" : "is_a",
@@ -12808,9 +13327,81 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_2759"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_33154",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_2759"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_33208",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_33154"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_33213",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_6072"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_33317",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_33213"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_33406",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_7147"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_3503",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_33090"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_3511",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_3503"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_3513",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000042"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_50557",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_6960"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_6072",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_33208"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_6656",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_88770"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_6946",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_2759"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_6960",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_197562"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_70320",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_6946"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_7147",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_50557"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_73401",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_7399"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_7399",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_50557"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_75144",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_73401"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_88770",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_1206794"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/NCIT_C48440",
       "pred" : "is_a",
@@ -15014,7 +15605,7 @@
     } ],
     "logicalDefinitionAxioms" : [ {
       "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000025" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
         "fillerId" : "http://purl.obolibrary.org/obo/PO_0025034"
@@ -15027,14 +15618,14 @@
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000025" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
         "fillerId" : "http://purl.obolibrary.org/obo/PO_0000055"
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000036",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000025" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0000086",
         "fillerId" : "http://purl.obolibrary.org/obo/GALLONT_0000009"
@@ -15050,7 +15641,7 @@
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000037",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000001" ],
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000025" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000051",
         "fillerId" : "http://purl.obolibrary.org/obo/GALLONT_0000006"

@@ -59,22 +59,31 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000036>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000037>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000042>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000043>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_109362>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1389465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1540852>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1934078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2714064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3503>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3511>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3513>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_50557>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_6946>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_70320>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7147>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_73401>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7399>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_75144>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
@@ -650,6 +659,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> <http://purl.obolibr
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0000055>))
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006001>))
 
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000039> (Acraspis erinacei (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000039> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000039> "2024-03-25T19:27:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000039> "Acraspis erinacei (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000039> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000039> <http://purl.obolibrary.org/obo/NCBITaxon_2714064>)
+
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000040> (nutritive tissue)
 
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000040> <http://orcid.org/0000-0002-2119-4663>)
@@ -691,15 +708,52 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000044> 
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000044> <http://purl.obolibrary.org/obo/CARO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000044> <http://purl.obolibrary.org/obo/NCBITaxon_1540852>)
 
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000045> (Acraspis erinacei (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000045> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000045> "2024-03-25T19:27:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000045> "Acraspis erinacei (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000045> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000045> <http://purl.obolibrary.org/obo/NCBITaxon_2714064>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000046> (Aceria triplacis)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000046> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000046> "2024-03-25T19:39:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000046> "Aceria triplacis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000046> <http://purl.obolibrary.org/obo/NCBITaxon_109362>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000047> (Acraspis gemula)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000047> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000047> "2024-03-25T19:40:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000047> "Acraspis gemula"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000047> <http://purl.obolibrary.org/obo/NCBITaxon_131567>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_109362> (Aceria)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_109362> "Aceria")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_109362> <http://purl.obolibrary.org/obo/NCBITaxon_70320>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_1389465> (Disholcaspis)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1389465> "Disholcaspis")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1389465> <http://purl.obolibrary.org/obo/NCBITaxon_73401>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1389465> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_1540852> (Disholcaspis quercusglobulus)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1540852> "Disholcaspis quercusglobulus")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1540852> <http://purl.obolibrary.org/obo/NCBITaxon_1389465>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1934078> (Acraspis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1934078> "Acraspis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1934078> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2714064> (Acraspis erinacei)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2714064> "Acraspis erinacei")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2714064> <http://purl.obolibrary.org/obo/NCBITaxon_1934078>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_33406> (Cecidomyiidae)
 
@@ -731,6 +785,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_50557> <http://purl.obolibr
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_6946> "Acariformes"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_6946> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
 
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_70320> (Eriophyidae)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_70320> "Eriophyidae")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_70320> <http://purl.obolibrary.org/obo/NCBITaxon_6946>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_7147> (Diptera)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7147> "Diptera")
@@ -745,6 +804,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_73401> <http://purl.obolibr
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7399> "Hymenoptera")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7399> <http://purl.obolibrary.org/obo/NCBITaxon_50557>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_75144> (Cynipini)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_75144> "Cynipini")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_75144> <http://purl.obolibrary.org/obo/NCBITaxon_73401>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C48440> (solitary)
 

@@ -1,20 +1,18 @@
 format-version: 1.2
-data-version: gallont/releases/2024-03-14/gallont-base.owl
+data-version: gallont/releases/2024-03-25/gallont-base.owl
 ontology: gallont/gallont-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-14" xsd:string
+property_value: owl:versionInfo "2024-03-25" xsd:string
 
 [Term]
 id: GALLONT:0000001
-name: plant gall
-def: "A multi-tissue plant structure, whose development is induced by an organism for the benefit of that organism." []
-is_a: PO:0025496
-property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/terms/date "2023-06-19T19:39:13Z" xsd:string
-property_value: seeAlso https://www.inaturalist.org/observations/62135900
+name: DEPRECATED plant gall
+comment: Updated the class definition to reflect that this structure is a response to biotic stress
+property_value: seeAlso GALLONT:0000025
+is_obsolete: true
 
 [Term]
 id: GALLONT:0000002
@@ -39,7 +37,7 @@ id: GALLONT:0000004
 name: kapéllo
 def: "A gall structure that is attractive to another organism, usually ants, and which facilitates dispersal of the gall" []
 is_a: PO:0025496
-relationship: BFO:0000050 GALLONT:0000001 ! plant gall
+relationship: BFO:0000050 GALLONT:0000025 ! plant gall
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2023-06-22T01:51:19Z" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/61878883
@@ -241,6 +239,15 @@ property_value: http://purl.org/dc/terms/source https://dictionary.cambridge.org
 property_value: seeAlso https://www.inaturalist.org/observations/47442195
 
 [Term]
+id: GALLONT:0000025
+name: plant gall
+def: "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000004)." []
+is_a: PO:0025496
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-24T21:38:29Z" xsd:string
+property_value: seeAlso https://www.inaturalist.org/observations/62135900
+
+[Term]
 id: GALLONT:0000026
 name: faceted
 def: "A texture quality in which a surface is covered or partially by with facets." []
@@ -312,9 +319,9 @@ property_value: http://purl.org/dc/terms/date "2023-06-27T01:41:01Z" xsd:string
 id: GALLONT:0000033
 name: erineum
 def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
-is_a: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
 is_a: UBERON:0001062
-intersection_of: GALLONT:0000001 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: BFO:0000050 PO:0025034
 intersection_of: BFO:0000051 PO:0006504
 intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate
@@ -330,7 +337,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/79701805
 id: GALLONT:0000034
 name: blister gall
 def: "A plant gall that is part of a leaf and which appears as a portion of swollen tissue, similar to a blister." []
-is_a: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
 relationship: BFO:0000050 PO:0025034
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2023-08-01T22:15:28Z" xsd:string
@@ -340,8 +347,8 @@ property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
 id: GALLONT:0000035
 name: bud gall
 def: "A plant gall that is located on a bud." []
-is_a: GALLONT:0000001 ! plant gall
-intersection_of: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: BFO:0000050 PO:0000055
 relationship: BFO:0000050 PO:0000055
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
@@ -353,8 +360,8 @@ property_value: seeAlso https://www.inaturalist.org/observations/48455720
 id: GALLONT:0000036
 name: bullet gall
 def: "A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape." []
-is_a: GALLONT:0000001 ! plant gall
-intersection_of: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: RO:0000086 GALLONT:0000009 ! monothalamous
 intersection_of: RO:0000086 GALLONT:0000012 ! solid
 intersection_of: RO:0000086 GALLONT:0000031 ! semideciduous
@@ -372,8 +379,8 @@ property_value: seeAlso https://www.inaturalist.org/observations/58434690
 id: GALLONT:0000037
 name: roly-poly gall
 def: "A plant gall that has a detached larval chamber capable of rolling around a hollow chamber located inside the gall." []
-is_a: GALLONT:0000001 ! plant gall
-intersection_of: GALLONT:0000001 ! plant gall
+is_a: GALLONT:0000025 ! plant gall
+intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: BFO:0000051 GALLONT:0000006 ! detached chamber
 intersection_of: RO:0000086 PATO:0002078
 relationship: BFO:0000051 GALLONT:0000006 ! detached chamber
@@ -397,6 +404,14 @@ property_value: IAO:0000118 "bunch gall" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/33495996
 
 [Term]
+id: GALLONT:0000039
+name: Acraspis erinacei (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2714064
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:27:00Z" xsd:dateTime
+
+[Term]
 id: GALLONT:0000040
 name: nutritive tissue
 comment: A portion of plant tissue that is fed upon by a gall inhabitant.
@@ -413,6 +428,51 @@ def: "A cavity that is occupied by one or more gall inhabitants." []
 is_a: GALLONT:0000003 ! cavity
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2024-01-19T02:27:40Z" xsd:string
+
+[Term]
+id: GALLONT:0000042
+name: Quercus sect. Quercus
+is_a: NCBITaxon:3511
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T01:26:41Z" xsd:string
+
+[Term]
+id: GALLONT:0000043
+name: Disholcaspis quercusglobulus (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:1540852
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T01:28:09Z" xsd:string
+
+[Term]
+id: GALLONT:0000044
+name: Disholcaspis quercusglobulus (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:1540852
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T01:28:48Z" xsd:string
+
+[Term]
+id: GALLONT:0000045
+name: Acraspis erinacei (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2714064
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:27:17Z" xsd:dateTime
+
+[Term]
+id: GALLONT:0000046
+name: Aceria triplacis
+is_a: NCBITaxon:109362
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:39:17Z" xsd:dateTime
+
+[Term]
+id: GALLONT:0000047
+name: Acraspis gemula
+is_a: NCBITaxon:131567
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-25T19:40:19Z" xsd:dateTime
 
 [Typedef]
 id: GALLONT:0000000
