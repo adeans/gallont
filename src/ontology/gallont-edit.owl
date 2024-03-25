@@ -670,23 +670,23 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000041> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000042> (Quercus sect. Quercus)
 
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000042> <https://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000042> "2024-03-25T01:26:41Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000042> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000042> "2024-03-25T01:26:41Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000042> "Quercus sect. Quercus"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000042> <http://purl.obolibrary.org/obo/NCBITaxon_3511>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000043> (Disholcaspis quercusglobulus (sexgen))
 
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000043> <https://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000043> "2024-03-25T01:28:09Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000043> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000043> "2024-03-25T01:28:09Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000043> "Disholcaspis quercusglobulus (sexgen)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000043> <http://purl.obolibrary.org/obo/CARO_0000048>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000043> <http://purl.obolibrary.org/obo/NCBITaxon_1540852>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000044> (Disholcaspis quercusglobulus (agamic))
 
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000044> <https://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000044> "2024-03-25T01:28:48Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000044> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000044> "2024-03-25T01:28:48Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000044> "Disholcaspis quercusglobulus (agamic)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000044> <http://purl.obolibrary.org/obo/CARO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000044> <http://purl.obolibrary.org/obo/NCBITaxon_1540852>)
