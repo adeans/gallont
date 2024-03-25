@@ -514,8 +514,8 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GALLONT_0000024> <http://purl.ob
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000025> "A multi-tissue plant structure (PO:0025496) that develops in response to a biotic stress (PSO:0000004).")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/pato#seeAlso> <http://purl.obolibrary.org/obo/GALLONT_0000025> <https://www.inaturalist.org/observations/62135900>)
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/GALLONT_0000025> <https://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dce:date <http://purl.obolibrary.org/obo/GALLONT_0000025> "2024-03-24T21:38:29Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000025> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000025> "2024-03-24T21:38:29Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000025> "plant gall"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> <http://purl.obolibrary.org/obo/PO_0025496>)
 
