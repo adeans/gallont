@@ -17,7 +17,9 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(dcterms:title "Plant Gall Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FLOPO_0900042>))
@@ -68,22 +70,161 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000086>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000095>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000096>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000097>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000098>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000099>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000103>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000105>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000107>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000108>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000109>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000110>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000111>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000112>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000114>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000115>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000117>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000124>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000125>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000130>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000131>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000132>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000133>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000134>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000136>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000137>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000139>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000142>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000143>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000145>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000146>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000147>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000148>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000149>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_109362>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1389465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1420675>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1540852>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1934075>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1934078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_201413>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_207785>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_207787>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2302816>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2302842>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2302876>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_240745>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2510113>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2510129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2558937>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2714064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2714074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2714083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2714085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2714087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2714088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2716790>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2761977>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2761999>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2799209>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2822341>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2828388>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2873703>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2911676>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2911677>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2950611>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2950621>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3022639>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3022644>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3022645>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3022648>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3022651>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3022662>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3022664>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3037601>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_331701>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33384>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3503>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3511>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3513>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_38120>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_50557>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_6946>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_70320>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7147>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_73401>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7399>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_75141>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_75144>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7524>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_85109>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCIT_C48440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000011>))
@@ -264,10 +405,26 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000000> <http://pur
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/BFO_0000040> (material entity)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/BFO_0000141> (immaterial entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000141> "immaterial entity")
+SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000141> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
 # Class: <http://purl.obolibrary.org/obo/CARO_0000005> (anatomical space)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000005> "Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000005> "anatomical space")
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000005> <http://purl.obolibrary.org/obo/CARO_0000007>)
+
+# Class: <http://purl.obolibrary.org/obo/CARO_0000007> (immaterial anatomical entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CARO_0000007> "immaterial anatomical entity")
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000007> <http://purl.obolibrary.org/obo/BFO_0000141>)
+SubClassOf(<http://purl.obolibrary.org/obo/CARO_0000007> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 
 # Class: <http://purl.obolibrary.org/obo/CARO_0000030> (asexual organism)
 
@@ -304,12 +461,12 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000002> 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000002> <https://www.inaturalist.org/observations/33275700>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000002> <http://purl.obolibrary.org/obo/PO_0025117>)
 
-# Class: <http://purl.obolibrary.org/obo/GALLONT_0000003> (cavity)
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000003> (plant gall cavity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000003> "A plant anatomical space that is located inside a gall."@en)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000003> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000003> "2023-06-19T19:44:42Z")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000003> "cavity"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000003> "plant gall cavity"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000003> <https://www.inaturalist.org/observations/117192961>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000003> <http://purl.obolibrary.org/obo/PO_0025117>)
 
@@ -728,7 +885,749 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000046> <http://purl.obolibr
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000047> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000047> "2024-03-25T19:40:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000047> "Acraspis gemula"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000047> <http://purl.obolibrary.org/obo/NCBITaxon_131567>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000047> <http://purl.obolibrary.org/obo/NCBITaxon_1934078>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000048> (Dasineura glandis)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000048> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000048> "2024-03-26T17:44:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000048> "Dasineura glandis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000048> <http://purl.obolibrary.org/obo/NCBITaxon_240745>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000049> (Lasioptera querciperda)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000049> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000049> "2024-03-26T17:44:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000049> "Lasioptera querciperda"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000049> <http://purl.obolibrary.org/obo/NCBITaxon_201413>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000050> (Macrodiplosis niveipila)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000050> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000050> "2024-03-26T17:45:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000050> "Macrodiplosis niveipila"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000050> <http://purl.obolibrary.org/obo/NCBITaxon_1420675>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000051> (Phylloxera querceti)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000051> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000051> "2024-03-26T17:47:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000051> "Phylloxera querceti"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_38120>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000054> (Acraspis gemula (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000054> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000054> "2024-03-26T17:51:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000054> "Acraspis gemula (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000054> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000054> <http://purl.obolibrary.org/obo/GALLONT_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000055> (Acraspis pezomachoides (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000055> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000055> "2024-03-26T17:52:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000055> "Acraspis pezomachoides (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000055> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000055> <http://purl.obolibrary.org/obo/NCBITaxon_2302816>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000056> (Acraspis pezomachoides (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000056> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000056> "2024-03-26T17:53:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000056> "Acraspis pezomachoides (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000056> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000056> <http://purl.obolibrary.org/obo/NCBITaxon_2302816>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000057> (Acraspis villosa (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000057> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000057> "2024-03-26T17:54:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000057> "Acraspis villosa (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000057> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000057> <http://purl.obolibrary.org/obo/NCBITaxon_2761977>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000058> (Acraspis villosa (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000058> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000058> "2024-03-26T17:54:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000058> "Acraspis villosa (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000058> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000058> <http://purl.obolibrary.org/obo/NCBITaxon_2761977>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000061> (Feron)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000061> "Feron")
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000061> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000063> (Zopheroteras cuneatum)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000063> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000063> "2024-03-26T18:04:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000063> "Zopheroteras cuneatum"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000063> <http://purl.obolibrary.org/obo/NCBITaxon_2828388>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000064> (Zopheroteras cuneatum (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000064> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000064> "2024-03-26T18:05:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000064> "Zopheroteras cuneatum (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000064> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000064> <http://purl.obolibrary.org/obo/GALLONT_0000063>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000065> (Trigonaspis quercusforticorne)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000065> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000065> "2024-03-26T18:06:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000065> "Trigonaspis quercusforticorne"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000065> <http://purl.obolibrary.org/obo/NCBITaxon_207787>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000066> (Trigonaspis polita (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000066> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000066> "2024-03-26T18:06:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000066> "Trigonaspis polita (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000066> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000066> <http://purl.obolibrary.org/obo/NCBITaxon_2302876>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000067> (Trigonaspis quercusforticorne (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000067> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000067> "2024-03-26T18:07:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000067> "Trigonaspis quercusforticorne (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000067> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000067> <http://purl.obolibrary.org/obo/GALLONT_0000065>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000068> (Sphaeroteras carolina (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000068> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000068> "2024-03-26T18:08:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000068> "Sphaeroteras carolina (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000068> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000068> <http://purl.obolibrary.org/obo/NCBITaxon_2911677>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000069> (Sphaeroteras carolina (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000069> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000069> "2024-03-26T18:08:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000069> "Sphaeroteras carolina (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000069> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000069> <http://purl.obolibrary.org/obo/NCBITaxon_2911677>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000070> (Phylloteras poculum (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000070> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000070> "2024-03-26T18:09:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000070> "Phylloteras poculum (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000070> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000070> <http://purl.obolibrary.org/obo/NCBITaxon_2714083>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000071> (Phylloteras poculum (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000071> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000071> "2024-03-26T18:10:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000071> "Phylloteras poculum (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000071> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000071> <http://purl.obolibrary.org/obo/NCBITaxon_2714083>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000072> (Phylloteras rubinum (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000072> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000072> "2024-03-26T18:11:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000072> "Phylloteras rubinum (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000072> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000072> <http://purl.obolibrary.org/obo/NCBITaxon_2873703>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000073> (Phylloteras sigma)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000073> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000073> "2024-03-26T18:11:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000073> "Phylloteras sigma"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000073> <http://purl.obolibrary.org/obo/NCBITaxon_2302842>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000074> (Phylloteras sigma (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000074> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000074> "2024-03-26T18:12:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000074> "Phylloteras sigma (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000074> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000074> <http://purl.obolibrary.org/obo/GALLONT_0000073>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000075> (Philonix nigra (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000075> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000075> "2024-03-26T18:13:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000075> "Philonix nigra (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000075> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000075> <http://purl.obolibrary.org/obo/NCBITaxon_2714088>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000076> (Philonix nigra (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000076> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000076> "2024-03-26T18:13:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000076> "Philonix nigra (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000076> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000076> <http://purl.obolibrary.org/obo/NCBITaxon_2714088>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000077> (Neuroterus bassettii)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000077> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000077> "2024-03-26T18:14:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000077> "Neuroterus bassettii"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000077> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000078> (Neuroterus clarkeae)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000078> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000078> "2024-03-26T18:14:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000078> "Neuroterus clarkeae"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000078> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000079> (Neuroterus escharensis)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000079> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000079> "2024-03-26T18:15:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000079> "Neuroterus escharensis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000079> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000080> (Neuroterus minutus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000080> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000080> "2024-03-26T18:15:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000080> "Neuroterus minutus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000080> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000081> (Neuroterus perminimus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000081> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000081> "2024-03-26T18:16:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000081> "synonym of Neuroterus niger according to NCBI taxonomy; see https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=2911676")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000081> "Neuroterus perminimus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000081> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000082> (Neuroterus quercusbatatus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000082> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000082> "2024-03-26T18:18:43Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000082> "Neuroterus quercusbatatus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000082> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000082> <http://purl.obolibrary.org/obo/NCBITaxon_3022664>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000083> (Neuroterus quercusbatatus (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000083> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000083> "2024-03-26T18:18:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000083> "Neuroterus quercusbatatus (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000083> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000083> <http://purl.obolibrary.org/obo/NCBITaxon_3022664>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000084> (Neuroterus tantulus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000084> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000084> "2024-03-26T18:20:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000084> "Neuroterus tantulus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000084> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000085> (Neuroterus tantulus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000085> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000085> "2024-03-26T18:20:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000085> "Neuroterus tantulus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000085> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000085> <http://purl.obolibrary.org/obo/GALLONT_0000084>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000086> (Neuroterus umbilicatus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000086> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000086> "2024-03-26T18:20:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000086> "Neuroterus umbilicatus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000086> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000087> (Neuroterus vesicula (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000087> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000087> "2024-03-26T18:21:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000087> "Neuroterus vesicula (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000087> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000087> <http://purl.obolibrary.org/obo/NCBITaxon_2510129>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000088> (Neuroterus umbilicatus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000088> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000088> "2024-03-26T18:22:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000088> "Neuroterus umbilicatus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000088> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000088> <http://purl.obolibrary.org/obo/GALLONT_0000086>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000089> (Neuroterus quercusverrucarum (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000089> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000089> "2024-03-26T18:23:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000089> "Neuroterus quercusverrucarum (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000089> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000089> <http://purl.obolibrary.org/obo/NCBITaxon_2714085>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000090> (Neuroterus quercusirregularis (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000090> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000090> "2024-03-26T18:23:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000090> "Neuroterus quercusirregularis (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000090> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000090> <http://purl.obolibrary.org/obo/NCBITaxon_2822341>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000091> (Neuroterus perminimus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000091> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000091> "2024-03-26T18:24:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000091> "Neuroterus perminimus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000091> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000091> <http://purl.obolibrary.org/obo/GALLONT_0000081>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000092> (Neuroterus perminimus (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000092> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000092> "2024-03-26T18:25:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000092> "Neuroterus perminimus (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000092> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000092> <http://purl.obolibrary.org/obo/GALLONT_0000081>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000093> (Neuroterus niger (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000093> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000093> "2024-03-26T18:25:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000093> "Neuroterus niger (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000093> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000093> <http://purl.obolibrary.org/obo/NCBITaxon_2911676>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000094> (Neuroterus minutus (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000094> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000094> "2024-03-26T18:26:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000094> "Neuroterus minutus (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000094> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000094> <http://purl.obolibrary.org/obo/GALLONT_0000080>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000095> (Neuroterus escharensis (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000095> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000095> "2024-03-26T18:26:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000095> "Neuroterus escharensis (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000095> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000095> <http://purl.obolibrary.org/obo/GALLONT_0000079>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000096> (Neuroterus clarkeae (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000096> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000096> "2024-03-26T18:27:28Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000096> "Neuroterus clarkeae (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000096> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000096> <http://purl.obolibrary.org/obo/GALLONT_0000078>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000097> (Neuroterus bassettii (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000097> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000097> "2024-03-26T18:28:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000097> "Neuroterus bassettii (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000097> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000097> <http://purl.obolibrary.org/obo/GALLONT_0000077>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000098> (Loxaulus quercusmammula (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000098> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000098> "2024-03-26T18:31:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000098> "Loxaulus quercusmammula (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000098> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000098> <http://purl.obolibrary.org/obo/NCBITaxon_3022662>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000099> (Loxaulus illinoisensis)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000099> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000099> "2024-03-26T18:31:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000099> "Loxaulus illinoisensis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000099> <http://purl.obolibrary.org/obo/NCBITaxon_2716790>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000100> (Loxaulus illinoisensis (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000100> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000100> "2024-03-26T18:32:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000100> "Loxaulus illinoisensis (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000100> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000100> <http://purl.obolibrary.org/obo/GALLONT_0000099>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000101> (Holocynips maxima)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000101> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000101> "2024-03-26T18:32:57Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000101> "Holocynips maxima"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000101> <http://purl.obolibrary.org/obo/NCBITaxon_2761999>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000102> (Holocynips maxima (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000102> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000102> "2024-03-26T18:33:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000102> "Holocynips maxima (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000102> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000102> <http://purl.obolibrary.org/obo/GALLONT_0000101>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000103> (Holocynips badia (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000103> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000103> "2024-03-26T18:33:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000103> "Holocynips badia (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000103> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000103> <http://purl.obolibrary.org/obo/NCBITaxon_3037601>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000104> (Feron apiarium)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000104> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000104> "2024-03-26T18:34:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000104> "Feron apiarium"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000104> <http://purl.obolibrary.org/obo/GALLONT_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000105> (Feron clarkei)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000105> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000105> "2024-03-26T18:34:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000105> "Feron clarkei"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000105> <http://purl.obolibrary.org/obo/GALLONT_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000106> (Feron comata)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000106> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000106> "2024-03-26T18:34:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000106> "Feron comata"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000106> <http://purl.obolibrary.org/obo/GALLONT_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000107> (Feron comata (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000107> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000107> "2024-03-26T18:35:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000107> "Feron comata (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000107> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000107> <http://purl.obolibrary.org/obo/GALLONT_0000106>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000108> (Feron clarkei (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000108> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000108> "2024-03-26T18:35:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000108> "Feron clarkei (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000108> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000108> <http://purl.obolibrary.org/obo/GALLONT_0000105>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000109> (Feron apiarium (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000109> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000109> "2024-03-26T18:35:57Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000109> "Feron apiarium (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000109> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000109> <http://purl.obolibrary.org/obo/GALLONT_0000104>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000110> (Druon quercusflocci (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000110> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000110> "2024-03-26T18:38:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000110> "Druon quercusflocci (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000110> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000110> <http://purl.obolibrary.org/obo/NCBITaxon_2950621>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000111> (Druon quercusflocci (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000111> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000111> "2024-03-26T18:38:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000111> "Druon quercusflocci (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000111> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000111> <http://purl.obolibrary.org/obo/NCBITaxon_2950621>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000112> (Disholcaspis terrestris)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000112> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000112> "2024-03-26T18:39:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000112> "Disholcaspis terrestris"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000112> <http://purl.obolibrary.org/obo/NCBITaxon_1389465>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000113> (Disholcaspis terrestris (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000113> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000113> "2024-03-26T18:39:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000113> "Disholcaspis terrestris (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000113> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000113> <http://purl.obolibrary.org/obo/GALLONT_0000112>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000114> (Disholcaspis spongiosa (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000114> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000114> "2024-03-26T18:40:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000114> "Disholcaspis spongiosa (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000114> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000114> <http://purl.obolibrary.org/obo/NCBITaxon_1934075>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000115> (Disholcaspis globosa)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000115> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000115> "2024-03-26T18:41:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000115> "Disholcaspis globosa"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000115> <http://purl.obolibrary.org/obo/NCBITaxon_1389465>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000116> (Disholcaspis globosa (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000116> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000116> "2024-03-26T18:41:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000116> "Disholcaspis globosa (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000116> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000116> <http://purl.obolibrary.org/obo/GALLONT_0000115>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000117> (Callirhytis elliptica)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000117> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000117> "2024-03-26T18:42:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000117> "Callirhytis elliptica"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000117> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000118> (Callirhytis gemmiformis)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000118> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000118> "2024-03-26T18:43:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000118> "Callirhytis gemmiformis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000119> (Callirhytis subcostata)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000119> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000119> "2024-03-26T18:45:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000119> "Callirhytis subcostata"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000119> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000120> (Callirhytis subcostata (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000120> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000120> "2024-03-26T18:45:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000120> "Callirhytis subcostata (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000120> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000120> <http://purl.obolibrary.org/obo/GALLONT_0000119>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000121> (Callirhytis seminator (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000121> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000121> "2024-03-26T18:46:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000121> "Callirhytis seminator (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000121> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000121> <http://purl.obolibrary.org/obo/NCBITaxon_3022651>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000122> (Callirhytis quercusfutilis (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000122> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000122> "2024-03-26T18:46:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000122> "Callirhytis quercusfutilis (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000122> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000122> <http://purl.obolibrary.org/obo/NCBITaxon_3022648>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000123> (Callirhytis quercusfutilis (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000123> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000123> "2024-03-26T18:46:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000123> "Callirhytis quercusfutilis (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000123> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000123> <http://purl.obolibrary.org/obo/NCBITaxon_3022648>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000124> (Callirhytis glandulus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000124> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000124> "2024-03-26T18:47:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000124> "Callirhytis glandulus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000124> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000124> <http://purl.obolibrary.org/obo/NCBITaxon_3022645>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000125> (Callirhytis gemmiformis (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000125> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000125> "2024-03-26T18:47:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000125> "Callirhytis gemmiformis (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000125> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000125> <http://purl.obolibrary.org/obo/GALLONT_0000118>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000126> (Callirhytis exigua (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000126> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000126> "2024-03-26T18:48:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000126> "Callirhytis exigua (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000126> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000126> <http://purl.obolibrary.org/obo/NCBITaxon_3022644>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000127> (Callirhytis elliptica (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000127> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000127> "2024-03-26T18:48:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000127> "Callirhytis elliptica (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000127> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000127> <http://purl.obolibrary.org/obo/GALLONT_0000117>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000128> (Callirhytis clavula (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000128> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000128> "2024-03-26T18:49:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000128> "Callirhytis clavula (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000128> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000128> <http://purl.obolibrary.org/obo/NCBITaxon_331701>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000129> (Andricus weldi)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000129> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000129> "2024-03-26T18:50:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000129> "Andricus weldi"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000129> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000130> (Andricus weldi (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000130> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000130> "2024-03-26T18:50:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000130> "Andricus weldi (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000130> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000130> <http://purl.obolibrary.org/obo/GALLONT_0000129>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000131> (Andricus quercusutriculus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000131> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000131> "2024-03-26T18:51:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000131> "Andricus quercusutriculus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000131> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000132> (Andricus quercusutriculus (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000132> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000132> "2024-03-26T18:51:28Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000132> "Andricus quercusutriculus (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000132> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000132> <http://purl.obolibrary.org/obo/GALLONT_0000131>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000133> (Andricus quercusstrobilanus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000133> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000133> "2024-03-26T18:52:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000133> "Andricus quercusstrobilanus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000133> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000133> <http://purl.obolibrary.org/obo/NCBITaxon_2510113>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000134> (Andricus quercuspetiolicola (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000134> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000134> "2024-03-26T18:53:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000134> "Andricus quercuspetiolicola (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000134> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000134> <http://purl.obolibrary.org/obo/NCBITaxon_2558937>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000135> (Andricus quercuspetiolicola (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000135> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000135> "2024-03-26T18:53:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000135> "Andricus quercuspetiolicola (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000135> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000135> <http://purl.obolibrary.org/obo/NCBITaxon_2558937>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000136> (Andricus quercusfrondosus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000136> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000136> "2024-03-26T18:54:28Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000136> "Andricus quercusfrondosus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000137> (Andricus quercusfrondosus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000137> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000137> "2024-03-26T18:54:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000137> "Andricus quercusfrondosus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000137> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000137> <http://purl.obolibrary.org/obo/GALLONT_0000136>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000138> (Andricus pisiformis (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000138> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000138> "2024-03-26T18:55:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000138> "Andricus pisiformis (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000138> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000138> <http://purl.obolibrary.org/obo/NCBITaxon_2714074>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000139> (Andricus mamillaformis)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000139> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000139> "2024-03-26T18:56:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000139> "Andricus mamillaformis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000139> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000140> (Andricus mamillaformis (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000140> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000140> "2024-03-26T18:56:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000140> "Andricus mamillaformis (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000140> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000140> <http://purl.obolibrary.org/obo/GALLONT_0000139>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000141> (Andricus indistinctus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000141> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000141> "2024-03-26T18:57:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000141> "Andricus indistinctus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000141> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000142> (Andricus indistinctus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000142> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000142> "2024-03-26T18:57:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000142> "Andricus indistinctus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000142> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000142> <http://purl.obolibrary.org/obo/GALLONT_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000143> (Andricus dimorphus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000143> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000143> "2024-03-26T18:57:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000143> "Andricus dimorphus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000143> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000144> (Andricus dimorphus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000144> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000144> "2024-03-26T18:57:43Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000144> "Andricus dimorphus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000144> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000144> <http://purl.obolibrary.org/obo/GALLONT_0000143>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000145> (Andricus deciduatus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000145> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000145> "2024-03-26T18:58:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000145> "Andricus deciduatus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000145> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000146> (Andricus deciduatus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000146> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000146> "2024-03-26T18:58:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000146> "Andricus deciduatus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000146> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000146> <http://purl.obolibrary.org/obo/GALLONT_0000145>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000147> (Andricus chinquapin (sexgen))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000147> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000147> "2024-03-26T18:59:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000147> "Andricus chinquapin (sexgen)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000147> <http://purl.obolibrary.org/obo/CARO_0000048>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000147> <http://purl.obolibrary.org/obo/NCBITaxon_3022639>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000148> (Andricus capillatus)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000148> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000148> "2024-03-26T18:59:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000148> "Andricus capillatus"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000148> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000149> (Andricus capillatus (agamic))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000149> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000149> "2024-03-26T19:00:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000149> "Andricus capillatus (agamic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000149> <http://purl.obolibrary.org/obo/CARO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000149> <http://purl.obolibrary.org/obo/GALLONT_0000148>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_109362> (Aceria)
 
@@ -740,20 +1639,210 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_109362> <http://purl.obolib
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1389465> "Disholcaspis")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1389465> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
 
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1420675> (Macrodiplosis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1420675> "Macrodiplosis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1420675> <http://purl.obolibrary.org/obo/NCBITaxon_33406>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_1540852> (Disholcaspis quercusglobulus)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1540852> "Disholcaspis quercusglobulus")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1540852> <http://purl.obolibrary.org/obo/NCBITaxon_1389465>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1934075> (Disholcaspis spongiosa)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1934075> "Disholcaspis spongiosa")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1934075> <http://purl.obolibrary.org/obo/NCBITaxon_1389465>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_1934078> (Acraspis)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_1934078> "Acraspis")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_1934078> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
 
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_201413> (Lasioptera)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_201413> "Lasioptera")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_201413> <http://purl.obolibrary.org/obo/NCBITaxon_33406>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_207785> (Callirhytis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_207785> "Callirhytis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_207785> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_207787> (Trigonaspis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_207787> "Trigonaspis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_207787> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2302816> (Acraspis pezomachoides)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2302816> "Acraspis pezomachoides")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2302816> <http://purl.obolibrary.org/obo/NCBITaxon_1934078>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2302842> (Phylloteras)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2302842> "Phylloteras")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2302842> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2302876> (Trigonaspis polita)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2302876> "Trigonaspis polita")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2302876> <http://purl.obolibrary.org/obo/NCBITaxon_207787>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_240745> (Dasineura)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_240745> "Dasineura")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_240745> <http://purl.obolibrary.org/obo/NCBITaxon_33406>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2510113> (Andricus quercusstrobilanus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2510113> "Andricus quercusstrobilanus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2510113> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2510129> (Neuroterus vesicula)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2510129> "Neuroterus vesicula")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2510129> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2558937> (Andricus quercuspetiolicola)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2558937> "Andricus quercuspetiolicola")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2558937> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_2714064> (Acraspis erinacei)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2714064> "Acraspis erinacei")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2714064> <http://purl.obolibrary.org/obo/NCBITaxon_1934078>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2714074> (Andricus pisiformis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2714074> "Andricus pisiformis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2714074> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2714083> (Phylloteras poculum)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2714083> "Phylloteras poculum")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2714083> <http://purl.obolibrary.org/obo/NCBITaxon_2302842>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2714085> (Neuroterus quercusverrucarum)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2714085> "Neuroterus quercusverrucarum")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2714085> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2714087> (Philonix)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2714087> "Philonix")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2714087> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2714088> (Philonix nigra)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2714088> "Philonix nigra")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2714088> <http://purl.obolibrary.org/obo/NCBITaxon_2714087>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2716790> (Loxaulus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2716790> "Loxaulus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2716790> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2761977> (Acraspis villosa)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2761977> "Acraspis villosa")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2761977> <http://purl.obolibrary.org/obo/NCBITaxon_1934078>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2761999> (Holocynips)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2761999> "Holocynips")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2761999> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2799209> (Sphaeroteras)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2799209> "Sphaeroteras")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2799209> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2822341> (Neuroterus quercusirregularis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2822341> "Neuroterus quercusirregularis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2822341> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2828388> (Zopheroteras)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2828388> "Zopheroteras")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2828388> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2873703> (Phylloteras rubinum)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2873703> "Phylloteras rubinum")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2873703> <http://purl.obolibrary.org/obo/NCBITaxon_2302842>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2911676> (Neuroterus niger)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2911676> "Neuroterus niger")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2911676> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2911677> (Sphaeroteras carolina)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2911677> "Sphaeroteras carolina")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2911677> <http://purl.obolibrary.org/obo/NCBITaxon_2799209>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2950611> (Druon)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2950611> "Druon")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2950611> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2950621> (Druon quercusflocci)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2950621> "Druon quercusflocci")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2950621> <http://purl.obolibrary.org/obo/NCBITaxon_2950611>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3022639> (Andricus chinquapin)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3022639> "Andricus chinquapin")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3022639> <http://purl.obolibrary.org/obo/NCBITaxon_75141>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3022644> (Callirhytis exigua)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3022644> "Callirhytis exigua")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3022644> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3022645> (Callirhytis glandulus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3022645> "Callirhytis glandulus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3022645> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3022648> (Callirhytis quercusfutilis)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3022648> "Callirhytis quercusfutilis")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3022648> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3022651> (Callirhytis seminator)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3022651> "Callirhytis seminator")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3022651> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3022662> (Loxaulus quercusmammula)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3022662> "Loxaulus quercusmammula")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3022662> <http://purl.obolibrary.org/obo/NCBITaxon_2716790>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3022664> (Neuroterus quercusbatatus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3022664> "Neuroterus quercusbatatus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3022664> <http://purl.obolibrary.org/obo/NCBITaxon_85109>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3037601> (Holocynips badia)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3037601> "Holocynips badia")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3037601> <http://purl.obolibrary.org/obo/NCBITaxon_2761999>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_331701> (Callirhytis clavula)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_331701> "Callirhytis clavula")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_331701> <http://purl.obolibrary.org/obo/NCBITaxon_207785>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33384> (Phylloxeridae)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_33384> "Phylloxeridae")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_33384> <http://purl.obolibrary.org/obo/NCBITaxon_7524>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_33406> (Cecidomyiidae)
 
@@ -775,15 +1864,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3511> <http://purl.obolibra
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3513> "Quercus alba")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3513> <http://purl.obolibrary.org/obo/GALLONT_0000042>)
 
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_38120> (Phylloxera)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_38120> "Phylloxera")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_38120> <http://purl.obolibrary.org/obo/NCBITaxon_33384>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_50557> (Insecta)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_50557> "Insecta")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_50557> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_6946> (Acariformes)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_6946> "Acariformes"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_6946> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_6946> <http://purl.obolibrary.org/obo/NCBITaxon_6656>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_70320> (Eriophyidae)
 
@@ -805,10 +1898,25 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_73401> <http://purl.obolibr
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7399> "Hymenoptera")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7399> <http://purl.obolibrary.org/obo/NCBITaxon_50557>)
 
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_75141> (Andricus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_75141> "Andricus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_75141> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_75144> (Cynipini)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_75144> "Cynipini")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_75144> <http://purl.obolibrary.org/obo/NCBITaxon_73401>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7524> (Hemiptera)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_7524> "Hemiptera")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_7524> <http://purl.obolibrary.org/obo/NCBITaxon_50557>)
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_85109> (Neuroterus)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_85109> "Neuroterus")
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_85109> <http://purl.obolibrary.org/obo/NCBITaxon_75144>)
 
 # Class: <http://purl.obolibrary.org/obo/NCIT_C48440> (solitary)
 
@@ -1205,6 +2313,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0009005> <ht
 # Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
 
 AnnotationAssertion(Annotation(dcterms:contributor <https://orcid.org/0000-0002-2119-4663>) rdfs:comment <http://purl.obolibrary.org/obo/PO_0009011> "These terms (i.e., subclasses of plant structure) can be used to describe the location of a plant gall (e.g., on leaf or stem) and also the parts of a gall (e.g., nectary, larval chamber)."@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009011> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009035> (nectary)
 
@@ -1277,6 +2386,10 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025034> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0025073> "stem"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0025073> "twig"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025073> <https://www.inaturalist.org/observations/28377541>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025117> (plant anatomical space)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025117> <http://purl.obolibrary.org/obo/PO_0025131>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0030119> (catkin inflorescence)
 
