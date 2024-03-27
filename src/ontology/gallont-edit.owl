@@ -74,6 +74,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000056>))
@@ -364,6 +365,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030121>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000059>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000052>))
 Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:date))
@@ -398,6 +402,31 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000000
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000000> "Relationship that specifies which organism is associated with a class.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000000> "has associate"@en)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000000> <http://purl.obolibrary.org/obo/OBI_0100026>)
+
+# Object Property: <http://purl.obolibrary.org/obo/GALLONT_0000059> (induced by)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000059> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000059> "2024-03-27T02:04:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000059> "induced by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/RO_0002434>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002453> (<http://purl.obolibrary.org/obo/RO_0002453>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/RO_0002434>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.obolibrary.org/obo/GALLONT_0000052> (hasDiameterInMm)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000052> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000052> "2024-03-27T01:25:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000052> "hasDiameterInMm"@en)
+FunctionalDataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000052>)
+DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000052> xsd:integer)
 
 
 
@@ -914,6 +943,15 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000051> "2024-03-26T17:47:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000051> "Phylloxera querceti"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000051> <http://purl.obolibrary.org/obo/NCBITaxon_38120>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000053> (hedgehog gall)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000053> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000053> "2024-03-27T01:45:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000053> "hedgehog gall"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000053> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_0000045>))
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000039>))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000054> (Acraspis gemula (sexgen))
 
