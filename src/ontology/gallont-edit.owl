@@ -949,9 +949,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000051> <http://purl.obolibr
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000053> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000053> "2024-03-27T01:45:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000053> "hedgehog gall"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000053> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_0000045>))
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000039>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000053> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_0000045>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000039>)))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000054> (Acraspis gemula (sexgen))
 
