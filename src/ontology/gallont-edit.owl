@@ -366,8 +366,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030121>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000059>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002371>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002454>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000052>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000060>))
+Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/11256339>))
+Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/3043687>))
 Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:date))
@@ -410,9 +415,20 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000059
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000059> "induced by"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/RO_0002434>)
 
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002453> (<http://purl.obolibrary.org/obo/RO_0002453>)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002371> (attached to)
 
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002371> "attached to")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002453> (host of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002453> "host of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/RO_0002434>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002454> (has host)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002454> "has host")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/RO_0002434>)
 
 
 ############################
@@ -426,7 +442,15 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000052
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000052> "hasDiameterInMm"@en)
 FunctionalDataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000052>)
 DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
-DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000052> xsd:integer)
+DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000052> xsd:decimal)
+
+# Data Property: <http://purl.obolibrary.org/obo/GALLONT_0000060> (hasHeightInMm)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000060> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000060> "2024-03-27T17:30:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000060> "hasHeightInMm"@en)
+DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_0000060> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000060> xsd:decimal)
 
 
 
@@ -2435,6 +2459,35 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 # Class: <http://purl.obolibrary.org/obo/PO_0030121> (capitulum inflorescence)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0030121> <http://purl.obolibrary.org/obo/PO_0009049>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://www.biodiversitylibrary.org/page/11256339> (Triggerson1914Acraspiserinacei(sexgen))
+
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/11256339> "Triggerson1914Acraspiserinacei(sexgen)")
+ClassAssertion(Annotation(rdfs:comment "on the lower green portion of the scale") <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://www.biodiversitylibrary.org/page/11256339>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_0000039>) <https://www.biodiversitylibrary.org/page/11256339>)
+ClassAssertion(Annotation(rdfs:comment "containing a young larva") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) <https://www.biodiversitylibrary.org/page/11256339>)
+ClassAssertion(Annotation(rdfs:comment "pebbled surface") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001361>) <https://www.biodiversitylibrary.org/page/11256339>)
+ClassAssertion(Annotation(rdfs:comment "greenish in color ... changed to a yellowish brown color ... when mature are reddish brown") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001532>) <https://www.biodiversitylibrary.org/page/11256339>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000045>) <https://www.biodiversitylibrary.org/page/11256339>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/11256339>)
+
+# Individual: <https://www.biodiversitylibrary.org/page/3043687> (Bassett1881Acraspisgemula)
+
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/3043687> "Bassett1881Acraspisgemula")
+ClassAssertion(Annotation(rdfs:comment "in the centre of both the flowering and leal buds") <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://www.biodiversitylibrary.org/page/3043687>)
+ClassAssertion(Annotation(rdfs:comment "Only one gall is found in a single bud") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/NCIT_C48440>) <https://www.biodiversitylibrary.org/page/3043687>)
+ClassAssertion(Annotation(rdfs:comment "dull blackish color") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000317>) <https://www.biodiversitylibrary.org/page/3043687>)
+ClassAssertion(Annotation(rdfs:comment "often nearly hidden in the surrounding bud scales") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000464>) <https://www.biodiversitylibrary.org/page/3043687>)
+ClassAssertion(Annotation(rdfs:comment "exactly like an ordinary acorn in shape having a truncate base and a cone-like extremity with a sharp point at the apex") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001500>) <https://www.biodiversitylibrary.org/page/3043687>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000054>) <https://www.biodiversitylibrary.org/page/3043687>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/3043687>)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000052> <https://www.biodiversitylibrary.org/page/3043687> "1.27"^^xsd:decimal)
+DataPropertyAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000060> <https://www.biodiversitylibrary.org/page/3043687> "2.54"^^xsd:decimal)
 
 
 )
