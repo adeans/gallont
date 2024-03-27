@@ -13,9 +13,9 @@
         "val" : "Plant Gall Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-25"
+        "val" : "2024-03-27"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-03-25/gallont.json"
+      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-03-27/gallont.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000125",
@@ -505,7 +505,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000003",
-      "lbl" : "cavity",
+      "lbl" : "plant gall cavity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {

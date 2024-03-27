@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-03-25
+data-version: releases/2024-03-27
 subsetdef: 3_STAR ""
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
@@ -58,7 +58,7 @@ ontology: gallont
 property_value: dcterms-license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-25" xsd:string
+property_value: owl:versionInfo "2024-03-27" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -194,7 +194,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/33275700
 
 [Term]
 id: GALLONT:0000003
-name: cavity
+name: plant gall cavity
 def: "A plant anatomical space that is located inside a gall." []
 is_a: PO:0025117 ! plant anatomical space
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
@@ -594,7 +594,7 @@ property_value: seeAlso https://doi.org/10.3390%2Finsects12100850
 id: GALLONT:0000041
 name: larval cavity
 def: "A cavity that is occupied by one or more gall inhabitants." []
-is_a: GALLONT:0000003 ! cavity
+is_a: GALLONT:0000003 ! plant gall cavity
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2024-01-19T02:27:40Z" xsd:string
 

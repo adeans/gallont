@@ -11,12 +11,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gallont/gallont-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-03-25/gallont-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-03-27/gallont-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>Plant Gall Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-25</owl:versionInfo>
+        <owl:versionInfo>2024-03-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -186,7 +186,7 @@
         <obo:IAO_0000115 xml:lang="en">A plant anatomical space that is located inside a gall.</obo:IAO_0000115>
         <dcterms:creator rdf:resource="https://orcid.org/0000-0002-2119-4663"/>
         <dcterms:date>2023-06-19T19:44:42Z</dcterms:date>
-        <rdfs:label xml:lang="en">cavity</rdfs:label>
+        <rdfs:label xml:lang="en">plant gall cavity</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/117192961"/>
     </owl:Class>
     
