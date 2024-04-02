@@ -278,6 +278,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001334>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001354>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001359>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001361>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001362>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001365>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001370>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001409>))
@@ -296,6 +297,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001543>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001544>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001609>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001629>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001662>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001716>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001729>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001730>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001732>))
@@ -372,6 +375,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000059>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000062>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000150>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002371>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002454>))
@@ -384,11 +388,16 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94733>))
 Declaration(NamedIndividual(<https://doi.org/10.11646/zootaxa.5145.1>))
 Declaration(NamedIndividual(<https://mbd-db.osu.edu/hol/publications/06ced3ab-830b-4314-afdf-b8ff8b29ae91>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/11256339>))
+Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/11488949>))
+Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/13762223>))
+Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/3043679>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/3043680>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/3043687>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/62524685>))
+Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/7562963>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/7610577>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/7610814>))
+Declaration(NamedIndividual(<https://www.gallformers.org/gall/854>))
 Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:date))
@@ -434,7 +443,12 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://pur
 # Object Property: <http://purl.obolibrary.org/obo/GALLONT_0000062> (has seasonal maturity)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000062> "has seasonal maturity")
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_0000062> <http://purl.obolibrary.org/obo/ENVO_03000096>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000062> <http://purl.obolibrary.org/obo/ENVO_03000096>)
+
+# Object Property: <http://purl.obolibrary.org/obo/GALLONT_0000150> (has seasonal emergence)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000150> "has seasonal emergence")
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000150> <http://purl.obolibrary.org/obo/ENVO_03000096>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002371> (attached to)
 
@@ -2137,6 +2151,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001359> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001361> <https://www.inaturalist.org/observations/55941836>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001362> (fragile)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001362> "fragile")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001362> <http://purl.obolibrary.org/obo/PATO_0001662>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0001362> <http://purl.obolibrary.org/obo/PATO_0001716>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001365> (spiny)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001365> <https://www.inaturalist.org/observations/83838615>)
@@ -2214,6 +2234,16 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001609> <
 # Class: <http://purl.obolibrary.org/obo/PATO_0001629> (aggregated)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001629> <https://www.inaturalist.org/observations/135839958>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001662> (fragility)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001662> "fragility")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001662> <http://purl.obolibrary.org/obo/PATO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001716> (non-fragile)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001716> "non-fragile")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001716> <http://purl.obolibrary.org/obo/PATO_0001662>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001730> (deciduous (generic))
 
@@ -2570,6 +2600,42 @@ ClassAssertion(Annotation(rdfs:comment "greenish in color ... changed to a yello
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000045>) <https://www.biodiversitylibrary.org/page/11256339>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/11256339>)
 
+# Individual: <https://www.biodiversitylibrary.org/page/11488949> (Philonixnigra(agamic)Gillette1890)
+
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/11488949> "Philonixnigra(agamic)Gillette1890")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_0000075>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(Annotation(rdfs:comment "gives them the appearance of felt") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000029>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(Annotation(rdfs:comment "brown") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000952>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001730>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(Annotation(rdfs:comment "globular") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001865>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(Annotation(rdfs:comment "attached to the under surface of the leaves") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/PO_0006019>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000076>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/11488949>)
+ClassAssertion(Annotation(rdfs:comment "in September and October") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_0000062> <http://purl.obolibrary.org/obo/NCIT_C94733>) <https://www.biodiversitylibrary.org/page/11488949>)
+
+# Individual: <https://www.biodiversitylibrary.org/page/13762223> (Neuroterusniger(agamic)Gillette1889)
+
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/13762223> "Neuroterusniger(agamic)Gillette1889")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <https://www.biodiversitylibrary.org/page/13762223>)
+ClassAssertion(Annotation(rdfs:comment "usually a large number on a single leaf") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001609>) <https://www.biodiversitylibrary.org/page/13762223>)
+ClassAssertion(Annotation(rdfs:comment "on the surface of the leaves ... show equally well from above and below") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/PO_0000047>) <https://www.biodiversitylibrary.org/page/13762223>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000093>) <https://www.biodiversitylibrary.org/page/13762223>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/13762223>)
+DataPropertyAssertion(Annotation(rdfs:comment "3 mm. in diameter") <http://purl.obolibrary.org/obo/GALLONT_0000052> <https://www.biodiversitylibrary.org/page/13762223> "3"^^xsd:decimal)
+
+# Individual: <https://www.biodiversitylibrary.org/page/3043679> (Neuroterusminutus(sexgen)Bassett1881)
+
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/3043679> "Neuroterusminutus(sexgen)Bassett1881")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <https://www.biodiversitylibrary.org/page/3043679>)
+ClassAssertion(Annotation(rdfs:comment "pubescent") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000454>) <https://www.biodiversitylibrary.org/page/3043679>)
+ClassAssertion(Annotation(rdfs:comment "usually of a pinkish color") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000954>) <https://www.biodiversitylibrary.org/page/3043679>)
+ClassAssertion(Annotation(rdfs:comment "greatly enlarged petioles without a leaf blade") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/PO_0020038>) <https://www.biodiversitylibrary.org/page/3043679>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000094>) <https://www.biodiversitylibrary.org/page/3043679>)
+ClassAssertion(Annotation(rdfs:comment "As soon as the leaves of Quercus alba begin to expand") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/3043679>)
+ClassAssertion(Annotation(rdfs:comment "As soon as the leaves of Quercus alba begin to expand in the spring") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_0000062> <http://purl.obolibrary.org/obo/NCIT_C94731>) <https://www.biodiversitylibrary.org/page/3043679>)
+
 # Individual: <https://www.biodiversitylibrary.org/page/3043680> (Neuroterusvesicula(sexgen)Bassett1881)
 
 AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/3043680> "Neuroterusvesicula(sexgen)Bassett1881")
@@ -2611,6 +2677,22 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> 
 ClassAssertion(Annotation(rdfs:comment "July to October") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_0000062> <http://purl.obolibrary.org/obo/NCIT_C94733>) <https://www.biodiversitylibrary.org/page/62524685>)
 DataPropertyAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000052> <https://www.biodiversitylibrary.org/page/62524685> "7.5"^^xsd:decimal)
 
+# Individual: <https://www.biodiversitylibrary.org/page/7562963> (Holocynipsmaxima(agamic)Weld1922)
+
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/7562963> "Holocynipsmaxima(agamic)Weld1922")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(Annotation(rdfs:comment "showed exit holes where all the adults had escaped") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000011>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000012>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(Annotation(rdfs:comment "Surface uneven but smooth") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000701>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(Annotation(rdfs:comment "brown") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000952>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(Annotation(rdfs:comment "When mature the interior is soft and easily cut or crumbled with the fingers") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001362>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(Annotation(rdfs:comment "rounded mass") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001865>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(Annotation(rdfs:comment "growing out from side of one of main roots at base of tree or stump just below surface of the ground") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/PO_0009047>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000102>) <https://www.biodiversitylibrary.org/page/7562963>)
+ClassAssertion(Annotation(rdfs:comment "on Quercus alba") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/7562963>)
+DataPropertyAssertion(Annotation(rdfs:comment "90 by 50 by 50 mm. or smaller") <http://purl.obolibrary.org/obo/GALLONT_0000052> <https://www.biodiversitylibrary.org/page/7562963> "90"^^xsd:decimal)
+DataPropertyAssertion(Annotation(rdfs:comment "90 by 50 by 50 mm. or smaller") <http://purl.obolibrary.org/obo/GALLONT_0000060> <https://www.biodiversitylibrary.org/page/7562963> "50"^^xsd:decimal)
+
 # Individual: <https://www.biodiversitylibrary.org/page/7610577> (Andricuscapillatus(agamic)Weld1926)
 
 AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/7610577> "Andricuscapillatus(agamic)Weld1926")
@@ -2641,6 +2723,20 @@ ClassAssertion(Annotation(rdfs:comment "with a nipple at apex") ObjectSomeValues
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000140>) <https://www.biodiversitylibrary.org/page/7610814>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/7610814>)
 ClassAssertion(Annotation(rdfs:comment "produced in the fall") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_0000062> <http://purl.obolibrary.org/obo/NCIT_C94733>) <https://www.biodiversitylibrary.org/page/7610814>)
+
+# Individual: <https://www.gallformers.org/gall/854> (Andricusindistinctus(agamic)Bassett1890)
+
+AnnotationAssertion(rdfs:label <https://www.gallformers.org/gall/854> "Andricusindistinctus(agamic)Bassett1890")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <https://www.gallformers.org/gall/854>)
+ClassAssertion(Annotation(rdfs:comment "They are monothalamous") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) <https://www.gallformers.org/gall/854>)
+ClassAssertion(Annotation(rdfs:comment "dry galls are wrinkled") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001359>) <https://www.gallformers.org/gall/854>)
+ClassAssertion(Annotation(rdfs:comment "round galls") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001865>) <https://www.gallformers.org/gall/854>)
+ClassAssertion(Annotation(rdfs:comment "to the small twigs") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/PO_0025073>) <https://www.gallformers.org/gall/854>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000142>) <https://www.gallformers.org/gall/854>)
+ClassAssertion(Annotation(rdfs:comment "of Q. alba") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.gallformers.org/gall/854>)
+ClassAssertion(Annotation(rdfs:comment "insects were nearly mature in October") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_0000062> <http://purl.obolibrary.org/obo/NCIT_C94733>) <https://www.gallformers.org/gall/854>)
+ClassAssertion(Annotation(rdfs:comment "came out before the next spring") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_0000150> <http://purl.obolibrary.org/obo/NCIT_C94730>) <https://www.gallformers.org/gall/854>)
+DataPropertyAssertion(Annotation(rdfs:comment "the dry ones are about one-eigth of an inch") <http://purl.obolibrary.org/obo/GALLONT_0000052> <https://www.gallformers.org/gall/854> "3.175"^^xsd:decimal)
 
 
 )
