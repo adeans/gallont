@@ -134,6 +134,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001334>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001354>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001359>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001361>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001362>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001365>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001370>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001409>))
@@ -152,6 +153,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001543>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001544>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001609>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001629>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001662>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001716>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001729>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001730>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001732>))
@@ -942,6 +945,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001359> <http://purl.obolibrary
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001361> <https://www.inaturalist.org/observations/55941836>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001362> (fragile)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001362> "fragile")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001362> <http://purl.obolibrary.org/obo/PATO_0001662>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PATO_0001362> <http://purl.obolibrary.org/obo/PATO_0001716>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001365> (spiny)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001365> <https://www.inaturalist.org/observations/83838615>)
@@ -1019,6 +1028,16 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001609> <
 # Class: <http://purl.obolibrary.org/obo/PATO_0001629> (aggregated)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001629> <https://www.inaturalist.org/observations/135839958>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001662> (fragility)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001662> "fragility")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001662> <http://purl.obolibrary.org/obo/PATO_0000141>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0001716> (non-fragile)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001716> "non-fragile")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001716> <http://purl.obolibrary.org/obo/PATO_0001662>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0001730> (deciduous (generic))
 
