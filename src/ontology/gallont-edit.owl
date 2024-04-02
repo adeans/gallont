@@ -373,6 +373,7 @@ Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000052>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000060>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/11256339>))
 Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/3043687>))
+Declaration(NamedIndividual(<https://www.biodiversitylibrary.org/page/7610577>))
 Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:date))
 Declaration(AnnotationProperty(dcterms:date))
@@ -2465,10 +2466,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0030121> <http://purl.obolibrary.o
 #   Named Individuals
 ############################
 
-# Individual: <https://www.biodiversitylibrary.org/page/11256339> (Triggerson1914Acraspiserinacei(sexgen))
+# Individual: <https://www.biodiversitylibrary.org/page/11256339> (Acraspiserinacei(sexgen)Triggerson1914)
 
-AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/11256339> "Triggerson1914Acraspiserinacei(sexgen)")
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/11256339> "Acraspiserinacei(sexgen)Triggerson1914")
 ClassAssertion(Annotation(rdfs:comment "on the lower green portion of the scale") <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://www.biodiversitylibrary.org/page/11256339>)
+ClassAssertion(Annotation(rdfs:comment "on the lower green portion of the scale") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0020054>) <https://www.biodiversitylibrary.org/page/11256339>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_0000039>) <https://www.biodiversitylibrary.org/page/11256339>)
 ClassAssertion(Annotation(rdfs:comment "containing a young larva") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) <https://www.biodiversitylibrary.org/page/11256339>)
 ClassAssertion(Annotation(rdfs:comment "pebbled surface") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001361>) <https://www.biodiversitylibrary.org/page/11256339>)
@@ -2476,9 +2478,9 @@ ClassAssertion(Annotation(rdfs:comment "greenish in color ... changed to a yello
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_0000045>) <https://www.biodiversitylibrary.org/page/11256339>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/11256339>)
 
-# Individual: <https://www.biodiversitylibrary.org/page/3043687> (Bassett1881Acraspisgemula)
+# Individual: <https://www.biodiversitylibrary.org/page/3043687> (AcraspisgemulaBassett1881)
 
-AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/3043687> "Bassett1881Acraspisgemula")
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/3043687> "AcraspisgemulaBassett1881")
 ClassAssertion(Annotation(rdfs:comment "in the centre of both the flowering and leal buds") <http://purl.obolibrary.org/obo/GALLONT_0000035> <https://www.biodiversitylibrary.org/page/3043687>)
 ClassAssertion(Annotation(rdfs:comment "Only one gall is found in a single bud") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/NCIT_C48440>) <https://www.biodiversitylibrary.org/page/3043687>)
 ClassAssertion(Annotation(rdfs:comment "dull blackish color") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000317>) <https://www.biodiversitylibrary.org/page/3043687>)
@@ -2488,6 +2490,18 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> 
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <https://www.biodiversitylibrary.org/page/3043687>)
 DataPropertyAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000052> <https://www.biodiversitylibrary.org/page/3043687> "1.27"^^xsd:decimal)
 DataPropertyAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000060> <https://www.biodiversitylibrary.org/page/3043687> "2.54"^^xsd:decimal)
+
+# Individual: <https://www.biodiversitylibrary.org/page/7610577> (Andricuscapillatus(agamic)Weld1926)
+
+AnnotationAssertion(rdfs:label <https://www.biodiversitylibrary.org/page/7610577> "Andricuscapillatus(agamic)Weld1926")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <https://www.biodiversitylibrary.org/page/7610577>)
+ClassAssertion(Annotation(rdfs:comment "on midrib ... under side of leaf") ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0006019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002371> <http://purl.obolibrary.org/obo/PO_0020139>)) <https://www.biodiversitylibrary.org/page/7610577>)
+ClassAssertion(Annotation(rdfs:comment "covered with sparse short pubescence which does not hide the outline of the gall") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000454>) <https://www.biodiversitylibrary.org/page/7610577>)
+ClassAssertion(Annotation(rdfs:comment "whitish or tan-colored") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001246>) <https://www.biodiversitylibrary.org/page/7610577>)
+ClassAssertion(Annotation(rdfs:comment "Cluster of 2-12") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001629>) <https://www.biodiversitylibrary.org/page/7610577>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001730>) <https://www.biodiversitylibrary.org/page/7610577>)
+ClassAssertion(Annotation(rdfs:comment "somewhat globular but slightly distorted by mutual pressure") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001865>) <https://www.biodiversitylibrary.org/page/7610577>)
+DataPropertyAssertion(Annotation(rdfs:comment "2-3 mm in diameter") <http://purl.obolibrary.org/obo/GALLONT_0000052> <https://www.biodiversitylibrary.org/page/7610577> "3"^^xsd:decimal)
 
 
 )
