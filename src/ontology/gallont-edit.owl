@@ -71,6 +71,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_109362>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1389465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1540852>))
@@ -229,6 +230,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030121>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002437>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002440>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002574>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94730>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94731>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94732>))
@@ -267,6 +272,23 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000000
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000000> "Relationship that specifies which organism is associated with a class.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000000> "has associate"@en)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000000> <http://purl.obolibrary.org/obo/OBI_0100026>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002437> (<http://purl.obolibrary.org/obo/RO_0002437>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002437> <http://purl.obolibrary.org/obo/RO_0002434>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002440> (<http://purl.obolibrary.org/obo/RO_0002440>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002440> <http://purl.obolibrary.org/obo/RO_0002574>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002453> (host of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002453> "host of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/RO_0002440>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002574> (<http://purl.obolibrary.org/obo/RO_0002574>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002574> <http://purl.obolibrary.org/obo/RO_0002437>)
 
 
 
@@ -619,15 +641,12 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000032
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000032> "brittle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000032> <http://purl.obolibrary.org/obo/PATO_0001543>)
 
-# Class: <http://purl.obolibrary.org/obo/GALLONT_0000033> (erineum)
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000033> (DEPRECATED erineum)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000033> "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness."@en)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000033> <http://orcid.org/0000-0002-2119-4663>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000033> "2023-08-01T21:56:59Z")
-AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000033> <https://lccn.loc.gov/41001073>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000033> "erineum"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000033> <https://www.inaturalist.org/observations/79701805>)
-EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000033> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000000> <http://purl.obolibrary.org/obo/NCBITaxon_6946>)))
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000033> "logic needed to be fixed")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000033> "DEPRECATED erineum"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/GALLONT_0000033> <http://purl.obolibrary.org/obo/GALLONT_0000048>)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/GALLONT_0000033> "true"^^xsd:boolean)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000034> (blister gall)
 
@@ -752,6 +771,14 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000047> "2024-03-25T19:40:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000047> "Acraspis gemula"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000047> <http://purl.obolibrary.org/obo/NCBITaxon_131567>)
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000048> (erineum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000048> "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness."@en)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000048> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000048> "2023-08-01T21:56:59Z")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000048> "erineum")
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/NCBITaxon_6946>)))
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_109362> (Aceria)
 
