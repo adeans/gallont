@@ -16,9 +16,9 @@
         "val" : "Plant Gall Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-03-27"
+        "val" : "2024-04-03"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-03-27/gallont-base.json"
+      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-04-03/gallont-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000000",
@@ -673,25 +673,15 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "lbl" : "erineum",
+      "lbl" : "DEPRECATED erineum",
       "type" : "CLASS",
       "meta" : {
-        "definition" : {
-          "val" : "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness."
-        },
+        "comments" : [ "logic needed to be fixed" ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/terms/creator",
-          "val" : "http://orcid.org/0000-0002-2119-4663"
-        }, {
-          "pred" : "http://purl.org/dc/terms/date",
-          "val" : "2023-08-01T21:56:59Z"
-        }, {
-          "pred" : "http://purl.org/dc/terms/source",
-          "val" : "https://lccn.loc.gov/41001073"
-        }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-          "val" : "https://www.inaturalist.org/observations/79701805"
-        } ]
+          "val" : "http://purl.obolibrary.org/obo/GALLONT_0000048"
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000034",
@@ -927,6 +917,22 @@
           "val" : "2024-03-25T19:40:19Z"
         } ]
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GALLONT_0000048",
+      "lbl" : "erineum",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-2119-4663"
+        }, {
+          "pred" : "http://purl.org/dc/terms/date",
+          "val" : "2023-08-01T21:56:59Z"
+        } ]
+      }
     } ],
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000002",
@@ -1065,26 +1071,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0001543"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/UBERON_0001062"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/PO_0025034"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
-      "obj" : "http://purl.obolibrary.org/obo/PO_0006504"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "pred" : "http://purl.obolibrary.org/obo/GALLONT_0000000",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_6946"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000034",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
@@ -1200,21 +1186,28 @@
       "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000047",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_131567"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000048",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GALLONT_0000025"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000048",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000048",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0001062"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000048",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0006504"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GALLONT_0000048",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002453",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_6946"
     } ],
     "logicalDefinitionAxioms" : [ {
-      "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000033",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000025" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
-        "fillerId" : "http://purl.obolibrary.org/obo/PO_0025034"
-      }, {
-        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000051",
-        "fillerId" : "http://purl.obolibrary.org/obo/PO_0006504"
-      }, {
-        "propertyId" : "http://purl.obolibrary.org/obo/GALLONT_0000000",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_6946"
-      } ]
-    }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000035",
       "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000025" ],
       "restrictions" : [ {
@@ -1246,6 +1239,16 @@
       }, {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0000086",
         "fillerId" : "http://purl.obolibrary.org/obo/PATO_0002078"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/GALLONT_0000048",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/GALLONT_0000025" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000051",
+        "fillerId" : "http://purl.obolibrary.org/obo/PO_0006504"
+      }, {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0002453",
+        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_6946"
       } ]
     } ]
   } ]

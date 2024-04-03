@@ -1,6 +1,5 @@
 format-version: 1.2
-data-version: releases/2024-03-27
-subsetdef: 3_STAR ""
+data-version: releases/2024-04-03
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
 subsetdef: Angiosperm ""
@@ -21,6 +20,7 @@ subsetdef: goslim_mouse ""
 subsetdef: goslim_pir ""
 subsetdef: goslim_plant ""
 subsetdef: goslim_pombe ""
+subsetdef: goslim_prokaryote ""
 subsetdef: goslim_yeast ""
 subsetdef: Gymnosperms ""
 subsetdef: hpo_slim ""
@@ -33,7 +33,6 @@ subsetdef: mpath_slim ""
 subsetdef: Musa ""
 subsetdef: Poaceae ""
 subsetdef: Potato ""
-subsetdef: prokaryote_subset ""
 subsetdef: Pteridophytes ""
 subsetdef: reference ""
 subsetdef: relational_slim ""
@@ -51,14 +50,29 @@ synonymtypedef: genbank_common_name ""
 synonymtypedef: German ""
 synonymtypedef: in_part ""
 synonymtypedef: Japanese ""
+synonymtypedef: OMO:0003003 ""
 synonymtypedef: OMO:0003004 ""
 synonymtypedef: Spanish ""
 synonymtypedef: synonym ""
 ontology: gallont
-property_value: dcterms-license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/description "None" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-27" xsd:string
+property_value: owl:versionInfo "2024-04-03" xsd:string
+
+[Term]
+id: BFO:0000001
+name: entity
+property_value: BFO:0000179 "entity" xsd:string
+property_value: BFO:0000180 "Entity" xsd:string
+property_value: IAO:0000112 "Julius Caesar" xsd:string
+property_value: IAO:0000112 "the Second World War" xsd:string
+property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
+property_value: IAO:0000112 "your body mass index" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
+property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000004", comment="per discussion with Barry Smith", seeAlso="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"}
+property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/001-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
 id: BFO:0000002
@@ -71,12 +85,24 @@ relationship: part_of BFO:0000002 {all_only="true"} ! continuant
 id: BFO:0000003
 name: occurrent
 def: "An entity that has temporal parts and that happens, unfolds or develops through time." []
+is_a: BFO:0000001 ! entity
 relationship: part_of BFO:0000003 {all_only="true"} ! occurrent
+property_value: BFO:0000179 "occurrent" xsd:string
+property_value: BFO:0000180 "Occurrent" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players." xsd:string
+property_value: IAO:0000116 "Occurrent doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process." xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000006", comment="per discussion with Barry Smith"}
+property_value: IAO:0000116 "Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by 'spn[e]' and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write 'spr[e]' and `spl[e]' respectively for the spread and spell of e, omitting mention of the frame." xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000012"}
+property_value: IAO:0000600 "An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/077-002"}
+property_value: IAO:0000601 "b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/079-001"}
+property_value: IAO:0000601 "Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/108-001"}
+property_value: IAO:0000602 "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/108-001"}
+property_value: IAO:0000602 "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/079-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
 id: BFO:0000004
 name: independent continuant
-def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
 def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
 comment: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
 is_a: BFO:0000002 ! continuant
@@ -84,9 +110,23 @@ disjoint_from: BFO:0000020 ! characteristic
 relationship: part_of BFO:0000004 {all_only="true"} ! independent continuant
 
 [Term]
+id: BFO:0000008
+name: temporal region
+is_a: BFO:0000003 ! occurrent
+property_value: BFO:0000179 "t-region" xsd:string
+property_value: BFO:0000180 "TemporalRegion" xsd:string
+property_value: IAO:0000116 "Temporal region doesn't have a closure axiom because the subclasses don't exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn't overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000003", comment="per discussion with Barry Smith"}
+property_value: IAO:0000600 "A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/100-001"}
+property_value: IAO:0000601 "All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/101-001"}
+property_value: IAO:0000601 "Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/119-002"}
+property_value: IAO:0000602 "(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/119-002"}
+property_value: IAO:0000602 "(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/101-001"}
+property_value: IAO:0000602 "(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/100-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
 id: BFO:0000015
 name: process
-def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" []
 comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 is_a: BFO:0000003 ! occurrent
@@ -117,7 +157,6 @@ relationship: part_of BFO:0000019 {all_only="true"} ! quality
 id: BFO:0000020
 name: characteristic
 name: specifically dependent continuant
-def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
 def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" []
 comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
@@ -130,13 +169,24 @@ property_value: seeAlso "https://github.com/oborel/obo-relations/pull/284" xsd:s
 id: BFO:0000023
 name: role
 def: "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts." []
-is_a: CHEBI:50906 ! role
-equivalent_to: CHEBI:50906 ! role
+is_a: BFO:0000017 ! realizable entity
 
 [Term]
 id: BFO:0000034
 name: function
 is_a: BFO:0000016 ! disposition
+
+[Term]
+id: BFO:0000038
+name: one-dimensional temporal region
+is_a: BFO:0000008 ! temporal region
+property_value: BFO:0000179 "1d-t-region" xsd:string
+property_value: BFO:0000180 "OneDimensionalTemporalRegion" xsd:string
+property_value: IAO:0000112 "the temporal region during which a process occurs." xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: A temporal interval is a special kind of one-dimensional temporal region, namely one that is self-connected (is without gaps or breaks)." xsd:string
+property_value: IAO:0000600 "A one-dimensional temporal region is a temporal region that is extended. (axiom label in BFO2 Reference: [103-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/103-001"}
+property_value: IAO:0000602 "(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/103-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
 id: BFO:0000040
@@ -160,12 +210,9 @@ name: gonochoristic organism
 is_a: OBI:0100026 ! organism
 
 [Term]
-id: CHEBI:50906
-name: role
-namespace: chebi_ontology
-def: "A role is particular behaviour which a material entity may exhibit." []
-subset: 3_STAR
-is_a: BFO:0000023 ! role
+id: ENVO:03000096
+name: season
+is_a: BFO:0000038 ! one-dimensional temporal region
 
 [Term]
 id: FLOPO:0900042
@@ -486,21 +533,10 @@ property_value: http://purl.org/dc/terms/date "2023-06-27T01:41:01Z" xsd:string
 
 [Term]
 id: GALLONT:0000033
-name: erineum
-def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
-is_a: GALLONT:0000025 ! plant gall
-is_a: UBERON:0001062 ! anatomical entity
-intersection_of: GALLONT:0000025 ! plant gall
-intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
-intersection_of: has_part PO:0006504 ! leaf trichome
-intersection_of: part_of PO:0025034 ! leaf
-relationship: GALLONT:0000000 NCBITaxon:6946 ! has associate Acariformes
-relationship: has_part PO:0006504 ! leaf trichome
-relationship: part_of PO:0025034 ! leaf
-property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/terms/date "2023-08-01T21:56:59Z" xsd:string
-property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
-property_value: seeAlso https://www.inaturalist.org/observations/79701805
+name: DEPRECATED erineum
+comment: logic needed to be fixed
+property_value: seeAlso GALLONT:0000048
+is_obsolete: true
 
 [Term]
 id: GALLONT:0000034
@@ -531,14 +567,14 @@ name: bullet gall
 def: "A plant gall that is monothalamous and solid, with a shape reminiscent of a bullet. Gall is usually subspherical or subelliptical in shape." []
 is_a: GALLONT:0000025 ! plant gall
 intersection_of: GALLONT:0000025 ! plant gall
-intersection_of: has_quality GALLONT:0000009 ! monothalamous
-intersection_of: has_quality GALLONT:0000012 ! solid
-intersection_of: has_quality GALLONT:0000031 ! semideciduous
-intersection_of: has_quality PATO:0001865 ! spheroid
-relationship: has_quality GALLONT:0000009 ! monothalamous
-relationship: has_quality GALLONT:0000012 ! solid
-relationship: has_quality GALLONT:0000031 ! semideciduous
-relationship: has_quality PATO:0001865 ! spheroid
+intersection_of: RO:0000086 GALLONT:0000009 ! has quality monothalamous
+intersection_of: RO:0000086 GALLONT:0000012 ! has quality solid
+intersection_of: RO:0000086 GALLONT:0000031 ! has quality semideciduous
+intersection_of: RO:0000086 PATO:0001865 ! has quality spheroid
+relationship: RO:0000086 GALLONT:0000009 ! has quality monothalamous
+relationship: RO:0000086 GALLONT:0000012 ! has quality solid
+relationship: RO:0000086 GALLONT:0000031 ! has quality semideciduous
+relationship: RO:0000086 PATO:0001865 ! has quality spheroid
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2023-08-01T22:28:40Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
@@ -551,9 +587,9 @@ def: "A plant gall that has a detached larval chamber capable of rolling around 
 is_a: GALLONT:0000025 ! plant gall
 intersection_of: GALLONT:0000025 ! plant gall
 intersection_of: has_part GALLONT:0000006 ! detached chamber
-intersection_of: has_quality PATO:0002078 ! hollow
+intersection_of: RO:0000086 PATO:0002078 ! has quality hollow
 relationship: has_part GALLONT:0000006 ! detached chamber
-relationship: has_quality PATO:0002078 ! hollow
+relationship: RO:0000086 PATO:0002078 ! has quality hollow
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2023-08-02T01:35:34Z" xsd:string
 property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
@@ -644,12 +680,28 @@ property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-211
 property_value: http://purl.org/dc/terms/date "2024-03-25T19:40:19Z" xsd:dateTime
 
 [Term]
+id: GALLONT:0000048
+name: erineum
+def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
+is_a: GALLONT:0000025 ! plant gall
+is_a: OBI:0100026 ! organism
+is_a: UBERON:0001062 ! anatomical entity
+intersection_of: GALLONT:0000025 ! plant gall
+intersection_of: has_part PO:0006504 ! leaf trichome
+intersection_of: RO:0002453 NCBITaxon:6946 ! host of Acariformes
+relationship: has_part PO:0006504 ! leaf trichome
+relationship: RO:0002453 NCBITaxon:6946 ! host of Acariformes
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-01T21:56:59Z" xsd:string
+
+[Term]
 id: GO:0003674
 name: gene product or complex activity
 name: molecular_function
 namespace: molecular_function
 alt_id: GO:0005554
 def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs." [GOC:pdt]
+comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
 comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
 comment: This is the same as GO molecular function
 subset: goslim_candida
@@ -689,6 +741,7 @@ alt_id: GO:0044699
 def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 def: "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective." []
 comment: A biological process is an evolved process
+comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 subset: goslim_candida
 subset: goslim_chembl
@@ -737,8 +790,8 @@ subset: goslim_metagenomics
 subset: goslim_mouse
 subset: goslim_pir
 subset: goslim_plant
+subset: goslim_prokaryote
 subset: goslim_yeast
-subset: prokaryote_subset
 xref: EC:2.-.-.-
 xref: Reactome:R-HSA-1483089 "PE is converted to PS by PTDSS2"
 xref: Reactome:R-HSA-1483186 "PC is converted to PS by PTDSS1"
@@ -773,6 +826,8 @@ name: root
 namespace: ncbi_taxonomy
 synonym: "all" RELATED synonym []
 xref: GC_ID:1
+xref: PMID:30365038
+xref: PMID:32761142
 is_a: OBI:0100026 ! organism
 
 [Term]
@@ -825,7 +880,7 @@ property_value: has_rank NCBITaxon:clade
 id: NCBITaxon:197563
 name: Mandibulata
 namespace: ncbi_taxonomy
-synonym: "mandibulates" EXACT common_name []
+synonym: "mandibulates" EXACT OMO:0003003 []
 xref: GC_ID:1
 xref: PMID:11557979
 xref: PMID:9727836
@@ -846,6 +901,7 @@ synonym: "Eucaryotae" RELATED synonym []
 synonym: "eucaryotes" EXACT genbank_common_name []
 synonym: "Eukarya" RELATED synonym []
 synonym: "Eukaryotae" RELATED synonym []
+synonym: "eukaryotes" EXACT OMO:0003003 []
 synonym: "eukaryotes" EXACT common_name []
 synonym: "eukaryotes" RELATED blast_name []
 xref: GC_ID:1
@@ -863,6 +919,7 @@ synonym: "Chlorophyta/Embryophyta group" EXACT equivalent_name []
 synonym: "chlorophyte/embryophyte group" EXACT equivalent_name []
 synonym: "Chloroplastida" RELATED synonym []
 synonym: "green plants" EXACT common_name []
+synonym: "green plants" EXACT OMO:0003003 []
 synonym: "green plants" RELATED blast_name []
 xref: GC_ID:1
 xref: PMID:16248873
@@ -887,7 +944,7 @@ namespace: ncbi_taxonomy
 synonym: "Animalia" RELATED synonym []
 synonym: "animals" RELATED blast_name []
 synonym: "metazoans" EXACT genbank_common_name []
-synonym: "multicellular animals" EXACT common_name []
+synonym: "multicellular animals" EXACT OMO:0003003 []
 xref: GC_ID:1
 is_a: NCBITaxon:33154 ! Opisthokonta
 property_value: has_rank NCBITaxon:kingdom
@@ -1741,6 +1798,17 @@ is_a: PATO:0000700 ! rough
 property_value: seeAlso https://www.inaturalist.org/observations/55941836
 
 [Term]
+id: PATO:0001362
+name: fragile
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's disposition to being easily damaged or destroyed." [WordNet:WordNet]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0001662 ! fragility
+disjoint_from: PATO:0001716 ! non-fragile
+property_value: RO:0002604 PATO:0001716
+
+[Term]
 id: PATO:0001365
 name: spiny
 namespace: quality
@@ -2033,6 +2101,16 @@ is_a: PATO:0000330 ! irregular spatial pattern
 property_value: seeAlso https://www.inaturalist.org/observations/135839958
 
 [Term]
+id: PATO:0001662
+name: fragility
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's disposition to being damaged or destroyed." [WordNet:WordNet]
+subset: attribute_slim
+subset: disposition_slim
+subset: scalar_slim
+is_a: PATO:0000141 ! structure
+
+[Term]
 id: PATO:0001708
 name: 1-D extent
 namespace: quality
@@ -2052,6 +2130,19 @@ is_a: PATO:0001334 ! diameter
 intersection_of: PATO:0001334 ! diameter
 intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
 property_value: RO:0002604 PATO:0001715
+
+[Term]
+id: PATO:0001716
+name: non-fragile
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's ability to withstand great strain without tearing or breaking." [thefreedictionary.com:thefreedictionary.com]
+subset: attribute_slim
+subset: disposition_slim
+synonym: "resilient" RELATED []
+synonym: "strong" RELATED []
+synonym: "tough" RELATED []
+is_a: PATO:0001662 ! fragility
+property_value: RO:0002604 PATO:0001362
 
 [Term]
 id: PATO:0001729
@@ -2404,6 +2495,21 @@ is_a: PATO:0002007 ! convex 3-D shape
 property_value: seeAlso https://www.inaturalist.org/observations/61704917
 
 [Term]
+id: PATO:0002055
+name: increased fragility
+namespace: quality
+def: "A fragility which is relatively high." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0001362 ! fragile
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0001362 ! fragile
+intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
+property_value: RO:0002604 PATO:0002056
+creation_date: 2009-03-26T04:01:37Z
+
+[Term]
 id: PATO:0002063
 name: columnar
 namespace: quality
@@ -2412,7 +2518,7 @@ subset: cell_quality
 subset: mpath_slim
 subset: value_slim
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/111432683
 creation_date: 2009-07-01T01:44:06Z
 
@@ -2424,7 +2530,7 @@ def: "A quality inhering in a bearer by virtue of the bearer's having an empty s
 subset: value_slim
 is_a: GALLONT:0000007 ! internal quality
 is_a: PATO:0002014 ! structure, cavities
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/117192961
 creation_date: 2009-09-18T02:19:20Z
 
@@ -2437,7 +2543,7 @@ subset: mpath_slim
 subset: value_slim
 is_a: PATO:0000052 {comment="probably not the right class for galls with nipple-like projections"} ! shape
 is_a: PATO:0000623 ! exserted
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/91418114
 creation_date: 2009-10-05T03:04:52Z
 
@@ -2448,7 +2554,7 @@ namespace: quality
 def: "A quality inhering in a bearer by virtue of its constitution." [PATOC:GVG]
 subset: attribute_slim
 is_a: PATO:0001018 ! physical quality
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2010-03-15T04:35:27Z
 
 [Term]
@@ -2464,7 +2570,7 @@ synonym: "sickle-shaped" EXACT []
 synonym: "unciform" EXACT []
 synonym: "uncinate" EXACT []
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2010-07-08T01:57:46Z
 
 [Term]
@@ -2474,7 +2580,7 @@ namespace: quality
 def: "A tapered shape quality inhering in a bearer by virtue of the bearer's tapering gradually to a sharp point." [url:http\://www.thefreedictionary.com/acuminate]
 subset: value_slim
 is_a: PATO:0001500 ! tapered
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/54845032
 creation_date: 2010-07-15T09:03:18Z
 
@@ -2486,7 +2592,7 @@ def: "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's 
 subset: value_slim
 synonym: "drop shaped" EXACT []
 is_a: PATO:0002007 ! convex 3-D shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/34366055
 creation_date: 2010-07-23T02:31:11Z
 
@@ -2496,7 +2602,7 @@ name: 3-D shape
 namespace: quality
 def: "A shape that inheres in a 3 dimensional entity." [PATOC:OREGON]
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2010-10-05T12:31:16Z
 
 [Term]
@@ -2506,7 +2612,7 @@ namespace: quality
 def: "Multicolored quality inhering in a bearer by virtue of the bearer's being colored with a variegated pattern resembling marble,." [url:http\://www.oed.com/]
 subset: value_slim
 is_a: PATO:0001533 ! multi-colored
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/61596659
 creation_date: 2010-11-16T11:17:32Z
 
@@ -2517,7 +2623,7 @@ namespace: quality
 def: "Multicolored quality inhering in a bearer by virtue of the bearer's being dappled with spots, patches, or blotches of different colors." [url:http\://www.oed.com/]
 subset: value_slim
 is_a: PATO:0001533 ! multi-colored
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/162989102
 creation_date: 2010-11-16T11:22:57Z
 
@@ -2528,7 +2634,7 @@ namespace: quality
 def: "A color pattern inhering in a bearer by virtue of bearer's exhibiting vertical bars of one hue or degree of saturation crossing another." [PATOC:WD]
 subset: value_slim
 is_a: PATO:0001533 ! multi-colored
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/45656874
 creation_date: 2010-11-16T11:30:40Z
 
@@ -2540,8 +2646,8 @@ def: "A quality that has a value that is increased compared to normal or average
 is_a: PATO:0000069 ! deviation (from_normal)
 intersection_of: PATO:0000001 ! quality
 intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
 relationship: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: RO:0002604 PATO:0002301
 creation_date: 2011-06-16T06:39:43Z
 
@@ -2554,7 +2660,7 @@ is_a: PATO:0001241 ! physical object quality
 is_a: PATO:0002300 ! increased quality
 intersection_of: PATO:0001241 ! physical object quality
 intersection_of: RO:0015007 PATO:0000461 ! increased in magnitude relative to normal
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: RO:0002604 PATO:0002303
 creation_date: 2011-06-16T06:54:01Z
 
@@ -2565,7 +2671,7 @@ namespace: quality
 def: "Having a fringe or border of hairlike or fingerlike projections." [PATO:WS]
 subset: value_slim
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/14417106
 creation_date: 2011-09-22T03:52:11Z
 
@@ -2576,7 +2682,7 @@ namespace: quality
 def: "A shape constituting a transition between a rectangle and a circle; a closed curve, of which the circle and ellipse are special cases, whose parametric equation is x = a.cos2/rt, y = b.cos2/rt" [wiktionary:superellipse]
 synonym: "Lamé curve" EXACT []
 is_a: PATO:0002006 ! 2-D shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2011-10-12T12:45:16Z
 
 [Term]
@@ -2586,7 +2692,7 @@ namespace: quality
 def: "A shape quality inhering in a bearer by virtue of the bearer's being dome-shaped." [PATOC:dd]
 subset: value_slim
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: IAO:0000118 "dome-like" xsd:string
 property_value: IAO:0000118 "hemispheroid" xsd:string
 creation_date: 2012-01-31T02:32:14Z
@@ -2598,7 +2704,7 @@ namespace: quality
 def: "A quality of being covered with stiff or rough hairs." [PATOC:GVG]
 subset: value_slim
 is_a: PATO:0000454 ! hairy
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/64256556
 creation_date: 2012-01-31T02:51:37Z
 
@@ -2609,7 +2715,7 @@ namespace: quality
 def: "A quality of being minutely hispid." [PATOC:DD]
 subset: value_slim
 is_a: PATO:0002339 ! hispid
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/27503910
 creation_date: 2012-01-31T02:53:21Z
 
@@ -2620,7 +2726,7 @@ namespace: quality
 def: "A quality inhering in a bearer by virtue of the bearer's being characterized by fine, entangled hairs giving the appearance of cobweb." [PATOC:DD]
 subset: value_slim
 is_a: PATO:0000454 ! hairy
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/62631894
 creation_date: 2012-01-31T03:49:00Z
 
@@ -2632,7 +2738,7 @@ def: "Having a spindle-like shape that is wide in the middle and tapers at both 
 subset: mpath_slim
 subset: value_slim
 is_a: PATO:0001409 ! spindle-shaped
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/47505522
 creation_date: 2012-12-07T05:43:25Z
 
@@ -2643,7 +2749,7 @@ namespace: quality
 def: "A color consisting of yellow and brown hue." [PATOC:GVG]
 subset: value_slim
 is_a: PATO:0000952 ! brown
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2012-12-17T10:55:51Z
 
 [Term]
@@ -2655,7 +2761,7 @@ def: "A surface feature shape having numerous very small circular rounded projec
 subset: value_slim
 is_a: PATO:0001925 ! surface feature shape
 disjoint_from: PATO:0002442 ! unornamented
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: IAO:0000118 "pebbled" xsd:string
 property_value: IAO:0000118 "tuberculose" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/118532452
@@ -2668,7 +2774,7 @@ namespace: quality
 def: "A surface feature shape quality inhering in a bearer by virtue of the degree of the bearer's highly topographical with ridges, pits, rugosity or other surface structures." [PATOC:GVG]
 subset: disposition_slim
 is_a: PATO:0001925 ! surface feature shape
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 creation_date: 2013-01-29T10:57:42Z
 
 [Term]
@@ -2679,7 +2785,7 @@ def: "A surface feature shape in which the bearer's surface is lacking ridges, p
 def: "A surface feature shape in which the bearer's surface is lacking ridges, pits, rugosity or other surface structures." [PATOC:AD]
 subset: value_slim
 is_a: PATO:0002440 ! ornamentation
-relationship: dc-contributor https://orcid.org/0000-0002-2061-091X
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: RO:0002604 PATO:0002441
 property_value: seeAlso https://www.inaturalist.org/observations/32783899
 creation_date: 2013-01-29T11:00:20Z
@@ -2692,7 +2798,7 @@ namespace: quality
 def: "Having the shape of a pear; tapering near the top and bulging toward the base or bottom. From thefreedictionary.com" [PATOC:WD]
 subset: value_slim
 is_a: PATO:0002007 ! convex 3-D shape
-relationship: dc-contributor https://orcid.org/0000-0003-3162-7490
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-3162-7490
 creation_date: 2014-09-09T12:30:02Z
 
 [Term]
@@ -2702,7 +2808,7 @@ namespace: quality
 def: "A shape that is almost an ellipse." [PATOC:WD]
 subset: value_slim
 is_a: PATO:0002318 ! superelliptic
-relationship: dc-contributor https://orcid.org/0000-0003-3162-7490
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-3162-7490
 property_value: seeAlso https://www.inaturalist.org/observations/91487515
 creation_date: 2014-09-09T12:36:15Z
 
@@ -2713,7 +2819,7 @@ namespace: quality
 def: "A spheroid shape quality inhering in a bearer by virtue of the bearer's being nearly, but not perfectly, spherical." [PATOC:WD]
 subset: value_slim
 is_a: PATO:0001865 ! spheroid
-relationship: dc-contributor https://orcid.org/0000-0003-3162-7490
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-3162-7490
 property_value: IAO:0000118 "globose" xsd:string
 property_value: IAO:0000118 "globular" xsd:string
 property_value: seeAlso https://www.inaturalist.org/observations/84454407
@@ -2725,8 +2831,8 @@ name: flared
 namespace: quality
 def: "A shape quality inhering in a bearer by virtue of the bearer being expanded laterally and or opened outward in shape." []
 is_a: PATO:0000052 ! shape
-relationship: dc-contributor https://orcid.org/0000-0001-5208-3432
 property_value: http://purl.org/dc/elements/1.1/date "2018-11-19T21:49:07Z" xsd:dateTime
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0001-5208-3432
 property_value: seeAlso https://www.inaturalist.org/observations/105016514
 
 [Term]
@@ -4735,7 +4841,7 @@ property_value: IAO:0000116 "A quality inheres in its bearer at all times for wh
 property_value: IAO:0000118 "is quality of" xsd:string
 property_value: IAO:0000118 "quality_of" xsd:string
 is_a: RO:0000052 ! characteristic of
-inverse_of: has_quality ! has quality
+inverse_of: RO:0000086 ! has quality
 
 [Typedef]
 id: RO:0000081
@@ -4758,6 +4864,16 @@ property_value: IAO:0000116 "A bearer can have many functions, and its functions
 property_value: IAO:0000118 "has_function" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000034 ! function
+is_a: bearer_of ! bearer of
+
+[Typedef]
+id: RO:0000086
+name: has quality
+def: "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this apple has quality this red color" xsd:string
+property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
+property_value: IAO:0000118 "has_quality" xsd:string
+range: BFO:0000019 ! quality
 is_a: bearer_of ! bearer of
 
 [Typedef]
@@ -4795,7 +4911,6 @@ def: "A relationship that holds between a GO molecular function and a component 
 comment: By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component 'ligand binding'.
 is_a: has_regulatory_component_activity ! has regulatory component activity
 is_a: positively_regulated_by ! positively regulated by
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:31:17Z
 
@@ -4804,7 +4919,6 @@ id: RO:0002017
 name: has component activity
 comment: A 'has component activity' B if A is A and B are molecular functions (GO_0003674) and A has_component B.
 is_a: RO:0002018 ! has component process
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:44:33Z
 
@@ -4815,52 +4929,43 @@ def: "w 'has process component' p if p and w are processes,  w 'has part' p and 
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
 is_a: has_component ! has component
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:49:21Z
 
 [Typedef]
 id: RO:0002022
 name: directly regulated by
-comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="GOC:dos"}
 comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="https://orcid.org/0000-0002-7073-9172"}
 is_a: regulated_by ! regulated by
 inverse_of: directly_regulates ! directly regulates
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:24Z
 
 [Typedef]
 id: RO:0002023
 name: directly negatively regulated by
-def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [GOC:dos]
 def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: directly_negatively_regulates ! directly negatively regulates
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:38Z
 
 [Typedef]
 id: RO:0002024
 name: directly positively regulated by
-def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [GOC:dos]
 def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: directly_positively_regulates ! directly positively regulates
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:47Z
 
 [Typedef]
 id: RO:0002025
 name: has effector activity
-def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [GOC:dos]
 def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [https://orcid.org/0000-0002-7073-9172]
 comment: This relation is designed for constructing compound molecular functions, typically in combination with one or more regulatory component activity relations.
 is_functional: true
 is_a: RO:0002017 ! has component activity
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-22T14:14:36Z
 
@@ -4942,7 +5047,6 @@ def: "c acts upstream of or within p if c is enables f, and f is causally upstre
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 synonym: "affects" RELATED []
 property_value: IAO:0000112 "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway." xsd:string
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within
 property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within" xsd:anyURI
 holds_over_chain: RO:0002327 causally_upstream_of_or_within
 is_a: RO:0002500 ! causal agent in process
@@ -4971,6 +5075,15 @@ transitive_over: part_of ! part_of
 id: RO:0002320
 name: evolutionarily related to
 def: "A relationship that holds via some environmental process" []
+
+[Typedef]
+id: RO:0002321
+name: ecologically related to
+def: "A relationship that is mediated in some way by the environment or environmental feature (ENVO:00002297)" []
+subset: ro-eco
+property_value: IAO:0000116 "Awaiting class for domain/range constraint, see: https://github.com/OBOFoundry/Experimental-OBO-Core/issues/6" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving ecological interactions" xsd:string
 
 [Typedef]
 id: RO:0002323
@@ -5005,13 +5118,20 @@ transitive_over: has_part ! has part
 transitive_over: RO:0002017 ! has component activity
 
 [Typedef]
+id: RO:0002328
+name: functionally related to
+def: "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities." []
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000232 "This is a grouping relation that collects relations used for the purpose of connecting structure and function" xsd:string
+
+[Typedef]
 id: RO:0002329
 name: part of structure that is capable of
 def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "false" xsd:boolean
 holds_over_chain: part_of capable_of {RO:0002581="true"}
-is_a: functionally_related_to ! functionally related to
+is_a: RO:0002328 ! functionally related to
 
 [Typedef]
 id: RO:0002331
@@ -5021,7 +5141,6 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
 property_value: seeAlso "https://wiki.geneontology.org/Involved_in" xsd:anyURI
-property_value: seeAlso Involved:in
 holds_over_chain: RO:0002327 part_of
 is_a: participates_in ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
@@ -5034,8 +5153,18 @@ def: "inverse of enables" []
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: seeAlso "https://wiki.geneontology.org/Enabled_by" xsd:anyURI
-is_a: functionally_related_to ! functionally related to
 is_a: has_participant ! has participant
+is_a: RO:0002328 ! functionally related to
+
+[Typedef]
+id: RO:0002352
+name: input of
+def: "inverse of has input" []
+subset: ro-eco
+subset: RO:0002259
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+is_a: participates_in ! participates in
+is_a: RO:0002328 ! functionally related to
 
 [Typedef]
 id: RO:0002384
@@ -5139,8 +5268,8 @@ def: "c involved in or regulates p if and only if either (i) c is involved in p 
 property_value: IAO:0000116 "OWL does not allow defining object properties via a Union" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "involved in or reguates" xsd:string
-is_a: functionally_related_to ! functionally related to
 is_a: RO:0002264 ! acts upstream of or within
+is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 
 [Typedef]
@@ -5170,6 +5299,32 @@ property_value: IAO:0000118 "molecularly binds with" xsd:string
 property_value: seeAlso ECO:0000353
 is_symmetric: true
 is_a: RO:0002434 ! interacts with
+
+[Typedef]
+id: RO:0002437
+name: biotically interacts with
+def: "An interaction relationship in which at least one of the partners is an organism and the other is either an organism or an abiotic entity with which the organism interacts." []
+subset: ro-eco
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000118 "interacts with on organism level" xsd:string
+property_value: seeAlso http://dx.doi.org/10.1016/j.ecoinf.2014.08.005
+property_value: seeAlso "http://eol.org/schema/terms/interactsWith" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_symmetric: true
+is_a: RO:0002321 ! ecologically related to
+is_a: RO:0002434 ! interacts with
+
+[Typedef]
+id: RO:0002440
+name: symbiotically interacts with
+def: "A biotic interaction in which the two organisms live together in more or less intimate association." []
+subset: ro-eco
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000119 "http://www.ncbi.nlm.nih.gov/pubmed/19278549" xsd:anyURI
+property_value: IAO:0000232 "We follow GO and PAMGO in using 'symbiosis' as the broad term encompassing mutualism through parasitism" xsd:string
+is_symmetric: true
+is_a: RO:0002574 ! participates in a biotic-biotic interaction with
 
 [Typedef]
 id: RO:0002447
@@ -5214,6 +5369,14 @@ property_value: IAO:0000118 "directly activates" xsd:string
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
 is_a: RO:0002448 ! directly regulates activity of
+
+[Typedef]
+id: RO:0002453
+name: host of
+subset: ro-eco
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000232 "The term host is usually used for the larger (macro) of the two members of a symbiosis (GO)" xsd:string
+is_a: RO:0002440 ! symbiotically interacts with
 
 [Typedef]
 id: RO:0002464
@@ -5299,13 +5462,23 @@ range: BFO:0000002 ! continuant
 is_a: RO:0002506 ! causal relation between entities
 
 [Typedef]
+id: RO:0002574
+name: participates in a biotic-biotic interaction with
+subset: ro-eco
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: seeAlso http://dx.doi.org/10.1016/j.ecoinf.2014.08.005
+domain: OBI:0100026 ! organism
+range: OBI:0100026 ! organism
+is_a: RO:0002437 ! biotically interacts with
+
+[Typedef]
 id: RO:0002584
 name: has part structure that is capable of
 def: "s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p" []
 property_value: IAO:0000112 "gland SubClassOf 'has part structure that is capable of' some 'secretion by cell'" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 holds_over_chain: has_part capable_of
-is_a: functionally_related_to ! functionally related to
+is_a: RO:0002328 ! functionally related to
 is_a: RO:0002595 ! causal relation between material entity and a process
 
 [Typedef]
@@ -5355,7 +5528,7 @@ id: RO:0004031
 name: enables subfunction
 def: "Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P." []
 holds_over_chain: RO:0002327 has_part
-is_a: functionally_related_to ! functionally related to
+is_a: RO:0002328 ! functionally related to
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-01-25T23:20:13Z
 
@@ -5364,7 +5537,6 @@ id: RO:0004032
 name: acts upstream of or within, positive effect
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004049 RO:0002264
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within,_positive_effect
 property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0004047
 is_a: RO:0002264 ! acts upstream of or within
@@ -5388,7 +5560,6 @@ name: acts upstream of, positive effect
 def: "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004049 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_positive_effect
 property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 causally_upstream_of,_positive_effect
 is_a: RO:0002263 ! acts upstream of
@@ -5402,7 +5573,6 @@ name: acts upstream of, negative effect
 def: "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004050 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_negative_effect
 property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_negative_effect" xsd:anyURI
 holds_over_chain: RO:0002327 causally_upstream_of,_negative_effect
 is_a: RO:0002263 ! acts upstream of
@@ -5443,7 +5613,6 @@ name: indirectly causally upstream of
 def: "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q." []
 is_a: causally_upstream_of ! causally upstream of
 created_by: https://orcid.org/0000-0003-1813-6857
-created_by: pg
 creation_date: 2022-09-26T06:07:17Z
 
 [Typedef]
@@ -5453,7 +5622,6 @@ def: "p indirectly regulates q iff p is indirectly causally upstream of q and p 
 is_a: regulates ! regulates
 is_a: RO:0012011 ! indirectly causally upstream of
 created_by: https://orcid.org/0000-0003-1813-6857
-created_by: pg
 creation_date: 2022-09-26T06:08:01Z
 
 [Typedef]
@@ -5527,7 +5695,6 @@ is_inverse_functional: true
 id: capable_of
 name: capable of
 namespace: external
-namespace: uberon
 def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
 subset: ro-eco
 xref: RO:0002215
@@ -5546,14 +5713,13 @@ is_a: capable_of_part_of ! capable of part of
 id: capable_of_part_of
 name: capable of part of
 namespace: external
-namespace: uberon
 def: "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p." []
 xref: RO:0002216
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "has function in" xsd:string
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
 holds_over_chain: capable_of part_of {RO:0002582="true"}
-is_a: functionally_related_to ! functionally related to
+is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 
 [Typedef]
@@ -5637,27 +5803,6 @@ is_a: RO:0002501 ! causal relation between processes
 inverse_of: causally_downstream_of_or_within ! causally downstream of or within
 
 [Typedef]
-id: dc-contributor
-name: contributor
-namespace: uberon
-xref: http://purl.org/dc/terms/contributor
-is_metadata_tag: true
-
-[Typedef]
-id: dc-creator
-name: creator
-namespace: uberon
-xref: http://purl.org/dc/elements/1.1/creator
-is_metadata_tag: true
-
-[Typedef]
-id: dcterms-license
-name: license
-namespace: uberon
-xref: http://purl.org/dc/terms/license
-is_metadata_tag: true
-
-[Typedef]
 id: developmentally_preceded_by
 name: developmentally preceded by
 name: developmentally_preceded_by
@@ -5734,19 +5879,9 @@ is_a: immediately_causally_upstream_of ! immediately causally upstream of
 is_a: regulates ! regulates
 
 [Typedef]
-id: functionally_related_to
-name: functionally related to
-namespace: uberon
-def: "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities." []
-xref: RO:0002328
-property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
-property_value: IAO:0000232 "This is a grouping relation that collects relations used for the purpose of connecting structure and function" xsd:string
-
-[Typedef]
 id: has_component
 name: has component
 namespace: external
-namespace: uberon
 def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
 subset: ro-eco
 xref: RO:0002180
@@ -5773,7 +5908,7 @@ property_value: IAO:0000118 "consumes" xsd:string
 property_value: seeAlso "https://wiki.geneontology.org/Has_input" xsd:anyURI
 domain: BFO:0000015 ! process
 is_a: has_participant ! has participant
-inverse_of: input_of ! input of
+inverse_of: RO:0002352 ! input of
 
 [Typedef]
 id: has_negative_regulatory_component_activity
@@ -5784,7 +5919,6 @@ comment: By convention GO molecular functions are classified by their effector f
 xref: RO:0002014
 is_a: has_regulatory_component_activity ! has regulatory component activity
 is_a: negatively_regulated_by ! negatively regulated by
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:31:01Z
 
@@ -5795,7 +5929,6 @@ name: has_part
 namespace: external
 namespace: plant_ontology
 namespace: quality
-namespace: uberon
 def: "a core relation that holds between a whole and its part" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -5821,7 +5954,6 @@ namespace: external
 namespace: plant_ontology
 def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
 xref: RO:0000057
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: http://purl.org/dc/terms/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
 property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
@@ -5835,18 +5967,6 @@ range: BFO:0000002 ! continuant
 holds_over_chain: has_part has_participant
 
 [Typedef]
-id: has_quality
-name: has quality
-namespace: uberon
-def: "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence" []
-xref: RO:0000086
-property_value: IAO:0000112 "this apple has quality this red color" xsd:string
-property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
-property_value: IAO:0000118 "has_quality" xsd:string
-range: BFO:0000019 ! quality
-is_a: bearer_of ! bearer of
-
-[Typedef]
 id: has_regulatory_component_activity
 name: has regulatory component activity
 namespace: external
@@ -5854,7 +5974,6 @@ def: "A 'has regulatory component activity' B if A and B are GO molecular functi
 xref: RO:0002013
 is_a: regulated_by ! regulated by
 is_a: RO:0002017 ! has component activity
-created_by: dos
 created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:30:46Z
 
@@ -5884,7 +6003,6 @@ is_a: immediately_precedes ! immediately precedes
 id: immediately_preceded_by
 name: immediately preceded by
 namespace: external
-namespace: uberon
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
 xref: RO:0002087
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
@@ -5905,18 +6023,6 @@ property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
 property_value: RO:0002575 BFO:0000063
 is_a: precedes ! precedes
-
-[Typedef]
-id: input_of
-name: input of
-namespace: uberon
-def: "inverse of has input" []
-subset: ro-eco
-subset: RO:0002259
-xref: RO:0002352
-property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
-is_a: functionally_related_to ! functionally related to
-is_a: participates_in ! participates in
 
 [Typedef]
 id: negatively_regulated_by
@@ -5951,7 +6057,7 @@ name: negatively regulates characteristic
 namespace: gene_ontology
 def: "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C." []
 xref: RO:0019002
-property_value: dc-contributor https://orcid.org/0000-0002-8688-6599
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
 holds_over_chain: negatively_regulates positively_regulates_characteristic
 holds_over_chain: positively_regulates negatively_regulates_characteristic
 is_a: regulates_characteristic ! regulates characteristic
@@ -5969,7 +6075,6 @@ is_a: RO:0002162 ! in taxon
 id: overlaps
 name: overlaps
 namespace: external
-namespace: uberon
 def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
@@ -5992,7 +6097,6 @@ name: part_of
 namespace: external
 namespace: plant_ontology
 namespace: quality
-namespace: uberon
 def: "a core relation that holds between a part and its whole" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
@@ -6029,7 +6133,6 @@ name: participates in
 name: participates_in
 namespace: external
 namespace: plant_ontology
-namespace: uberon
 def: "a relation between a continuant and a process, in which the continuant is somehow involved in the process" []
 xref: RO:0000056
 property_value: IAO:0000111 "participates in" xsd:string
@@ -6076,7 +6179,7 @@ name: positively regulates characteristic
 namespace: gene_ontology
 def: "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C." []
 xref: RO:0019001
-property_value: dc-contributor https://orcid.org/0000-0002-8688-6599
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
 holds_over_chain: positively_regulates positively_regulates_characteristic
 is_a: regulates_characteristic ! regulates characteristic
 
@@ -6086,13 +6189,11 @@ name: preceded by
 name: preceded_by
 namespace: external
 namespace: plant_ontology
-namespace: uberon
 def: "The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P." [POC:Laurel_Cooper]
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
 comment: Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.
 subset: ro-eco
 xref: BFO:0000062
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
 property_value: http://purl.org/dc/terms/source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
 property_value: IAO:0000111 "preceded by" xsd:string
 property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
@@ -6112,7 +6213,6 @@ id: precedes
 name: precedes
 namespace: external
 namespace: plant_ontology
-namespace: uberon
 def: "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
 subset: ro-eco
 xref: BFO:0000063
@@ -6179,7 +6279,7 @@ name: regulates characteristic
 namespace: gene_ontology
 def: "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C." []
 xref: RO:0019000
-property_value: dc-contributor https://orcid.org/0000-0002-8688-6599
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
 domain: BFO:0000015 ! process
 range: PATO:0000001 ! quality
 holds_over_chain: regulates regulates_characteristic

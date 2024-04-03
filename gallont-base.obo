@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: gallont/releases/2024-03-27/gallont-base.owl
+data-version: gallont/releases/2024-04-03/gallont-base.owl
 ontology: gallont/gallont-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-27" xsd:string
+property_value: owl:versionInfo "2024-04-03" xsd:string
 
 [Term]
 id: GALLONT:0000001
@@ -317,21 +317,10 @@ property_value: http://purl.org/dc/terms/date "2023-06-27T01:41:01Z" xsd:string
 
 [Term]
 id: GALLONT:0000033
-name: erineum
-def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
-is_a: GALLONT:0000025 ! plant gall
-is_a: UBERON:0001062
-intersection_of: GALLONT:0000025 ! plant gall
-intersection_of: BFO:0000050 PO:0025034
-intersection_of: BFO:0000051 PO:0006504
-intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate
-relationship: BFO:0000050 PO:0025034
-relationship: BFO:0000051 PO:0006504
-relationship: GALLONT:0000000 NCBITaxon:6946 ! has associate
-property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/terms/date "2023-08-01T21:56:59Z" xsd:string
-property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
-property_value: seeAlso https://www.inaturalist.org/observations/79701805
+name: DEPRECATED erineum
+comment: logic needed to be fixed
+property_value: seeAlso GALLONT:0000048
+is_obsolete: true
 
 [Term]
 id: GALLONT:0000034
@@ -473,6 +462,21 @@ name: Acraspis gemula
 is_a: NCBITaxon:131567
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2024-03-25T19:40:19Z" xsd:dateTime
+
+[Term]
+id: GALLONT:0000048
+name: erineum
+def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
+is_a: GALLONT:0000025 ! plant gall
+is_a: OBI:0100026
+is_a: UBERON:0001062
+intersection_of: GALLONT:0000025 ! plant gall
+intersection_of: BFO:0000051 PO:0006504
+intersection_of: RO:0002453 NCBITaxon:6946
+relationship: BFO:0000051 PO:0006504
+relationship: RO:0002453 NCBITaxon:6946
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2023-08-01T21:56:59Z" xsd:string
 
 [Typedef]
 id: GALLONT:0000000

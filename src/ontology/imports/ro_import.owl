@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/gallont/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/gallont/releases/2024-03-27/imports/ro_import.owl>
+<http://purl.obolibrary.org/obo/gallont/releases/2024-04-03/imports/ro_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2024-02-13/ro.owl>)
-Annotation(owl:versionInfo "2024-03-27")
+Annotation(owl:versionInfo "2024-04-03")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -70,6 +70,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002264>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002304>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002305>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002314>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002321>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002323>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002327>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002328>))
@@ -95,10 +96,13 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002430>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002431>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002434>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002436>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002437>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002440>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002447>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002448>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002449>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002450>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002464>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002481>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002500>))
@@ -109,6 +113,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002559>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002563>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002564>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002566>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002574>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002578>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002584>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002595>))
@@ -824,6 +829,15 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002314> "char
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/ro/docs/reflexivity/>)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002314> <http://purl.obolibrary.org/obo/RO_0002502>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002321> (ecologically related to)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002321> "A relationship that is mediated in some way by the environment or environmental feature (ENVO:00002297)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002321> "Awaiting class for domain/range constraint, see: https://github.com/OBOFoundry/Experimental-OBO-Core/issues/6")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002321> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002321> "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving ecological interactions")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002321> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002321> "ecologically related to"@en)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002323> (mereotopologically related to)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002323> "A mereological relationship or a topological relationship")
@@ -1094,6 +1108,32 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002436> <http://purl.obolibrary.org/obo/RO_0002434>)
 SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002436>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002437> (biotically interacts with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002437> "An interaction relationship in which at least one of the partners is an organism and the other is either an organism or an abiotic entity with which the organism interacts.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002437> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002437> "interacts with on organism level")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002437> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002437> "biotically interacts with")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002437> <http://dx.doi.org/10.1016/j.ecoinf.2014.08.005>)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002437> "http://eol.org/schema/terms/interactsWith")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002437> <http://purl.obolibrary.org/obo/RO_0002321>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002437> <http://purl.obolibrary.org/obo/RO_0002434>)
+SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002437>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002437> <http://purl.obolibrary.org/obo/BFO_0000040>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002437> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002440> (symbiotically interacts with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002440> "A biotic interaction in which the two organisms live together in more or less intimate association.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002440> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002440> "http://www.ncbi.nlm.nih.gov/pubmed/19278549"^^xsd:anyURI)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002440> "We follow GO and PAMGO in using 'symbiosis' as the broad term encompassing mutualism through parasitism")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002440> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002440> "symbiotically interacts with")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002440> <http://purl.obolibrary.org/obo/RO_0002574>)
+SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002440>)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002447> (phosphorylates)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002447> "Axiomatization to GO to be added later")
@@ -1141,6 +1181,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002450> "dire
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002450> <http://purl.obolibrary.org/obo/RO_0002448>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002450> <http://purl.obolibrary.org/obo/BFO_0000040>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002450> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002453> (host of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002453> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002453> "The term host is usually used for the larger (macro) of the two members of a symbiosis (GO)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002453> "host of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/RO_0002440>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002464> (helper property (not for use in curation))
 
@@ -1224,6 +1272,16 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002566> "caus
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/RO_0002506>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/BFO_0000002>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/BFO_0000002>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002574> (participates in a biotic-biotic interaction with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002574> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002574> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002574> "participates in a biotic-biotic interaction with")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002574> <http://dx.doi.org/10.1016/j.ecoinf.2014.08.005>)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002574> <http://purl.obolibrary.org/obo/RO_0002437>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002574> <http://purl.obolibrary.org/obo/OBI_0100026>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002574> <http://purl.obolibrary.org/obo/OBI_0100026>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002578> (directly regulates)
 

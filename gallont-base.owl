@@ -11,12 +11,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gallont/gallont-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-03-27/gallont-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-04-03/gallont-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>Plant Gall Ontology</dcterms:title>
-        <owl:versionInfo>2024-03-27</owl:versionInfo>
+        <owl:versionInfo>2024-04-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -129,6 +129,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002453 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002453"/>
     
 
 
@@ -609,51 +615,10 @@
     <!-- http://purl.obolibrary.org/obo/GALLONT_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000033">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000025"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006504"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000000"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6946"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000025"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006504"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000000"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6946"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness.</obo:IAO_0000115>
-        <dcterms:creator rdf:resource="http://orcid.org/0000-0002-2119-4663"/>
-        <dcterms:date>2023-08-01T21:56:59Z</dcterms:date>
-        <dcterms:source rdf:resource="https://lccn.loc.gov/41001073"/>
-        <rdfs:label xml:lang="en">erineum</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://www.inaturalist.org/observations/79701805"/>
+        <rdfs:comment>logic needed to be fixed</rdfs:comment>
+        <rdfs:label xml:lang="en">DEPRECATED erineum</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000048"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -944,6 +909,47 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GALLONT_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000048">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GALLONT_0000025"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006504"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002453"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6946"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GALLONT_0000025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0006504"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002453"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6946"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness.</obo:IAO_0000115>
+        <dcterms:creator rdf:resource="https://orcid.org/0000-0002-2119-4663"/>
+        <dcterms:date>2023-08-01T21:56:59Z</dcterms:date>
+        <rdfs:label>erineum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_109362 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_109362"/>
@@ -977,6 +983,12 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_6946 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6946"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
