@@ -162,6 +162,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001732>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001851>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001871>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001873>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001874>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001877>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001878>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001883>))
@@ -183,11 +184,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002078>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002108>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002215>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002226>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002240>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002273>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002274>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002276>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002299>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002311>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002335>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002339>))
@@ -1090,6 +1093,10 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001871> <
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001873> <https://www.inaturalist.org/observations/111343832>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001874> (<http://purl.obolibrary.org/obo/PATO_0001874>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001874> <http://purl.obolibrary.org/obo/PATO_0001873>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001877> (lanceolate)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001877> "A shape quality inhering in a bearer by virtue of the bearer's being shaped like a lance-head, considerably longer than wide, tapering towards the tip from below the middle; attached at the broad end."@en)
@@ -1154,6 +1161,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002078> <http://purl.obolibrary
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002108> <https://www.inaturalist.org/observations/91418114>)
 SubClassOf(Annotation(rdfs:comment "probably not the right class for galls with nipple-like projections"@en) <http://purl.obolibrary.org/obo/PATO_0002108> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0002226> (<http://purl.obolibrary.org/obo/PATO_0002226>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002226> <http://purl.obolibrary.org/obo/PATO_0001873>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0002228> (acuminate)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002228> <https://www.inaturalist.org/observations/54845032>)
@@ -1174,6 +1185,10 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002274> <
 # Class: <http://purl.obolibrary.org/obo/PATO_0002276> (barred)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002276> <https://www.inaturalist.org/observations/45656874>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002299> (<http://purl.obolibrary.org/obo/PATO_0002299>)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002299> <http://purl.obolibrary.org/obo/PATO_0001873>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002311> (fimbriated)
 
