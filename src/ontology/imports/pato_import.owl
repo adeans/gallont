@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/gallont/imports/pato_import.owl>
-<http://purl.obolibrary.org/obo/gallont/releases/2024-04-03/imports/pato_import.owl>
+<http://purl.obolibrary.org/obo/gallont/releases/2024-04-08/imports/pato_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pato/releases/2024-03-28/pato.owl>)
-Annotation(owl:versionInfo "2024-04-03")
+Annotation(owl:versionInfo "2024-04-08")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -150,6 +150,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001857>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001865>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001871>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001873>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001874>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001875>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001877>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001878>))
@@ -179,12 +180,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002078>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002108>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002198>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002215>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002226>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002240>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002273>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002274>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002276>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002299>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002305>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0002311>))
@@ -3522,6 +3525,18 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001873> "cy
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001873> <http://purl.obolibrary.org/obo/PATO_0002007>)
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001873> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0015011> <http://purl.obolibrary.org/obo/PATO_0000411>))
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0001874> (discoid)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:cjm") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001874> "A shape quality inhering in a bearer by virtue of the bearer's being cylindrical, in which the height is less than the diameter.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001874> "disc-shaped")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0001874> "disk-shaped")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0001874> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0001874> "PATO:0001874")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001874> <http://purl.obolibrary.org/obo/pato#cell_quality>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0001874> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0001874> "discoid")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001874> <http://purl.obolibrary.org/obo/PATO_0001873>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0001875> (triangular)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "wordreference:wordreference") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0001875> "A shape quality inhering in a bearer by virtue of the bearer's having three angles.")
@@ -3838,6 +3853,17 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002215> "falciform")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002215> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0002226> (subcylindrical)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "url:http://www.thefreedictionary.com/Subcylindrical") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002226> "A cylindrical shape quality inhering in a bearer by virtue of the bearer's being imperfectly cylindrical or approximately cylindrical.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002226> <https://orcid.org/0000-0002-2061-091X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002226> "2010-07-13T04:22:30Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002226> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002226> "PATO:0002226")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0002226> <http://purl.obolibrary.org/obo/pato#value_slim>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002226> "subcylindrical")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002226> <http://purl.obolibrary.org/obo/PATO_0001873>)
+
 # Class: <http://purl.obolibrary.org/obo/PATO_0002228> (acuminate)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "url:http://www.thefreedictionary.com/acuminate") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002228> "A tapered shape quality inhering in a bearer by virtue of the bearer's tapering gradually to a sharp point.")
@@ -3903,6 +3929,20 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/PATO_0002276> <http://purl.obolibrary.org/obo/pato#value_slim>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002276> "barred")
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002276> <http://purl.obolibrary.org/obo/PATO_0001533>)
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0002299> (tubular)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0002299> "A cylindrical shape that is hollow.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/PATO_0002299> <https://orcid.org/0000-0002-2061-091X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/PATO_0002299> "2011-06-08T06:33:50Z")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0002299> "tube like")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0002299> "tube-shaped")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PATO_0002299> "tubulate")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PATO_0002299> "quality")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PATO_0002299> "PATO:0002299")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0002299> "tubular")
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002299> <http://purl.obolibrary.org/obo/PATO_0001873>)
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002299> <http://purl.obolibrary.org/obo/PATO_0002078>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0002300> (increased quality)
 

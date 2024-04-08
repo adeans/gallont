@@ -13,9 +13,9 @@
         "val" : "Plant Gall Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-04-03"
+        "val" : "2024-04-08"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-04-03/gallont-full.json"
+      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-04-08/gallont-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000125",
@@ -4548,6 +4548,28 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0001874",
+      "lbl" : "discoid",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A shape quality inhering in a bearer by virtue of the bearer's being cylindrical, in which the height is less than the diameter.",
+          "xrefs" : [ "PATOC:cjm" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/pato#cell_quality", "http://purl.obolibrary.org/obo/pato#value_slim" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "disc-shaped"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "disk-shaped"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "quality"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0001875",
       "lbl" : "triangular",
       "type" : "CLASS",
@@ -5159,6 +5181,27 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002226",
+      "lbl" : "subcylindrical",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A cylindrical shape quality inhering in a bearer by virtue of the bearer's being imperfectly cylindrical or approximately cylindrical.",
+          "xrefs" : [ "url:http://www.thefreedictionary.com/Subcylindrical" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/pato#value_slim" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-2061-091X"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-07-13T04:22:30Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "quality"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0002228",
       "lbl" : "acuminate",
       "type" : "CLASS",
@@ -5300,6 +5343,36 @@
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "val" : "https://www.inaturalist.org/observations/45656874"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0002299",
+      "lbl" : "tubular",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A cylindrical shape that is hollow.",
+          "xrefs" : [ "PATOC:GVG" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "tube like"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "tube-shaped"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "tubulate"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-2061-091X"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2011-06-08T06:33:50Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "quality"
         } ]
       }
     }, {
@@ -7168,6 +7241,34 @@
         } ],
         "xrefs" : [ {
           "val" : "PO_GIT:36"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "plant_anatomy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PO_0008039",
+      "lbl" : "stem base",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The basal part of stem.",
+          "xrefs" : [ "Gramene:Chih-Wei_Tung" ]
+        },
+        "synonyms" : [ {
+          "synonymType" : "http://purl.obolibrary.org/obo/po#Spanish",
+          "pred" : "hasExactSynonym",
+          "val" : "base del tallo (Spanish, exact)",
+          "xrefs" : [ "POC:Maria_Alejandra_Gandolfo" ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "gametophore stem base (exact)"
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/po#Japanese",
+          "pred" : "hasExactSynonym",
+          "val" : "茎基部 (Japanese, exact)",
+          "xrefs" : [ "NIG:Yukiko_Yamazaki" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -14103,6 +14204,10 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0015011",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0000411"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0001874",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001873"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/PATO_0001875",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0002006"
@@ -14245,6 +14350,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0000052"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0002226",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001873"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/PATO_0002228",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0001500"
@@ -14268,6 +14377,14 @@
       "sub" : "http://purl.obolibrary.org/obo/PATO_0002276",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0001533"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0002299",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001873"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0002299",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0002078"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PATO_0002300",
       "pred" : "is_a",
@@ -14608,6 +14725,14 @@
       "sub" : "http://purl.obolibrary.org/obo/PO_0008028",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "obj" : "http://purl.obolibrary.org/obo/PO_0025222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PO_0008039",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0025001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/PO_0008039",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "obj" : "http://purl.obolibrary.org/obo/PO_0009047"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PO_0009001",
       "pred" : "is_a",

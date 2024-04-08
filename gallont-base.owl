@@ -11,12 +11,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/gallont/gallont-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-04-03/gallont-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/gallont/releases/2024-04-08/gallont-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>Plant Gall Ontology</dcterms:title>
-        <owl:versionInfo>2024-04-03</owl:versionInfo>
+        <owl:versionInfo>2024-04-08</owl:versionInfo>
     </owl:Ontology>
     
 

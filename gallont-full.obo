@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: gallont/releases/2024-04-03/gallont-full.owl
+data-version: gallont/releases/2024-04-08/gallont-full.owl
 subsetdef: abnormal_slim ""
 subsetdef: absent_slim ""
 subsetdef: Angiosperm ""
@@ -58,7 +58,7 @@ ontology: gallont/gallont-full
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-04-03" xsd:string
+property_value: owl:versionInfo "2024-04-08" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -901,8 +901,8 @@ synonym: "Eucaryotae" RELATED synonym []
 synonym: "eucaryotes" EXACT genbank_common_name []
 synonym: "Eukarya" RELATED synonym []
 synonym: "Eukaryotae" RELATED synonym []
-synonym: "eukaryotes" EXACT common_name []
 synonym: "eukaryotes" EXACT OMO:0003003 []
+synonym: "eukaryotes" EXACT common_name []
 synonym: "eukaryotes" RELATED blast_name []
 xref: GC_ID:1
 xref: PMID:23020233
@@ -2268,6 +2268,17 @@ relationship: RO:0015011 PATO:0000411 ! has cross section circular
 property_value: seeAlso https://www.inaturalist.org/observations/111343832
 
 [Term]
+id: PATO:0001874
+name: discoid
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being cylindrical, in which the height is less than the diameter." [PATOC:cjm]
+subset: cell_quality
+subset: value_slim
+synonym: "disc-shaped" EXACT []
+synonym: "disk-shaped" EXACT []
+is_a: PATO:0001873 ! cylindrical
+
+[Term]
 id: PATO:0001875
 name: triangular
 namespace: quality
@@ -2574,6 +2585,16 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 creation_date: 2010-07-08T01:57:46Z
 
 [Term]
+id: PATO:0002226
+name: subcylindrical
+namespace: quality
+def: "A cylindrical shape quality inhering in a bearer by virtue of the bearer's being imperfectly cylindrical or approximately cylindrical." [url:http\://www.thefreedictionary.com/Subcylindrical]
+subset: value_slim
+is_a: PATO:0001873 ! cylindrical
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
+creation_date: 2010-07-13T04:22:30Z
+
+[Term]
 id: PATO:0002228
 name: acuminate
 namespace: quality
@@ -2637,6 +2658,19 @@ is_a: PATO:0001533 ! multi-colored
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
 property_value: seeAlso https://www.inaturalist.org/observations/45656874
 creation_date: 2010-11-16T11:30:40Z
+
+[Term]
+id: PATO:0002299
+name: tubular
+namespace: quality
+def: "A cylindrical shape that is hollow." [PATOC:GVG]
+synonym: "tube like" EXACT []
+synonym: "tube-shaped" EXACT []
+synonym: "tubulate" EXACT []
+is_a: PATO:0001873 ! cylindrical
+is_a: PATO:0002078 ! hollow
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-2061-091X
+creation_date: 2011-06-08T06:33:50Z
 
 [Term]
 id: PATO:0002300
@@ -3430,6 +3464,17 @@ synonym: "生殖シュート頂端 分裂組織 (Japanese, exact)" EXACT Japanes
 xref: PO_GIT:36
 is_a: PO:0020148 ! shoot apical meristem
 relationship: part_of PO:0025222 ! reproductive shoot apex
+
+[Term]
+id: PO:0008039
+name: stem base
+namespace: plant_anatomy
+def: "The basal part of stem." [Gramene:Chih-Wei_Tung]
+synonym: "base del tallo (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
+synonym: "gametophore stem base (exact)" EXACT []
+synonym: "茎基部 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
+is_a: PO:0025001 ! cardinal organ part
+relationship: part_of PO:0009047 ! stem
 
 [Term]
 id: PO:0009001

@@ -16,9 +16,9 @@
         "val" : "Plant Gall Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-04-03"
+        "val" : "2024-04-08"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-04-03/gallont-base.json"
+      "version" : "http://purl.obolibrary.org/obo/gallont/releases/2024-04-08/gallont-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/GALLONT_0000000",

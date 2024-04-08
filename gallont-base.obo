@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: gallont/releases/2024-04-03/gallont-base.owl
+data-version: gallont/releases/2024-04-08/gallont-base.owl
 ontology: gallont/gallont-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-04-03" xsd:string
+property_value: owl:versionInfo "2024-04-08" xsd:string
 
 [Term]
 id: GALLONT:0000001
