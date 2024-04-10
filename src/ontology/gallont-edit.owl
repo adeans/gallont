@@ -205,6 +205,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0005004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0005014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0040022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0005421>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0005597>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0006018>))
@@ -227,6 +228,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020138>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020139>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
@@ -1093,7 +1095,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001871> <
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0001873> <https://www.inaturalist.org/observations/111343832>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0001874> (<http://purl.obolibrary.org/obo/PATO_0001874>)
+# Class: <http://purl.obolibrary.org/obo/PATO_0001874> (discoid)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0001874> <http://purl.obolibrary.org/obo/PATO_0001873>)
 
@@ -1161,7 +1163,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002078> <http://purl.obolibrary
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002108> <https://www.inaturalist.org/observations/91418114>)
 SubClassOf(Annotation(rdfs:comment "probably not the right class for galls with nipple-like projections"@en) <http://purl.obolibrary.org/obo/PATO_0002108> <http://purl.obolibrary.org/obo/PATO_0000052>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0002226> (<http://purl.obolibrary.org/obo/PATO_0002226>)
+# Class: <http://purl.obolibrary.org/obo/PATO_0002226> (subcylindrical)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002226> <http://purl.obolibrary.org/obo/PATO_0001873>)
 
@@ -1186,7 +1188,7 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002274> <
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0002276> <https://www.inaturalist.org/observations/45656874>)
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0002299> (<http://purl.obolibrary.org/obo/PATO_0002299>)
+# Class: <http://purl.obolibrary.org/obo/PATO_0002299> (tubular)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0002299> <http://purl.obolibrary.org/obo/PATO_0001873>)
 
@@ -1254,12 +1256,17 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PATO_0040022> <
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0000055> <https://www.inaturalist.org/observations/48455720>)
 
+# Class: <http://purl.obolibrary.org/obo/PO_0005421> (parenchyma)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0005421> "parenchyma")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0005421> <http://purl.obolibrary.org/obo/PO_0025059>)
+
 # Class: <http://purl.obolibrary.org/obo/PO_0005597> (cambium)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0005597> "A lateral meristem (PO:0020145) that has as part a single layer of cambial initial cells (PO:0000295) and their derivatives, arranged orderly in radial files."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0005597> "cambium"@en)
 
-# Class: <http://purl.obolibrary.org/obo/PO_0006018> (leaf adaxial epidermis)
+# Class: <http://purl.obolibrary.org/obo/PO_0006018> (adaxial leaf epidermis)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0006018> "A portion of leaf epidermis (PO:0006016) that covers the adaxial/upper surface of a leaf."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0006018> "upper leaf"@en)
@@ -1267,7 +1274,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0006018> "adax
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0006018> <https://www.inaturalist.org/observations/53324962>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006018> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025034>))
 
-# Class: <http://purl.obolibrary.org/obo/PO_0006019> (leaf abaxial epidermis)
+# Class: <http://purl.obolibrary.org/obo/PO_0006019> (abaxial leaf epidermis)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0006019> "A portion of leaf epidermis (PO:0006016) that covers the abaxial/lower surface of a leaf."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0006019> "leaf underside"@en)
@@ -1330,7 +1337,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0020049> ObjectSomeValuesFrom(<htt
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020128> "A phyllome margin (PO:0025018) that is part of a leaf (PO:0025034)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020128> "leaf margin"@en)
 
-# Class: <http://purl.obolibrary.org/obo/PO_0020138> (leaf lamina vein)
+# Class: <http://purl.obolibrary.org/obo/PO_0020138> (leaf vein)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0020138> "A phyllome lamina vein (PO:0025348) that is part of a leaf lamina vascular system (PO:0000048)."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0020138> "leaf lamina vein"@en)
@@ -1359,6 +1366,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0020140> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/PO_0025034> (leaf)
 
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025034> <https://www.inaturalist.org/observations/60861819>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025059> (portion of ground tissue)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025059> "portion of ground tissue")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025059> <http://purl.obolibrary.org/obo/PO_0009007>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0025073> (branch)
 
