@@ -75,6 +75,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_1000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_1000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_1000050>))
@@ -427,6 +428,8 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/GALLONT_1000038>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/GALLONT_1000039>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/GALLONT_1000040>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/GALLONT_1000042>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/GALLONT_1000043>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/GALLONT_1000044>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94730>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94731>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94732>))
@@ -510,7 +513,7 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000052> "2024-03-27T01:25:52Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000052> "hasDiameterInMm"@en)
 FunctionalDataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000052>)
-DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
+DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/PO_0025496>)
 DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000052> xsd:decimal)
 
 # Data Property: <http://purl.obolibrary.org/obo/GALLONT_1000041> (hasLengthInMm)
@@ -520,7 +523,7 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000041
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_1000041> "For use with integral galls")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000041> "hasLengthInMm")
 FunctionalDataProperty(<http://purl.obolibrary.org/obo/GALLONT_1000041>)
-DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_1000041> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
+DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_1000041> <http://purl.obolibrary.org/obo/PO_0025496>)
 DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000041> xsd:decimal)
 
 # Data Property: <http://purl.obolibrary.org/obo/GALLONT_1000060> (hasHeightInMm)
@@ -529,7 +532,7 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_1000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000060> "2024-03-27T17:30:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000060> "hasHeightInMm"@en)
 FunctionalDataProperty(<http://purl.obolibrary.org/obo/GALLONT_1000060>)
-DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_1000060> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
+DataPropertyDomain(<http://purl.obolibrary.org/obo/GALLONT_1000060> <http://purl.obolibrary.org/obo/PO_0025496>)
 DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000060> xsd:decimal)
 
 
@@ -1040,6 +1043,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000047> <http://purl.obolibr
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000048> "erineum")
 EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/NCBITaxon_6946>)))
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000049> (plant gall aggregate)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000049> "plant gall aggregate")
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000049> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000025>))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_1000048> (Dasineura glandis)
 
@@ -3221,16 +3230,45 @@ ClassAssertion(Annotation(rdfs:comment "bisexual generation are less woody, usua
 DataPropertyAssertion(Annotation(rdfs:comment "8 mm wide in the bisexual form") <http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_1000040> "8"^^xsd:decimal)
 DataPropertyAssertion(Annotation(rdfs:comment "20 mm long") <http://purl.obolibrary.org/obo/GALLONT_1000041> <http://purl.obolibrary.org/obo/GALLONT_1000040> "20"^^xsd:decimal)
 
-# Individual: <http://purl.obolibrary.org/obo/GALLONT_1000042> (Druon quercusflocci (agamic) CuestaPortaEtAl (2022))
+# Individual: <http://purl.obolibrary.org/obo/GALLONT_1000042> (Druon quercusflocci (agamic) gall CuestaPortaEtAl (2022))
 
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_1000042> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000042> "2024-04-11T14:15:43Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_1000042> <https://doi.org/10.11646/zootaxa.5132.1.1>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000042> "Druon quercusflocci (agamic) CuestaPortaEtAl (2022)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000042> "Druon quercusflocci (agamic) gall CuestaPortaEtAl (2022)")
 ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <http://purl.obolibrary.org/obo/GALLONT_1000042>)
+ClassAssertion(Annotation(rdfs:comment "cluster of galls is usually elongated along the direction of the leaf midrib ... larval cells are distinct individually, rather than fused into a single mass") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GALLONT_0000049>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
+ClassAssertion(Annotation(rdfs:comment "attached at one end to the midrib") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0020139>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_1000110>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
+ClassAssertion(Annotation(rdfs:comment "dirty white to pinkish pubescent") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000454>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
+ClassAssertion(Annotation(rdfs:comment "cluster of galls is usually elongated along the direction of the leaf midrib ... larval cells are distinct individually, rather than fused into a single mass") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001629>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_1000111>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
+ClassAssertion(Annotation(rdfs:comment "in autumn") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_1000062> <http://purl.obolibrary.org/obo/NCIT_C94733>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
+DataPropertyAssertion(Annotation(rdfs:comment "larval cells 0.2–1.0 mm in diameter") <http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_1000042> "1"^^xsd:decimal)
+
+# Individual: <http://purl.obolibrary.org/obo/GALLONT_1000043> (Druon quercusflocci (agamic) gall cluster CuestaPortaEtAl (2022))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_1000043> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000043> "2024-04-11T14:55:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000043> "Druon quercusflocci (agamic) gall cluster CuestaPortaEtAl (2022)")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000049> <http://purl.obolibrary.org/obo/GALLONT_1000043>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_1000110>) <http://purl.obolibrary.org/obo/GALLONT_1000043>)
+DataPropertyAssertion(Annotation(rdfs:comment "8.0–8.5 mm broad") <http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_1000043> "8.5"^^xsd:decimal)
+DataPropertyAssertion(Annotation(rdfs:comment "10–12 mm long") <http://purl.obolibrary.org/obo/GALLONT_1000041> <http://purl.obolibrary.org/obo/GALLONT_1000043> "12"^^xsd:decimal)
+DataPropertyAssertion(Annotation(rdfs:comment "4–5 mm high") <http://purl.obolibrary.org/obo/GALLONT_1000060> <http://purl.obolibrary.org/obo/GALLONT_1000043> "5"^^xsd:decimal)
+
+# Individual: <http://purl.obolibrary.org/obo/GALLONT_1000044> (Druon quercusflocci (sexgen) gall Weld (1926))
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_1000044> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000044> "2024-04-11T15:04:34Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_1000044> "https://www.biodiversitylibrary.org/page/7610733")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000044> "Druon quercusflocci (sexgen) gall Weld (1926)")
+ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <http://purl.obolibrary.org/obo/GALLONT_1000044>)
+ClassAssertion(Annotation(rdfs:comment "subapical buds") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0000055>) <http://purl.obolibrary.org/obo/GALLONT_1000044>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_1000111>) <http://purl.obolibrary.org/obo/GALLONT_1000044>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_1000110>) <http://purl.obolibrary.org/obo/GALLONT_1000044>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <http://purl.obolibrary.org/obo/GALLONT_1000044>)
 
 # Individual: <http://purl.obolibrary.org/obo/NCIT_C94730> (winter)
 
