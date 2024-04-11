@@ -793,6 +793,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000049> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000049> "2024-04-11T14:32:57Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000049> "plant gall aggregate")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000049> "plant gall cluster")
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000049> <http://purl.obolibrary.org/obo/PO_0025496>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000025>))
 
