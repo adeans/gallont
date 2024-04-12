@@ -3234,6 +3234,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000037> 
 ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <http://purl.obolibrary.org/obo/GALLONT_1000037>)
 ClassAssertion(Annotation(rdfs:comment "On undersides of leaves") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0006019>) <http://purl.obolibrary.org/obo/GALLONT_1000037>)
 ClassAssertion(Annotation(rdfs:comment "near mid-ribs and along smaller veins") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0020138>) <http://purl.obolibrary.org/obo/GALLONT_1000037>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_1000051>) <http://purl.obolibrary.org/obo/GALLONT_1000037>)
 ClassAssertion(Annotation(rdfs:comment "yellow") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000324>) <http://purl.obolibrary.org/obo/GALLONT_1000037>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_1000051>) <http://purl.obolibrary.org/obo/GALLONT_1000037>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <http://purl.obolibrary.org/obo/GALLONT_1000037>)
