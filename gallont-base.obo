@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: gallont/releases/2024-03-25/gallont-base.owl
+data-version: gallont/releases/2024-04-15/gallont-base.owl
 ontology: gallont/gallont-base
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/description "None" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: http://purl.org/dc/terms/title "Plant Gall Ontology" xsd:string
-property_value: owl:versionInfo "2024-03-25" xsd:string
+property_value: owl:versionInfo "2024-04-15" xsd:string
 
 [Term]
 id: GALLONT:0000001
@@ -25,7 +25,7 @@ property_value: seeAlso https://www.inaturalist.org/observations/33275700
 
 [Term]
 id: GALLONT:0000003
-name: cavity
+name: plant gall cavity
 def: "A plant anatomical space that is located inside a gall." []
 is_a: PO:0025117
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
@@ -317,21 +317,10 @@ property_value: http://purl.org/dc/terms/date "2023-06-27T01:41:01Z" xsd:string
 
 [Term]
 id: GALLONT:0000033
-name: erineum
-def: "A plant gall that is induced by mites (Acariformes) on leaves and which consists of an area of leaf epidermis that has increased hairiness." []
-is_a: GALLONT:0000025 ! plant gall
-is_a: UBERON:0001062
-intersection_of: GALLONT:0000025 ! plant gall
-intersection_of: BFO:0000050 PO:0025034
-intersection_of: BFO:0000051 PO:0006504
-intersection_of: GALLONT:0000000 NCBITaxon:6946 ! has associate
-relationship: BFO:0000050 PO:0025034
-relationship: BFO:0000051 PO:0006504
-relationship: GALLONT:0000000 NCBITaxon:6946 ! has associate
-property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
-property_value: http://purl.org/dc/terms/date "2023-08-01T21:56:59Z" xsd:string
-property_value: http://purl.org/dc/terms/source https://lccn.loc.gov/41001073
-property_value: seeAlso https://www.inaturalist.org/observations/79701805
+name: DEPRECATED erineum
+comment: logic needed to be fixed
+property_value: seeAlso GALLONT:0000048
+is_obsolete: true
 
 [Term]
 id: GALLONT:0000034
@@ -425,7 +414,7 @@ property_value: seeAlso https://doi.org/10.3390%2Finsects12100850
 id: GALLONT:0000041
 name: larval cavity
 def: "A cavity that is occupied by one or more gall inhabitants." []
-is_a: GALLONT:0000003 ! cavity
+is_a: GALLONT:0000003 ! plant gall cavity
 property_value: http://purl.org/dc/terms/creator http://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2024-01-19T02:27:40Z" xsd:string
 
@@ -470,9 +459,782 @@ property_value: http://purl.org/dc/terms/date "2024-03-25T19:39:17Z" xsd:dateTim
 [Term]
 id: GALLONT:0000047
 name: Acraspis gemula
-is_a: NCBITaxon:131567
+is_a: NCBITaxon:1934078
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2024-03-25T19:40:19Z" xsd:dateTime
+
+[Term]
+id: GALLONT:0000048
+name: erineum
+is_a: GALLONT:0000025 ! plant gall
+is_a: OBI:0100026
+is_a: UBERON:0001062
+intersection_of: GALLONT:0000025 ! plant gall
+intersection_of: BFO:0000051 PO:0006504
+intersection_of: RO:0002453 NCBITaxon:6946
+relationship: BFO:0000051 PO:0006504
+relationship: RO:0002453 NCBITaxon:6946
+
+[Term]
+id: GALLONT:0000049
+name: plant gall aggregate
+is_a: PO:0025496
+relationship: BFO:0000051 GALLONT:0000025 ! plant gall
+
+[Term]
+id: GALLONT:1000048
+name: Dasineura glandis
+is_a: NCBITaxon:240745
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:44:08Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000049
+name: Lasioptera querciperda
+is_a: NCBITaxon:201413
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:44:42Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000050
+name: Macrodiplosis niveipila
+is_a: NCBITaxon:1420675
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:45:30Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000051
+name: Phylloxera querceti
+is_a: NCBITaxon:38120
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:47:30Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000053
+name: hedgehog gall
+is_a: GALLONT:0000025 ! plant gall
+is_a: OBI:0100026
+intersection_of: GALLONT:0000025 ! plant gall
+intersection_of: GALLONT:0000059 GALLONT:0000045 ! induced by Acraspis erinacei (sexgen)
+intersection_of: RO:0002453 GALLONT:0000039 ! Acraspis erinacei (agamic)
+relationship: GALLONT:0000059 GALLONT:0000045 ! induced by Acraspis erinacei (sexgen)
+relationship: RO:0002453 GALLONT:0000039 ! Acraspis erinacei (agamic)
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-27T01:45:02Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000054
+name: Acraspis gemula (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:0000047 ! Acraspis gemula
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:51:23Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000055
+name: Acraspis pezomachoides (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2302816
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:52:49Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000056
+name: Acraspis pezomachoides (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2302816
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:53:10Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000057
+name: Acraspis villosa (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2761977
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:54:45Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000058
+name: Acraspis villosa (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2761977
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T17:54:56Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000061
+name: Feron
+is_a: NCBITaxon:75144
+
+[Term]
+id: GALLONT:1000063
+name: Zopheroteras cuneatum
+is_a: NCBITaxon:2828388
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:04:35Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000064
+name: Zopheroteras cuneatum (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000063 ! Zopheroteras cuneatum
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:05:07Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000065
+name: Trigonaspis quercusforticorne
+is_a: NCBITaxon:207787
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:06:16Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000066
+name: Trigonaspis polita (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2302876
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:06:44Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000067
+name: Trigonaspis quercusforticorne (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000065 ! Trigonaspis quercusforticorne
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:07:07Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000068
+name: Sphaeroteras carolina (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2911677
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:08:23Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000069
+name: Sphaeroteras carolina (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2911677
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:08:44Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000070
+name: Phylloteras poculum (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2714083
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:09:46Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000071
+name: Phylloteras poculum (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2714083
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:10:24Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000072
+name: Phylloteras rubinum (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2873703
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:11:24Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000073
+name: Phylloteras sigma
+is_a: NCBITaxon:2302842
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:11:53Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000074
+name: Phylloteras sigma (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000073 ! Phylloteras sigma
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:12:09Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000075
+name: Philonix nigra (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2714088
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:13:19Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000076
+name: Philonix nigra (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2714088
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:13:35Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000077
+name: Neuroterus bassettii
+is_a: NCBITaxon:85109
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:14:40Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000078
+name: Neuroterus clarkeae
+is_a: NCBITaxon:85109
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:14:59Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000079
+name: Neuroterus escharensis
+is_a: NCBITaxon:85109
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:15:17Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000080
+name: Neuroterus minutus
+is_a: NCBITaxon:85109
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:15:34Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000081
+name: Neuroterus perminimus
+comment: synonym of Neuroterus niger according to NCBI taxonomy; see https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=2911676
+is_a: NCBITaxon:85109
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:16:18Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000082
+name: Neuroterus quercusbatatus (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:3022664
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:18:43Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000083
+name: Neuroterus quercusbatatus (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:3022664
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:18:59Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000084
+name: Neuroterus tantulus
+is_a: NCBITaxon:85109
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:20:25Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000085
+name: Neuroterus tantulus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000084 ! Neuroterus tantulus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:20:34Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000086
+name: Neuroterus umbilicatus
+is_a: NCBITaxon:85109
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:20:50Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000087
+name: Neuroterus vesicula (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2510129
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:21:45Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000088
+name: Neuroterus umbilicatus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000086 ! Neuroterus umbilicatus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:22:10Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000089
+name: Neuroterus quercusverrucarum (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2714085
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:23:18Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000090
+name: Neuroterus quercusirregularis (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2822341
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:23:53Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000091
+name: Neuroterus perminimus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000081 ! Neuroterus perminimus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:24:46Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000092
+name: Neuroterus perminimus (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:1000081 ! Neuroterus perminimus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:25:00Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000093
+name: Neuroterus niger (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2911676
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:25:35Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000094
+name: Neuroterus minutus (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:1000080 ! Neuroterus minutus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:26:08Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000095
+name: Neuroterus escharensis (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000079 ! Neuroterus escharensis
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:26:44Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000096
+name: Neuroterus clarkeae (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:1000078 ! Neuroterus clarkeae
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:27:28Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000097
+name: Neuroterus bassettii (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:1000077 ! Neuroterus bassettii
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:28:03Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000098
+name: Loxaulus quercusmammula (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:3022662
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:31:29Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000099
+name: Loxaulus illinoisensis
+is_a: NCBITaxon:2716790
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:31:52Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000100
+name: Loxaulus illinoisensis (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000099 ! Loxaulus illinoisensis
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:32:01Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000101
+name: Holocynips maxima
+is_a: NCBITaxon:2761999
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:32:57Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000102
+name: Holocynips maxima (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000101 ! Holocynips maxima
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:33:18Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000103
+name: Holocynips badia (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:3037601
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:33:39Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000104
+name: Feron apiarium
+is_a: GALLONT:1000061 ! Feron
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:34:16Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000105
+name: Feron clarkei
+is_a: GALLONT:1000061 ! Feron
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:34:36Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000106
+name: Feron comata
+is_a: GALLONT:1000061 ! Feron
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:34:52Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000107
+name: Feron comata (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:1000106 ! Feron comata
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:35:12Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000108
+name: Feron clarkei (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:1000105 ! Feron clarkei
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:35:33Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000109
+name: Feron apiarium (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000104 ! Feron apiarium
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:35:57Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000110
+name: Druon quercusflocci (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2950621
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:38:17Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000111
+name: Druon quercusflocci (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2950621
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:38:36Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000112
+name: Disholcaspis terrestris
+is_a: NCBITaxon:1389465
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:39:37Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000113
+name: Disholcaspis terrestris (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000112 ! Disholcaspis terrestris
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:39:52Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000114
+name: Disholcaspis spongiosa (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:1934075
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:40:45Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000115
+name: Disholcaspis globosa
+is_a: NCBITaxon:1389465
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:41:34Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000116
+name: Disholcaspis globosa (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000115 ! Disholcaspis globosa
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:41:47Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000117
+name: Callirhytis elliptica
+is_a: NCBITaxon:207785
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:42:58Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000118
+name: Callirhytis gemmiformis
+is_a: NCBITaxon:207785
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:43:40Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000119
+name: Callirhytis subcostata
+is_a: NCBITaxon:207785
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:45:16Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000120
+name: Callirhytis subcostata (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000119 ! Callirhytis subcostata
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:45:36Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000121
+name: Callirhytis seminator (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:3022651
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:46:05Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000122
+name: Callirhytis quercusfutilis (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:3022648
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:46:40Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000123
+name: Callirhytis quercusfutilis (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:3022648
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:46:52Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000124
+name: Callirhytis glandulus (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:3022645
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:47:33Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000125
+name: Callirhytis gemmiformis (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000118 ! Callirhytis gemmiformis
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:47:55Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000126
+name: Callirhytis exigua (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:3022644
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:48:25Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000127
+name: Callirhytis elliptica (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000117 ! Callirhytis elliptica
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:48:55Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000128
+name: Callirhytis clavula (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:331701
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:49:23Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000129
+name: Andricus weldi
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:50:32Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000130
+name: Andricus weldi (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000129 ! Andricus weldi
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:50:41Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000131
+name: Andricus quercusutriculus
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:51:12Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000132
+name: Andricus quercusutriculus (sexgen)
+is_a: CARO:0000048
+is_a: GALLONT:1000131 ! Andricus quercusutriculus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:51:28Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000133
+name: Andricus quercusstrobilanus (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2510113
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:52:39Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000134
+name: Andricus quercuspetiolicola (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2558937
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:53:34Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000135
+name: Andricus quercuspetiolicola (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:2558937
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:53:42Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000136
+name: Andricus quercusfrondosus
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:54:28Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000137
+name: Andricus quercusfrondosus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000136 ! Andricus quercusfrondosus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:54:46Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000138
+name: Andricus pisiformis (agamic)
+is_a: CARO:0000030
+is_a: NCBITaxon:2714074
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:55:36Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000139
+name: Andricus mamillaformis
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:56:25Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000140
+name: Andricus mamillaformis (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000139 ! Andricus mamillaformis
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:56:40Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000141
+name: Andricus indistinctus
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:57:02Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000142
+name: Andricus indistinctus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000141 ! Andricus indistinctus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:57:13Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000143
+name: Andricus dimorphus
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:57:35Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000144
+name: Andricus dimorphus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000143 ! Andricus dimorphus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:57:43Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000145
+name: Andricus deciduatus
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:58:18Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000146
+name: Andricus deciduatus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000145 ! Andricus deciduatus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:58:27Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000147
+name: Andricus chinquapin (sexgen)
+is_a: CARO:0000048
+is_a: NCBITaxon:3022639
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:59:29Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000148
+name: Andricus capillatus
+is_a: NCBITaxon:75141
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T18:59:59Z" xsd:dateTime
+
+[Term]
+id: GALLONT:1000149
+name: Andricus capillatus (agamic)
+is_a: CARO:0000030
+is_a: GALLONT:1000148 ! Andricus capillatus
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-26T19:00:13Z" xsd:dateTime
 
 [Typedef]
 id: GALLONT:0000000
@@ -480,4 +1242,19 @@ name: has associate
 comment: Relationship that specifies which organism is associated with a class.
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
 property_value: http://purl.org/dc/terms/date "2024-01-24T01:49:45Z" xsd:string
+
+[Typedef]
+id: GALLONT:0000059
+name: induced by
+property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-2119-4663
+property_value: http://purl.org/dc/terms/date "2024-03-27T02:04:51Z" xsd:dateTime
+is_a: RO:0002434
+
+[Typedef]
+id: GALLONT:1000062
+name: has seasonal maturity
+
+[Typedef]
+id: GALLONT:1000150
+name: has seasonal emergence
 
