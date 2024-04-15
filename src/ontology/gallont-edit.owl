@@ -296,10 +296,12 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://pur
 # Object Property: <http://purl.obolibrary.org/obo/GALLONT_1000062> (has seasonal maturity)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000062> "has seasonal maturity")
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000062> <http://purl.obolibrary.org/obo/ENVO_03000096>)
 
 # Object Property: <http://purl.obolibrary.org/obo/GALLONT_1000150> (has seasonal emergence)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000150> "has seasonal emergence")
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000150> <http://purl.obolibrary.org/obo/ENVO_03000096>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002437> (biotically interacts with)
 
