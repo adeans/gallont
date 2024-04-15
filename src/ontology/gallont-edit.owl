@@ -73,6 +73,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_109362>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1389465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1540852>))
@@ -796,6 +797,15 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000049> 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000049> "plant gall cluster")
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000049> <http://purl.obolibrary.org/obo/PO_0025496>)
 SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000025>))
+
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000050> (zoocecidium)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000050> "A plant gall that is induced by an animal")
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000050> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000050> "2024-04-15T13:33:50Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000050> <https://doi.org/10.1007/978-94-017-6230-4_9>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000050> "zoocecidium")
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000050> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_109362> (Aceria)
 
