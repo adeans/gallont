@@ -829,7 +829,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000046> <http://purl.obolibr
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000047> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000047> "2024-03-25T19:40:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000047> "Acraspis gemula"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000047> <http://purl.obolibrary.org/obo/NCBITaxon_131567>)
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000047> <http://purl.obolibrary.org/obo/NCBITaxon_1934078>)
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000048> (erineum)
 
@@ -837,7 +837,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000048> <https://orcid.org/0000-0002-2119-4663>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000048> "2023-08-01T21:56:59Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000048> "erineum")
-EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/NCBITaxon_6946>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0006504>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/NCBITaxon_6946>)))
 
 # Class: <http://purl.obolibrary.org/obo/GALLONT_0000049> (plant gall aggregate)
 
@@ -856,7 +856,7 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000050> "2024-04-15T13:33:50Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_0000050> <https://doi.org/10.1007/978-94-017-6230-4_9>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000050> "zoocecidium")
-SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000050> <http://purl.obolibrary.org/obo/GALLONT_0000025>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)))
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_109362> (Aceria)
 
@@ -906,12 +906,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_3513> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_50557> (Insecta)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_50557> "Insecta")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_50557> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_6946> (Acariformes)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_6946> "Acariformes"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_6946> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_6946> <http://purl.obolibrary.org/obo/NCBITaxon_6656>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_70320> (Eriophyidae)
 
