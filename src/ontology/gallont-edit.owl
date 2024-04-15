@@ -3506,6 +3506,7 @@ AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_10001
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000156> "Andricus quercusstrobilanus (agamic) gall cluster Osten Sacken (1862)")
 ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000049> <http://purl.obolibrary.org/obo/GALLONT_1000156>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/NCBITaxon_2510113>) <http://purl.obolibrary.org/obo/GALLONT_1000156>)
+ClassAssertion(ObjectExactCardinality(25 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/GALLONT_0000025>) <http://purl.obolibrary.org/obo/GALLONT_1000156>)
 DataPropertyAssertion(Annotation(rdfs:comment "Diameter about an inch and a half") <http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_1000156> "38.1"^^xsd:decimal)
 
 # Individual: <http://purl.obolibrary.org/obo/GALLONT_1000157> (Andricus quercusutriculus (sexgen) gall Bassett (1881))
