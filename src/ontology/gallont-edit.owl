@@ -238,10 +238,17 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030119>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030121>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000059>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_1000062>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_1000150>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002437>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002440>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002454>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002574>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_0000052>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_1000041>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/GALLONT_1000060>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94730>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94731>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/NCIT_C94732>))
@@ -281,6 +288,19 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_0000000
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000000> "has associate"@en)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000000> <http://purl.obolibrary.org/obo/OBI_0100026>)
 
+# Object Property: <http://purl.obolibrary.org/obo/GALLONT_0000059> (induced by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000059> "induced by")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/RO_0002440>)
+
+# Object Property: <http://purl.obolibrary.org/obo/GALLONT_1000062> (has seasonal maturity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000062> "has seasonal maturity")
+
+# Object Property: <http://purl.obolibrary.org/obo/GALLONT_1000150> (has seasonal emergence)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000150> "has seasonal emergence")
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002437> (biotically interacts with)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002437> <http://purl.obolibrary.org/obo/RO_0002434>)
@@ -294,9 +314,40 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002440> <http://purl.obo
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002453> "host of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/RO_0002440>)
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002454> (<http://purl.obolibrary.org/obo/RO_0002454>)
+
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/RO_0002440>)
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002574> (participates in a biotic-biotic interaction with)
 
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002574> <http://purl.obolibrary.org/obo/RO_0002437>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.obolibrary.org/obo/GALLONT_0000052> (hasDiameterInMm)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000052> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000052> "2024-03-27T01:25:52Z")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000052> "hasDiameterInMm")
+DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_0000052> xsd:decimal)
+
+# Data Property: <http://purl.obolibrary.org/obo/GALLONT_1000041> (hasLengthInMm)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_1000041> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000041> "2024-04-11T14:02:15Z")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GALLONT_1000041> "For use with integral galls")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000041> "hasLengthInMm")
+DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000041> xsd:decimal)
+
+# Data Property: <http://purl.obolibrary.org/obo/GALLONT_1000060> (hasHeightInMm)
+
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_1000060> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000060> "2024-03-27T17:30:29Z")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000060> "hasHeightInMm")
+DataPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000060> xsd:decimal)
 
 
 
