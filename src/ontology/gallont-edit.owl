@@ -380,6 +380,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000000>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_0000059>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_1000062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/GALLONT_1000150>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002180>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002371>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002454>))
@@ -513,6 +514,11 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000062> <http://pur
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000150> "has seasonal emergence")
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/GALLONT_1000150> <http://purl.obolibrary.org/obo/ENVO_03000096>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002180> (has component)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002180> "has component")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/BFO_0000051>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002371> (attached to)
 
@@ -2855,6 +2861,7 @@ ClassAssertion(Annotation(rdfs:comment "produced in the fall") ObjectHasValue(<h
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_1000014> <https://www.biodiversitylibrary.org/page/7490911>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000014> "Andricus indistinctus (agamic) gall Bassett (1890)")
 ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <http://purl.obolibrary.org/obo/GALLONT_1000014>)
+ClassAssertion(Annotation(rdfs:comment "no true larval cell") ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000005>)) <http://purl.obolibrary.org/obo/GALLONT_1000014>)
 ClassAssertion(Annotation(rdfs:comment "to the small twigs") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025073>) <http://purl.obolibrary.org/obo/GALLONT_1000014>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_1000141>) <http://purl.obolibrary.org/obo/GALLONT_1000014>)
 ClassAssertion(Annotation(rdfs:comment "They are monothalamous") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) <http://purl.obolibrary.org/obo/GALLONT_1000014>)
@@ -3305,6 +3312,7 @@ ClassAssertion(Annotation(rdfs:comment "cluster of galls is usually elongated al
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/GALLONT_1000111>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/NCBITaxon_3513>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
 ClassAssertion(Annotation(rdfs:comment "in autumn") ObjectHasValue(<http://purl.obolibrary.org/obo/GALLONT_1000062> <http://purl.obolibrary.org/obo/NCIT_C94733>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
+ClassAssertion(ObjectExactCardinality(10 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/GALLONT_0000005>) <http://purl.obolibrary.org/obo/GALLONT_1000042>)
 DataPropertyAssertion(Annotation(rdfs:comment "larval cells 0.2–1.0 mm in diameter") <http://purl.obolibrary.org/obo/GALLONT_0000052> <http://purl.obolibrary.org/obo/GALLONT_1000042> "1"^^xsd:decimal)
 
 # Individual: <http://purl.obolibrary.org/obo/GALLONT_1000043> (Druon quercusflocci (agamic) gall cluster CuestaPortaEtAl (2022))
@@ -3507,6 +3515,7 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000157
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_1000157> <https://www.biodiversitylibrary.org/page/3043661>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000157> "Andricus quercusutriculus (sexgen) gall Bassett (1881)")
 ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <http://purl.obolibrary.org/obo/GALLONT_1000157>)
+ClassAssertion(Annotation(rdfs:comment "contains no larval cell") ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000005>)) <http://purl.obolibrary.org/obo/GALLONT_1000157>)
 ClassAssertion(Annotation(rdfs:comment "it appears on both sides of the leaf, but is most prominent above") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0006018>) <http://purl.obolibrary.org/obo/GALLONT_1000157>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_1000131>) <http://purl.obolibrary.org/obo/GALLONT_1000157>)
 ClassAssertion(Annotation(rdfs:comment "monothalamous") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) <http://purl.obolibrary.org/obo/GALLONT_1000157>)
@@ -3746,6 +3755,7 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_1000171
 AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_1000171> <https://www.biodiversitylibrary.org/page/28154038>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_1000171> "Callirhytis gemmiformis (agamic) gall Beutenmuller (1917)")
 ClassAssertion(<http://purl.obolibrary.org/obo/GALLONT_0000025> <http://purl.obolibrary.org/obo/GALLONT_1000171>)
+ClassAssertion(Annotation(rdfs:comment "containing no separate larval chamber") ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GALLONT_0000005>)) <http://purl.obolibrary.org/obo/GALLONT_1000171>)
 ClassAssertion(Annotation(rdfs:comment "On the trunk") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0009047>) <http://purl.obolibrary.org/obo/GALLONT_1000171>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/GALLONT_1000118>) <http://purl.obolibrary.org/obo/GALLONT_1000171>)
 ClassAssertion(Annotation(rdfs:comment "Monothalamous") ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/GALLONT_0000009>) <http://purl.obolibrary.org/obo/GALLONT_1000171>)
