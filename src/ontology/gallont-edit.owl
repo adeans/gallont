@@ -74,6 +74,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GALLONT_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_109362>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1389465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1540852>))
@@ -232,6 +233,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020140>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025092>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025117>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030119>))
@@ -860,6 +862,15 @@ AnnotationAssertion(dcterms:source <http://purl.obolibrary.org/obo/GALLONT_00000
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000050> "zoocecidium")
 EquivalentClasses(<http://purl.obolibrary.org/obo/GALLONT_0000050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GALLONT_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/GALLONT_0000059> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)))
 
+# Class: <http://purl.obolibrary.org/obo/GALLONT_0000051> (plant gall dehiscence zone)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GALLONT_0000051> "A dehiscence zone (PO:0025092) that is part of a plant gall.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/pato#seeAlso> <http://purl.obolibrary.org/obo/GALLONT_0000051> <https://www.inaturalist.org/observations/129032167>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/GALLONT_0000051> <https://orcid.org/0000-0002-2119-4663>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/GALLONT_0000051> "2024-04-18T13:34:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GALLONT_0000051> "plant gall dehiscence zone")
+SubClassOf(<http://purl.obolibrary.org/obo/GALLONT_0000051> <http://purl.obolibrary.org/obo/PO_0025092>)
+
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_109362> (Aceria)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_109362> "Aceria")
@@ -1450,6 +1461,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0025059> <http://purl.obolibrary.o
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0025073> "stem"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PO_0025073> "twig"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/PO_0025073> <https://www.inaturalist.org/observations/28377541>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025092> (dehiscence zone)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025092> "dehiscence zone")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025092> <http://purl.obolibrary.org/obo/PO_0009007>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0030119> (catkin inflorescence)
 
