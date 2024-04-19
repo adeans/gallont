@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/gallont/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/gallont/releases/2024-04-08/imports/ro_import.owl>
+<http://purl.obolibrary.org/obo/gallont/releases/2024-04-19/imports/ro_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2024-02-13/ro.owl>)
-Annotation(owl:versionInfo "2024-04-08")
+Annotation(owl:versionInfo "2024-04-19")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -103,6 +103,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002448>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002449>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002450>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002453>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002454>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002464>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002481>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002500>))
@@ -1189,6 +1190,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002453> "host of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002453> <http://purl.obolibrary.org/obo/RO_0002440>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002454> (has host)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002454> "X 'has host' y if and only if: x is an organism, y is an organism, and x can live on the surface of or within the body of y")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002454> <https://orcid.org/0000-0002-6601-2165>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002454> "has host")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/RO_0002454> "http://eol.org/schema/terms/hasHost")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002454> <http://purl.obolibrary.org/obo/RO_0002440>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002464> (helper property (not for use in curation))
 
