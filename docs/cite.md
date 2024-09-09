@@ -6,4 +6,4 @@ Deans AR, Nastasi LF, Davis CK, GallOnt Contributors [year] GallOnt: An ontology
 
 The paper that introduces and describes the ontology:
 
-Deans AR, Nastasi LF, Davis C (2024) GallOnt: An ontology for plant gall phenotypes. ARPHA Preprints. https://doi.org/10.3897/arphapreprints.e128953
+Deans AR, Nastasi LF, Davis CK (2024) GallOnt: An ontology for plant gall phenotypes. Biodiversity Data Journal 12: e128585 https://doi.org/10.3897/BDJ.12.e128585 
