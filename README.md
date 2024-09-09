@@ -20,6 +20,10 @@ http://purl.obolibrary.org/obo/gallont.owl
 
 Editors of this ontology should use the edit version, [src/ontology/gallont-edit.owl](src/ontology/gallont-edit.owl)
 
+## How to cite
+
+Deans AR, Nastasi LF, Davis CK (2024) GallOnt: An ontology for plant gall phenotypes. _Biodiversity Data Journal_ 12: e128585 https://doi.org/10.3897/BDJ.12.e128585 
+
 ## Contact
 
 Please use this GitHub repository's [Issue tracker](https://github.com/adeans/gallont/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
